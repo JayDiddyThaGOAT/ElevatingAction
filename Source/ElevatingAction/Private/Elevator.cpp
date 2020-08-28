@@ -10,20 +10,9 @@ AElevator::AElevator()
     static ConstructorHelpers::FObjectFinder<UStaticMesh> ElevatorMesh(TEXT("/Game/PolygonOffice/Meshes/Buildings/SM_Bld_Elevator_01"));
     static ConstructorHelpers::FObjectFinder<UStaticMesh> ElevatorDoorMesh(TEXT("/Game/PolygonOffice/Meshes/Buildings/SM_Bld_Elevator_01_Door"));
 
-    GetStaticMeshComponent()->SetStaticMesh(ElevatorMesh.Object);
+	if (ElevatorMesh.Succeeded())
+		GetStaticMeshComponent()->SetStaticMesh(ElevatorMesh.Object);
     GetStaticMeshComponent()->SetMobility(EComponentMobility::Movable);
-
-    LeftDoor = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("LeftDoor"));
-    LeftDoor->SetCollisionProfileName(TEXT("BlockAll"));
-    LeftDoor->SetupAttachment(RootComponent);
-    LeftDoor->SetStaticMesh(ElevatorDoorMesh.Object);
-    LeftDoor->SetRelativeLocation(LeftDoorTargetLocation);
-
-    RightDoor = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("RightDoor"));
-    RightDoor->SetCollisionProfileName(TEXT("BlockAll"));
-    RightDoor->SetupAttachment(RootComponent);
-    RightDoor->SetStaticMesh(ElevatorDoorMesh.Object);
-    RightDoor->SetRelativeLocationAndRotation(RightDoorTargetLocation, FRotator(0.0f, 180.0f, 0.0f));
 
     ElevatorDirection = EDirectionState::Down;
     ElevatorSpeed = 150.0f;
@@ -34,12 +23,24 @@ AElevator::AElevator()
     ElevatorDoorsSpeed = 75.0f;
     LeftDoorTargetLocation = FVector(0.0f, -5.0f, 0.0f);
     RightDoorTargetLocation = FVector(250.0f, -10.0f, 0.0f);
-    LeftDoor->SetRelativeLocation(LeftDoorTargetLocation);
-    RightDoor->SetRelativeLocation(RightDoorTargetLocation);
     OpenDoorOffset = 70.0f;
 
     MinFloorNumber = 1;
-	NextTargetFloorNumber = -1;
+    NextTargetFloorNumber = -1;
+	
+    LeftDoor = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("LeftDoor"));
+    LeftDoor->SetCollisionProfileName(TEXT("BlockAll"));
+    LeftDoor->SetupAttachment(RootComponent);
+    LeftDoor->SetRelativeLocation(LeftDoorTargetLocation);
+    if (ElevatorDoorMesh.Succeeded())
+		LeftDoor->SetStaticMesh(ElevatorDoorMesh.Object);
+
+    RightDoor = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("RightDoor"));
+    RightDoor->SetCollisionProfileName(TEXT("BlockAll"));
+    RightDoor->SetupAttachment(RootComponent);
+    RightDoor->SetRelativeLocationAndRotation(RightDoorTargetLocation, FRotator(0.0f, 180.0f, 0.0f));
+    if (ElevatorDoorMesh.Succeeded())
+		RightDoor->SetStaticMesh(ElevatorDoorMesh.Object);
 }
 
 void AElevator::BeginPlay()
@@ -47,7 +48,7 @@ void AElevator::BeginPlay()
     Super::BeginPlay();
 
     CurrentFloorNumber = 30 + FMath::FloorToInt(GetActorLocation().Z / 300);
-    CurrentTargetFloorNumber = ElevatorDirection == EDirectionState::Down ? CurrentFloorNumber - 1 : CurrentFloorNumber + 1;
+    CurrentTargetFloorNumber = CurrentFloorNumber;
 
     if (CurrentFloorNumber >= 30)
         MaxFloorNumber = 30;

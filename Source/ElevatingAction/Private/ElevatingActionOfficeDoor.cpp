@@ -5,15 +5,11 @@ UElevatingActionOfficeDoor::UElevatingActionOfficeDoor()
 {
 	PrimaryComponentTick.bCanEverTick = true;
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> OfficeDoorMeshRef(TEXT("/Game/PolygonOffice/Meshes/Buildings/SM_Bld_Door_04"));
-	if (OfficeDoorMeshRef.Succeeded())
-		UStaticMeshComponent::SetStaticMesh(OfficeDoorMeshRef.Object);
-
 	static ConstructorHelpers::FObjectFinder<UMaterialInstance> OfficeDoorFrameRef(TEXT("/Game/ElevatingActionOffice/Materials/M_ElevatingActionOffice_Wall"));
-	if (OfficeDoorMeshRef.Succeeded() && OfficeDoorFrameRef.Succeeded())
+	if (OfficeDoorFrameRef.Succeeded())
 		FrameMaterialInstance = OfficeDoorFrameRef.Object;
 	
-	bIsDoorClosed = true;
+	bIsClosed = true;
 	DoorRotationSpeed = 150.0f;
 }
 
@@ -64,7 +60,7 @@ float UElevatingActionOfficeDoor::GetFrameBrightness()
 
 bool UElevatingActionOfficeDoor::IsClosed() const
 {
-	return bIsDoorClosed;
+	return bIsClosed;
 }
 
 bool UElevatingActionOfficeDoor::IsLocked() const
@@ -88,7 +84,7 @@ void UElevatingActionOfficeDoor::TickComponent(float DeltaTime, enum ELevelTick 
 	SetRelativeRotation(DoorRotation);
 
 	if (IsLocked())
-		bIsDoorClosed = DoorTargetRotation.Equals(DoorClosedRotation);
+		bIsClosed = DoorTargetRotation.Equals(DoorClosedRotation);
 }
 
 

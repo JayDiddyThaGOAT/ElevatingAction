@@ -43,7 +43,7 @@ protected:
 	float FrameBrightness;
 
 	UPROPERTY(BlueprintGetter = IsClosed, meta = (AllowPrivateAccess = "true"), Category = "Door")
-	bool bIsDoorClosed;
+	bool bIsClosed;
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Door")
 	float DoorRotationSpeed;
