@@ -38,7 +38,7 @@ private:
 	int32 LevelNumber;
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Level)
-	TArray<int32> SecretFileCounts;
+	TMap<int32, FInt32Range> SecretFileCounts;
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Blackout)
 	float BlackoutDuration;

@@ -14,13 +14,14 @@ UElevatingActionGameInstance::UElevatingActionGameInstance()
     BlackoutDuration = 4.0f;
     BlackoutElapsedTime = 0.0f;
 
-    SecretFileCounts.Add(5);	//Level 1
-    SecretFileCounts.Add(6);	//Level 2
-    SecretFileCounts.Add(6);	//Level 3
-    SecretFileCounts.Add(7);	//Level 4
-    SecretFileCounts.Add(8);	//Level 5
-    SecretFileCounts.Add(9);	//Level 6
-    SecretFileCounts.Add(10);	//Level 7 & Up
+    //InKey = Number Of Secret Files Spawned Per Level
+    //InValue = How low or high each secret file can spawn in level
+    SecretFileCounts.Add(5, FInt32Range(9, 20));	//Level 1
+    SecretFileCounts.Add(6, FInt32Range(3, 20));	//Level 2
+    SecretFileCounts.Add(7, FInt32Range(2, 20));	//Level 3
+    SecretFileCounts.Add(8, FInt32Range(2, 21));	//Level 4
+    SecretFileCounts.Add(9, FInt32Range(2, 30));	//Level 5
+    SecretFileCounts.Add(10, FInt32Range(1, 30)); //Level 6 & Up
 }
 
 void UElevatingActionGameInstance::AddPlayerScore(int32 Points)
