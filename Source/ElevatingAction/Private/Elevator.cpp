@@ -95,9 +95,6 @@ void AElevator::Tick(float DeltaSeconds)
 		
 		if (!HasElevatorPassedStopTime())
 		{
-			if (IsTargetFloorNumberSet() && CurrentFloorNumber == NextTargetFloorNumber)
-				NextTargetFloorNumber = -1;
-			
 			CurrentFloorNumber = CurrentTargetFloorNumber;
 			
 			if (!GetOwner())
@@ -126,6 +123,11 @@ void AElevator::Tick(float DeltaSeconds)
 					else
 						ElevatorStoppedTime = 0.0f;
 				}
+			}
+			else
+			{
+				if (GetOwner() || (IsTargetFloorNumberSet() && CurrentTargetFloorNumber == NextTargetFloorNumber))
+					NextTargetFloorNumber = -1;
 			}
 		}
 	}
