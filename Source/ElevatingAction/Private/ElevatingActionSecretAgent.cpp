@@ -48,6 +48,8 @@ AElevatingActionSecretAgent::AElevatingActionSecretAgent()
 	bCanGoRight = true;
 
 	CurrentTransition = ETransitionState::None;
+
+	RoomTargetLocation = 500.0f;
 }
 
 // Called when the game starts or when spawned
@@ -167,7 +169,7 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 	for (AActor* SecretAgent : SecretAgents)
 		MoveIgnoreActorAdd(SecretAgent);
 	
-	CurrentFloorNumber = 30 + FMath::FloorToInt(GetMesh()->GetSocketLocation(TEXT("Pelvis")).Z / 300);
+	CurrentFloorNumber = 30 + FMath::FloorToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
 	if (CurrentFloorNumber >= 16 && CurrentFloorNumber <= 20)
 	{
 		FHitResult StairHitResult;
@@ -344,7 +346,10 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 			bCanGoLeft = false;
 			bCanGoRight = false;
 
-			FVector TargetLocation = FVector(TracedDoor->GetOwner()->GetActorLocation().X + 125.0f, TracedDoor->GetComponentLocation().Y - 500.0f, GetActorLocation().Z);
+			FVector TargetLocation = FVector(
+				TracedDoor->GetOwner()->GetActorLocation().X + 125.0f,
+				TracedDoor->GetComponentLocation().Y - RoomTargetLocation,
+				GetActorLocation().Z);
 			FVector DirectionToTarget = (TargetLocation - GetActorLocation()).GetSafeNormal();
 			AddMovementInput(DirectionToTarget);
 

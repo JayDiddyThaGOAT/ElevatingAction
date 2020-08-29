@@ -98,6 +98,10 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Movement)
 	float DefaultWalkSpeed;
 
+	//How far will the secret agent walk to inside the room?
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Movement)
+	float RoomTargetLocation;
+
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = State)
 	ETransitionState CurrentTransition;
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = State)
@@ -120,7 +124,7 @@ protected:
 	class UElevatingActionOfficeDoor* TracedDoor;
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Tracing)
 	FVector TracedStairsLocation;
-
+	
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Attacking)
 	bool bShootButtonPressed;
 	
