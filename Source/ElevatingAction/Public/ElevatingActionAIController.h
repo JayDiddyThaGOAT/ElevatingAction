@@ -44,6 +44,7 @@ class ELEVATINGACTION_API AElevatingActionAIController : public AAIController
 
 	bool bShouldGoUpStairs, bShouldGoDownStairs;
 	bool bCanGoToSecretAgentOtto, bBlockedByWall;
+	bool bCanGoLeft, bCanGoRight;
 
 	FVector DirectionVector;
 };

@@ -99,21 +99,18 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
 
             int32 SecretAgentAIFloorNumber = SecretAgentAI->GetCurrentFloorNumber();
             int32 SecretAgentOttoFloorNumber = SecretAgentOtto->GetCurrentFloorNumber();
+
+            bCanGoLeft = SecretAgentAI->CanGoLeft();
+            bCanGoRight = SecretAgentAI->CanGoRight();
         
             if (SecretAgentAITransition == ETransitionState::None)
             {
                 if (SecretAgentAILocation == ELocationState::Hallway)
                 {
-                    if (!(SecretAgentAI->CanGoLeft() && SecretAgentAI->CanGoRight()))
-                    {
-                        if (DirectionVector.Equals(FVector::BackwardVector))
-                            DirectionVector = FVector::ForwardVector;
-                        else if (DirectionVector.Equals(FVector::ForwardVector))
-                            DirectionVector = FVector::BackwardVector;
-                    }
-
-                    if (DirectionVector.Equals(FVector::ZeroVector))
-                        DirectionVector = UKismetMathLibrary::RandomBool() ? FVector::ForwardVector : FVector::BackwardVector;
+                    if (!bCanGoLeft)
+                        DirectionVector = FVector::ForwardVector;
+                    else if (!bCanGoRight)
+                        DirectionVector = FVector::BackwardVector;
                 
                     if (SecretAgentAIFloorNumber == SecretAgentOttoFloorNumber &&
                         SecretAgentAITransition == SecretAgentOttoTransition &&
@@ -181,6 +178,8 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
 
                                 if ((bShouldGoUpStairs || bShouldGoDownStairs) && bInMiddleOfStairPlatform)
                                 {
+                                    PatrolTime = 0.0f;
+                                    
                                     SecretAgentAI->StartTransition();
                                     SecretAgentAI->Transition();
                                 }
@@ -241,10 +240,14 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                             float DistanceX = ((TracedElevator->GetActorLocation() + FVector::ForwardVector * 125.0f) - SecretAgentAI->GetActorLocation()).X;
 
                             bool bAtMiddleOfElevator = UKismetMathLibrary::NearlyEqual_FloatFloat(DistanceX, 0.0f, 1.0f);
-                            bool bElevatorCantGoDownToOtto = SecretAgentAIFloorNumber == ElevatorMinFloorNumber && SecretAgentAIFloorNumber >= SecretAgentOttoFloorNumber;
+                            bool bCantGoLeftOrRight = !(bCanGoLeft && bCanGoRight);
+                            bool bElevatorCantGoDownToOtto = SecretAgentAIFloorNumber == ElevatorMinFloorNumber && SecretAgentAIFloorNumber > SecretAgentOttoFloorNumber;
                             bool bElevatorCantGoUpToOtto = SecretAgentAIFloorNumber == ElevatorMaxFloorNumber && SecretAgentAIFloorNumber < SecretAgentOttoFloorNumber;
-                            if (bAtMiddleOfElevator && !bElevatorCantGoDownToOtto && !bElevatorCantGoUpToOtto)
+                            if ((bCantGoLeftOrRight || bAtMiddleOfElevator) && !bElevatorCantGoDownToOtto && !bElevatorCantGoUpToOtto)
+                            {
+                                PatrolTime = 0.0f;
                                 SecretAgentAI->Transition();
+                            }
                         }
                         else if (TracedStairs)
                         {
@@ -268,6 +271,8 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                     if ((bShouldGoUpStairs || bShouldGoDownStairs) &&
                                         (bBothAgentsOnLeftSide || bBothAgentsOnRightSide || bOnBottomLeftStairs || bOnBottomRightStairs || bBlockedByWall))
                                     {
+                                        PatrolTime = 0.0f;
+                                        
                                         SecretAgentAI->StartTransition();
                                         SecretAgentAI->Transition();
                                     }
@@ -305,10 +310,6 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
             {
                 if (SecretAgentAITransition == ETransitionState::Exit)
                 {
-                    UElevatingActionOfficeDoor* TracedDoor = SecretAgentAI->GetTracedDoor();
-                    if (TracedDoor)
-                        PatrolTime = 0.0f;
-
                     FHitResult WallHitResult;
                     FVector SecretAgentAILeftSide = SecretAgentAI->GetMesh()->GetSocketLocation(TEXT("spine_03")) + FVector::BackwardVector * 500.0f;
                     FVector SecretAgentAIRightSide = SecretAgentAI->GetMesh()->GetSocketLocation(TEXT("spine_03")) + FVector::ForwardVector * 500.0f;
@@ -338,7 +339,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                     DirectionVector = FVector::BackwardVector;
                             }
                             else
-                                DirectionVector = UKismetMathLibrary::RandomBool() ? FVector::ForwardVector : FVector::BackwardVector;
+                                DirectionVector = FVector::BackwardVector; //UKismetMathLibrary::RandomBool() ? FVector::ForwardVector : FVector::BackwardVector;
                         }
                     }
                 }
