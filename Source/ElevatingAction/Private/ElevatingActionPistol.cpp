@@ -32,3 +32,8 @@ float AElevatingActionPistol::GetFireRate() const
 {
     return FireRate;
 }
+
+void AElevatingActionPistol::SetFireRate(float Rate)
+{
+    FireRate = Rate;
+}

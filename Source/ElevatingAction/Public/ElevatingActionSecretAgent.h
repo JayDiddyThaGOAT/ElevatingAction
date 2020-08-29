@@ -130,6 +130,9 @@ protected:
 	
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Attacking)
 	class AElevatingActionPistol* Pistol;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Attacking)
+	float PistolFireRate;
 	
 	FCollisionQueryParams CollisionQueryParams;
 };

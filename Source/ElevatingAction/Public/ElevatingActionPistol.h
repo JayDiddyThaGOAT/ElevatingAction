@@ -14,19 +14,20 @@ class ELEVATINGACTION_API AElevatingActionPistol : public ASkeletalMeshActor
 {
 	GENERATED_BODY()
 
-	public:
+public:
 	AElevatingActionPistol();
 
 	UFUNCTION(BlueprintCallable, Category = Firing)
     void PullTrigger();
 
+	void SetFireRate(float FireRate);
 	float GetFireRate() const;
 
-	protected:
+protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Firing)
 	float FireRate;
-
-	private:
+	
+private:
 	UClass* Projectile;
 	FTransform ProjectileSpawnTransform;
 };

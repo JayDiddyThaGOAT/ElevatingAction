@@ -50,6 +50,7 @@ AElevatingActionSecretAgent::AElevatingActionSecretAgent()
 	CurrentTransition = ETransitionState::None;
 
 	RoomTargetLocation = 500.0f;
+	PistolFireRate = 1.0f;
 }
 
 // Called when the game starts or when spawned
@@ -62,6 +63,7 @@ void AElevatingActionSecretAgent::BeginPlay()
 	
 	Pistol = GetWorld()->SpawnActor<AElevatingActionPistol>(AElevatingActionPistol::StaticClass(), WeaponTransform, WeaponSpawnParameters);
 	Pistol->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, TEXT("Hand_R_PistolSocket"));
+	Pistol->SetFireRate(PistolFireRate);
 	Pistol->SetOwner(this);
 
 	FHitResult GroundHitResult;
