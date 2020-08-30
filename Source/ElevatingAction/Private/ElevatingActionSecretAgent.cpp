@@ -72,19 +72,23 @@ void AElevatingActionSecretAgent::BeginPlay()
 
 	FCollisionShape SmallSphere = FCollisionShape::MakeSphere(10.0f);
 
-	if (GetWorld()->SweepSingleByChannel(GroundHitResult, FeetLocation, FeetLocation, FQuat::Identity, ECollisionChannel::ECC_Visibility, SmallSphere, CollisionQueryParams))
+	CurrentFloorNumber = 30 + FMath::FloorToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
+	if (CurrentFloorNumber >= 31)
+		CurrentLocation = ELocationState::Roof;
+	else
 	{
-		if (GroundHitResult.Actor->GetName().Contains("Roof"))
-			CurrentLocation = ELocationState::Roof;
-		else if (GroundHitResult.Component->GetName().Equals("RoomFloors"))
-			CurrentLocation = ELocationState::Room;
-		else if (GroundHitResult.Actor->GetName().Contains("Street"))
+		if (GetWorld()->SweepSingleByChannel(GroundHitResult, FeetLocation, FeetLocation, FQuat::Identity, ECC_WorldStatic, SmallSphere, CollisionQueryParams))
 		{
-			CurrentLocation = ELocationState::Sidewalk;
-			CurrentTransition = ETransitionState::Exit;
+			if (GroundHitResult.Component->GetName().Equals("RoomFloors"))
+				CurrentLocation = ELocationState::Room;
+			else if (GroundHitResult.Actor->GetName().Contains("Street"))
+			{
+				CurrentLocation = ELocationState::Sidewalk;
+				CurrentTransition = ETransitionState::Exit;
+			}
+			else
+				CurrentLocation = ELocationState::Hallway;
 		}
-		else
-			CurrentLocation = ELocationState::Hallway;
 	}
 }
 
@@ -642,6 +646,8 @@ void AElevatingActionSecretAgent::MoveUp(float AxisValue)
 	{
 		if (!TracedElevator->IsElevatorMoving() && !TracedElevator->AreDoorsMoving() && TracedElevator->AreDoorsClosed())
 		{
+			TracedElevator->CloseDoors();
+			
 			if (AxisValue > 0.0f)
 			{
 				bCanTransition = false;
