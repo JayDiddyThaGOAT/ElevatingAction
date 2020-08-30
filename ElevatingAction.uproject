@@ -19,5 +19,11 @@
 			"Name": "RiderLink",
 			"Enabled": true
 		}
+	],
+	"TargetPlatforms": [
+		"LinuxNoEditor",
+		"LinuxAArch64NoEditor",
+		"WindowsNoEditor",
+		"WindowsNoEditorWin32"
 	]
 }

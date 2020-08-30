@@ -52,6 +52,9 @@ public:
 
 	virtual float TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 	
+	virtual void Destroyed() override;
+
+	bool IsDamaged() const;
 	bool IsShootButtonPressed() const;
 	bool CanGoLeft() const;
 	bool CanGoRight() const;
@@ -127,6 +130,9 @@ protected:
 	
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Attacking)
 	bool bShootButtonPressed;
+
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Attacking)
+	bool bIsDamaged;
 	
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Attacking)
 	class AElevatingActionPistol* Pistol;

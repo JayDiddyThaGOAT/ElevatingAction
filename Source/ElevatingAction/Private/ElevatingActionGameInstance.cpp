@@ -35,6 +35,9 @@ void UElevatingActionGameInstance::ResetGame()
     PreviousScore = 0;
     BonusScore = 1000;
 
+    bIsOfficeBlackedOut = false;
+    BlackoutElapsedTime = 0.0f;
+
     LevelNumber = 1;
     PlayerLives = 3;
 }

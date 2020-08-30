@@ -51,6 +51,7 @@ AElevatingActionSecretAgent::AElevatingActionSecretAgent()
 
 	RoomTargetLocation = 500.0f;
 	PistolFireRate = 1.0f;
+	bIsDamaged = false;
 }
 
 // Called when the game starts or when spawned
@@ -94,7 +95,7 @@ void AElevatingActionSecretAgent::TraceOfficeWalls()
 	FVector StartLocation = GetMesh()->GetSocketLocation(TEXT("spine_03"));
 	FVector EndLocation = StartLocation + FVector::LeftVector * 500.0f;
 
-	if (GetWorld()->LineTraceSingleByChannel(WallHitResult, StartLocation, EndLocation, ECollisionChannel::ECC_Visibility, CollisionQueryParams))
+	if (GetWorld()->LineTraceSingleByChannel(WallHitResult, StartLocation, EndLocation, ECC_WorldStatic, CollisionQueryParams))
 	{
 		TracedStairs = nullptr;
 		TracedStairsLocation = FVector::ZeroVector;
@@ -215,11 +216,6 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 		else if (CurrentLocation == ELocationState::Elevator && TracedElevator)
 		{
 			AddMovementInput(FVector::RightVector);
-
-			if (TracedElevatorButton)
-				TracedElevatorButton = nullptr;
-
-			bCanTransition = TracedElevator->AreDoorsClosed() && !TracedElevator->IsElevatorMoving();
 		}
 		else if (CurrentLocation == ELocationState::Hallway)
 		{
@@ -370,8 +366,11 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 	{
 		if (TracedElevator)
 		{
-			if (!TracedElevator->AreDoorsMoving())
+			if (!TracedElevator->AreDoorsMoving() && !TracedElevator->AreDoorsClosed())
+			{
+				TracedElevator->SetOwner(nullptr);
 				GetCharacterMovement()->MaxWalkSpeed = DefaultWalkSpeed;
+			}
 		}
 
 		if (CurrentLocation != ELocationState::Sidewalk)
@@ -386,8 +385,6 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 			{
 				if (TracedDoor)
 					TracedDoor->Close();
-				else if (TracedElevator)
-					TracedElevator->SetOwner(nullptr);
 
 				if (CurrentFloorNumber == 0)
 					CurrentLocation = ELocationState::Sidewalk;
@@ -473,8 +470,55 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 		TracedStairsLocation = FVector::ZeroVector;
 		TracedStairs = nullptr;
 	}
+	else if (IsValid(TracedElevatorButton))
+	{
+		TracedElevatorButton->SetButtonBrightness(1.0f);
+		TracedElevatorButton = nullptr;
+	}
 
+	bIsDamaged = true;
 	return DamageTaken;
+}
+
+void AElevatingActionSecretAgent::Destroyed()
+{
+	Super::Destroyed();
+
+	if (IsValid(Pistol))
+		Pistol->Destroy();
+
+	if (IsValid(TracedElevator))
+	{
+		TracedElevator->SetOwner(nullptr);
+
+		if (!TracedElevator->HasElevatorPassedStopTime())
+			TracedElevator->ResetStopTime();
+		
+		TracedElevator = nullptr;
+	}
+	else if (IsValid(TracedDoor))
+	{
+		TracedDoor->Close();
+		TracedDoor = nullptr;
+	}
+	else if (IsValid(TracedStairs))
+	{
+		bCanGoDownStairs = false;
+		bCanGoUpStairs = false;
+		
+		TracedStairsLocation = FVector::ZeroVector;
+		TracedStairs = nullptr;
+	}
+	else if (IsValid(TracedElevatorButton))
+	{
+		TracedElevatorButton->SetButtonBrightness(1.0f);
+		TracedElevatorButton = nullptr;
+	}
+}
+
+bool AElevatingActionSecretAgent::IsDamaged() const
+{
+	return bIsDamaged;
 }
 
 void AElevatingActionSecretAgent::Transition()
@@ -540,10 +584,10 @@ void AElevatingActionSecretAgent::ShootPistol()
 {
 	if (!(bCanGoLeft && bCanGoRight))
 		return;
-
+	
 	if (!(CurrentLocation == ELocationState::Hallway && CurrentTransition == ETransitionState::None))
 		return;
-
+	
 	if (!(FMath::RoundToInt(GetActorRotation().Yaw) == 0 || FMath::RoundToInt(GetActorRotation().Yaw) == -180))
 		return;
 
@@ -583,22 +627,30 @@ void AElevatingActionSecretAgent::MoveForward(float AxisValue)
 
 void AElevatingActionSecretAgent::MoveUp(float AxisValue)
 {
-	if (AxisValue == 0.0f)
+	if (!IsValid(TracedElevator))
 		return;
 
-	if (CurrentFloorNumber < 1)
-		return;
-
-	if (TracedElevator)
+	if (AxisValue == 0)
 	{
 		if (CurrentLocation == ELocationState::Elevator)
+			bCanTransition = !TracedElevator->IsElevatorMoving() && !TracedElevator->AreDoorsMoving() && TracedElevator->AreDoorsClosed();
+		
+		return;
+	}
+
+	if (CurrentLocation == ELocationState::Elevator)
+	{
+		if (!TracedElevator->IsElevatorMoving() && !TracedElevator->AreDoorsMoving() && TracedElevator->AreDoorsClosed())
 		{
-			if (!TracedElevator->IsElevatorMoving() && !TracedElevator->AreDoorsMoving() && TracedElevator->AreDoorsClosed())
+			if (AxisValue > 0.0f)
 			{
-				if (AxisValue > 0.0f)
-					TracedElevator->GoToNextFloor(EDirectionState::Up);
-				else if (AxisValue < 0.0f)
-					TracedElevator->GoToNextFloor(EDirectionState::Down);
+				bCanTransition = false;
+				TracedElevator->GoToNextFloor(EDirectionState::Up);
+			}
+			else if (AxisValue < 0.0f)
+			{
+				bCanTransition = false;
+				TracedElevator->GoToNextFloor(EDirectionState::Down);
 			}
 		}
 	}

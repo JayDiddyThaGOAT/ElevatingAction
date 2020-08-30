@@ -177,6 +177,7 @@ bool AElevator::IsTargetFloorNumberSet() const
 
 void AElevator::GoToNextFloor(EDirectionState Direction)
 {
+	NextTargetFloorNumber = -1;
 	ElevatorDirection = Direction;
 
 	if (ElevatorDirection == EDirectionState::Up)
