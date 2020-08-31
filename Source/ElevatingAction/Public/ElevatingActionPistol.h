@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Animation/SkeletalMeshActor.h"
+#include "Components/AudioComponent.h"
 #include "ElevatingActionPistol.generated.h"
 
 /**
@@ -24,8 +25,12 @@ public:
 	float GetFireRate() const;
 
 protected:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Firing)
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Firing)
+	class UAudioComponent* ProjectileShotAudioComponent;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Firing)
 	float FireRate;
+	
 	
 private:
 	UClass* Projectile;
