@@ -304,19 +304,19 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                     AElevator* Elevator = SecretAgentAI->GetTracedElevator();
                     int32 ElevatorMinFloorNumber = Elevator->GetMinFloorNumber();
                     int32 ElevatorMaxFloorNumber = Elevator->GetMaxFloorNumber();
-
                     int32 ElevatorTargetFloor = FMath::Clamp(SecretAgentOttoFloorNumber, ElevatorMinFloorNumber, ElevatorMaxFloorNumber);
-                
-                    if (Elevator->GetCurrentFloorNumber() < ElevatorTargetFloor)
-                        SecretAgentAI->MoveUp(1.0f);
-                    else if (Elevator->GetCurrentFloorNumber() > ElevatorTargetFloor)
-                        SecretAgentAI->MoveUp(-1.0f);
-                    else if (Elevator->GetCurrentFloorNumber() == ElevatorTargetFloor)
+
+                    if (Elevator->AreDoorsClosed() && !Elevator->AreDoorsMoving())
                     {
-                        if (!Elevator->IsElevatorMoving() && Elevator->AreDoorsClosed() && !Elevator->AreDoorsMoving())
+                        if (Elevator->GetCurrentFloorNumber() != ElevatorTargetFloor)
+                            Elevator->GoToFloor(ElevatorTargetFloor);
+                        else
                         {
-                            SecretAgentAI->StartTransition();
-                            SecretAgentAI->Transition();
+                            if (!Elevator->IsElevatorMoving())
+                            {
+                                SecretAgentAI->StartTransition();
+                                SecretAgentAI->Transition();
+                            }
                         }
                     }
                 }
