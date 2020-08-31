@@ -77,6 +77,9 @@ public:
 
 	void ShootPistol();
 
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Attacking)
+	int32 ProjectilesShotCount;
+
 	UFUNCTION(BlueprintCallable, Category = State)
     void StartTransition();
 
@@ -139,6 +142,9 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Attacking)
 	float PistolFireRate;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Attacking)
+	int32 ProjectilesShotMax;
 	
 	FCollisionQueryParams CollisionQueryParams;
 };

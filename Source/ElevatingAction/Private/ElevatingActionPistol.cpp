@@ -3,6 +3,8 @@
 
 #include "ElevatingActionPistol.h"
 
+#include "ElevatingActionSecretAgent.h"
+
 AElevatingActionPistol::AElevatingActionPistol()
 {
     PrimaryActorTick.bCanEverTick = false;
@@ -25,7 +27,13 @@ AElevatingActionPistol::AElevatingActionPistol()
 
 void AElevatingActionPistol::PullTrigger()
 {
-    GetWorld()->SpawnActor<AActor>(Projectile, GetSkeletalMeshComponent()->GetSocketTransform(TEXT("SK_Wep_Projectile_Socket")));
+    AActor* ProjetileShot = GetWorld()->SpawnActor<AActor>(Projectile, GetSkeletalMeshComponent()->GetSocketTransform(TEXT("SK_Wep_Projectile_Socket")));
+    AElevatingActionSecretAgent* SecretAgent = Cast<AElevatingActionSecretAgent>(GetOwner());
+    if (SecretAgent)
+    {
+        ProjetileShot->SetInstigator(SecretAgent);
+        SecretAgent->ProjectilesShotCount++;
+    }
 }
 
 float AElevatingActionPistol::GetFireRate() const

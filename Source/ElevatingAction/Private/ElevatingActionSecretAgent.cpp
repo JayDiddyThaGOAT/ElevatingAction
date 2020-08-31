@@ -51,6 +51,8 @@ AElevatingActionSecretAgent::AElevatingActionSecretAgent()
 
 	RoomTargetLocation = 500.0f;
 	PistolFireRate = 1.0f;
+	ProjectilesShotCount = 0;
+	ProjectilesShotMax = 3;
 	bIsDamaged = false;
 }
 
