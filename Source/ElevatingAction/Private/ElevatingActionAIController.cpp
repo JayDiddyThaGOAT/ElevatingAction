@@ -1,6 +1,8 @@
 
 #include "ElevatingActionAIController.h"
-#include "ElevatingActionOfficeDoor.h"
+
+#include "ElevatingActionGameInstance.h"
+#include "Components/CapsuleComponent.h"
 #include "Elevator.h"
 #include "ElevatorButton.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -101,6 +103,8 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
 
             bCanGoLeft = SecretAgentAI->CanGoLeft();
             bCanGoRight = SecretAgentAI->CanGoRight();
+
+            bool bIsOfficeBlackedOut = Cast<UElevatingActionGameInstance>(GetGameInstance())->IsOfficeBlackedOut();
         
             if (SecretAgentAITransition == ETransitionState::None)
             {
@@ -126,14 +130,19 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                 DirectionVector = FVector::ForwardVector;
                             else if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
                                 DirectionVector = FVector::BackwardVector;
+
+                           
+                            float DistanceRequiredToShootPlayer = !bIsOfficeBlackedOut ? 250.0f : 125.0f;
                         
-                            float Distance = FVector::Distance(SecretAgentOtto->GetActorLocation(), SecretAgentAI->GetActorLocation());
-                            if (Distance <= 375.0f)
+                            float DistanceBetweenAgents = FVector::Distance(SecretAgentOtto->GetActorLocation(), SecretAgentAI->GetActorLocation());
+                            if (DistanceBetweenAgents <= DistanceRequiredToShootPlayer)
                             {
                                 SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = 0.0f;
+                                
+                                float CurrentShootPistolDelay = !bIsOfficeBlackedOut ? ShootPistolDelay : ShootPistolDelay + 2.0f;
                             
                                 ShootPistolTime += DeltaTime;
-                                if (ShootPistolTime >= ShootPistolDelay)
+                                if (ShootPistolTime >= CurrentShootPistolDelay)
                                 {
                                     SecretAgentAI->ShootPistol();
                                     ShootPistolTime = 0.0f;
@@ -158,30 +167,33 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                             AActor* TracedStairs = SecretAgentAI->GetTracedStairs();
                             FVector TracedStairsLocation = SecretAgentAI->GetTracedStairsLocation();
 
-                            if (TracedStairs)
+                            if (!bIsOfficeBlackedOut)
                             {
-                                if (SecretAgentAI->CanGoDownStairs())
+                                if (TracedStairs)
                                 {
-                                    bShouldGoDownStairs = true;
-                                    bShouldGoUpStairs = false;
-                                }
-                                else if (SecretAgentAI->CanGoUpStairs())
-                                {
-                                    bShouldGoDownStairs = false;
-                                    bShouldGoUpStairs = true;
-                                }
+                                    if (SecretAgentAI->CanGoDownStairs())
+                                    {
+                                        bShouldGoDownStairs = true;
+                                        bShouldGoUpStairs = false;
+                                    }
+                                    else if (SecretAgentAI->CanGoUpStairs())
+                                    {
+                                        bShouldGoDownStairs = false;
+                                        bShouldGoUpStairs = true;
+                                    }
 
-                                float TargetLocationX = GetTargetLocationToUseStairs(TracedStairs, bShouldGoUpStairs, bShouldGoDownStairs);
+                                    float TargetLocationX = GetTargetLocationToUseStairs(TracedStairs, bShouldGoUpStairs, bShouldGoDownStairs);
 
-                                bool bInMiddleOfStairPlatform = UKismetMathLibrary::NearlyEqual_FloatFloat
-                                (FMath::Abs(TracedStairsLocation.X), TargetLocationX, 15.0f);
+                                    bool bInMiddleOfStairPlatform = UKismetMathLibrary::NearlyEqual_FloatFloat
+                                    (FMath::Abs(TracedStairsLocation.X), TargetLocationX, 15.0f);
 
-                                if ((bShouldGoUpStairs || bShouldGoDownStairs) && bInMiddleOfStairPlatform)
-                                {
-                                    PatrolTime = 0.0f;
+                                    if ((bShouldGoUpStairs || bShouldGoDownStairs) && bInMiddleOfStairPlatform)
+                                    {
+                                        PatrolTime = 0.0f;
                                     
-                                    SecretAgentAI->StartTransition();
-                                    SecretAgentAI->Transition();
+                                        SecretAgentAI->StartTransition();
+                                        SecretAgentAI->Transition();
+                                    }
                                 }
                             }
                         }
@@ -194,7 +206,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                         AActor* TracedStairs = SecretAgentAI->GetTracedStairs();
                         FVector TracedStairsLocation = SecretAgentAI->GetTracedStairsLocation();
 
-                        if (SecretAgentAIFloorNumber != SecretAgentOttoFloorNumber)
+                        if (SecretAgentAIFloorNumber != SecretAgentOttoFloorNumber && !bIsOfficeBlackedOut)
                         {
                             if (TracedElevatorButton)
                             {
