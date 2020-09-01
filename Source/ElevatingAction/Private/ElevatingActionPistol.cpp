@@ -28,7 +28,7 @@ AElevatingActionPistol::AElevatingActionPistol()
     ProjectileShotAudioComponent->SetUISound(true);
     ProjectileShotAudioComponent->SetAutoActivate(false);
 
-    static ConstructorHelpers::FObjectFinder<USoundCue> ProjectileShotSound(TEXT("SoundCue'/Game/ElevatingActionAudio/GameMasterAudio/PistolSounds/S_ProjectileShot_Cue.S_ProjectileShot_Cue'"));
+    static ConstructorHelpers::FObjectFinder<USoundCue> ProjectileShotSound(TEXT("SoundCue'/Game/ElevatingActionAudio/GameMasterAudio/PistolTriggerPulledSounds/S_ProjectileShot_Cue.S_ProjectileShot_Cue'"));
     if (ProjectileShotSound.Succeeded())
         ProjectileShotAudioComponent->SetSound(ProjectileShotSound.Object);
     
