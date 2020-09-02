@@ -61,8 +61,8 @@ float AElevatingActionAIController::GetTargetLocationToUseStairs(AActor* Stairs,
 FHitResult AElevatingActionAIController::ObjectBetweenSecretAgents()
 {
     FHitResult HitResult;
-    FVector StartLocation = SecretAgentAI->GetMesh()->GetSocketLocation(TEXT("spine_03"));
-    FVector EndLocation = SecretAgentOtto->GetMesh()->GetSocketLocation(TEXT("spine_03"));
+    FVector StartLocation = SecretAgentAI->GetMesh()->GetSocketLocation(TEXT("eyes"));
+    FVector EndLocation = SecretAgentOtto->GetMesh()->GetSocketLocation(TEXT("eyes"));
 
     FCollisionQueryParams CollisionQueryParams;
 
@@ -110,27 +110,24 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
             {
                 if (SecretAgentAILocation == ELocationState::Hallway)
                 {
-                    if (!bCanGoLeft)
-                        DirectionVector = FVector::ForwardVector;
-                    else if (!bCanGoRight)
-                        DirectionVector = FVector::BackwardVector;
-                
                     if (SecretAgentAIFloorNumber == SecretAgentOttoFloorNumber &&
                         SecretAgentAITransition == SecretAgentOttoTransition &&
                         SecretAgentAILocation == SecretAgentOttoLocation)
                     {
                         if (ObjectBetweenSecretAgents().Actor == SecretAgentOtto)
                         {
+                            if (!(bCanGoLeft && bCanGoRight))
+                            {
+                                if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
+                                    DirectionVector = FVector::BackwardVector;
+                                else if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
+                                    DirectionVector = FVector::ForwardVector;
+                            }
+                            
                             PatrolTime = 0.0f;
                             
                             bCanGoToSecretAgentOtto = true;
                             bBlockedByWall = false;
-
-                            if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
-                                DirectionVector = FVector::ForwardVector;
-                            else if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
-                                DirectionVector = FVector::BackwardVector;
-
                            
                             float DistanceRequiredToShootPlayer = !bIsOfficeBlackedOut ? 250.0f : 125.0f;
                         
@@ -200,6 +197,14 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                     }
                     else
                     {
+                        if (!(bCanGoLeft && bCanGoRight))
+                        {
+                            if (DirectionVector == FVector::BackwardVector)
+                                DirectionVector = FVector::ForwardVector;
+                            else if (DirectionVector == FVector::ForwardVector)
+                                DirectionVector = FVector::BackwardVector;
+                        }
+                        
                         UElevatorButton* TracedElevatorButton = SecretAgentAI->GetTracedElevatorButton();
                         AElevator* TracedElevator = SecretAgentAI->GetTracedElevator();
 
@@ -343,7 +348,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                 if (SecretAgentAIFloorNumber == SecretAgentOttoFloorNumber)
                     PatrolTime = 0.0f;
 
-                if (GetWorld()->LineTraceSingleByChannel(WallHitResult, SecretAgentAILeftSide, SecretAgentAIRightSide, ECC_WorldStatic, CollisionQueryParams))
+                if (GetWorld()->LineTraceSingleByChannel(WallHitResult, SecretAgentAILeftSide, SecretAgentAIRightSide, ECC_Visibility, CollisionQueryParams))
                 {
                     bBlockedByWall = true;
                     
