@@ -25,6 +25,14 @@ AElevatingActionSecretAgent::AElevatingActionSecretAgent()
 	if (ElevatingActionAnimBP.Succeeded())
 		GetMesh()->SetAnimClass(ElevatingActionAnimBP.Class);
 
+	ConstructorHelpers::FObjectFinder<USoundCue> DeathSound(TEXT("SoundCue'/Game/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/S_Death_Cue.S_Death_Cue'"));
+	if (DeathSound.Succeeded())
+		DeathCue = DeathSound.Object;
+
+	ConstructorHelpers::FObjectFinder<USoundCue> HurtSound(TEXT("SoundCue'/Game/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/S_Hurt_Cue.S_Hurt_Cue'"));
+	if (HurtSound.Succeeded())
+		HurtCue = HurtSound.Object;
+
 	GetMesh()->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, -90.0f), FRotator(0.0f, -90.0f, 0.0f));
 	GetMesh()->SetCollisionProfileName(TEXT("BlockAll"));
 
@@ -76,7 +84,7 @@ void AElevatingActionSecretAgent::BeginPlay()
 
 	FCollisionShape SmallSphere = FCollisionShape::MakeSphere(10.0f);
 
-	CurrentFloorNumber = 30 + FMath::FloorToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
+	CurrentFloorNumber = 30 + FMath::TruncToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
 	if (CurrentFloorNumber >= 31)
 		CurrentLocation = ELocationState::Roof;
 	else
@@ -174,7 +182,7 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	
-	CurrentFloorNumber = 30 + FMath::FloorToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
+	CurrentFloorNumber = 30 + FMath::TruncToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
 	if (CurrentFloorNumber >= 16 && CurrentFloorNumber <= 20)
 	{
 		FHitResult StairHitResult;
@@ -530,6 +538,29 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 	{
 		TracedElevatorButton->SetButtonBrightness(1.0f);
 		TracedElevatorButton = nullptr;
+	}
+
+	UElevatingActionGameInstance* GameInstance = Cast<UElevatingActionGameInstance>(GetGameInstance());
+	if (Cast<APlayerController>(GetController()))
+	{
+		if (GameInstance)
+		{
+			if (GameInstance->GetNumberOfPlayerLives() - 1 > 0)
+			{
+				if (IsValid(HurtCue))
+					UGameplayStatics::PlaySoundAtLocation(GetWorld(), HurtCue, GetMesh()->GetSocketLocation(TEXT("head")));
+			}
+			else
+			{
+				if (IsValid(DeathCue))
+					UGameplayStatics::PlaySoundAtLocation(GetWorld(), DeathCue, GetMesh()->GetSocketLocation(TEXT("head")));
+			}
+		}
+	}
+	else
+	{
+		if (IsValid(DeathCue))
+			UGameplayStatics::PlaySoundAtLocation(GetWorld(), DeathCue, GetMesh()->GetSocketLocation(TEXT("head")));
 	}
 
 	bIsDamaged = true;

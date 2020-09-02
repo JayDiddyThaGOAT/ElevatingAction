@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Sound/SoundCue.h"
 #include "Elevator.h"
 #include "ElevatorButton.h"
 #include "ElevatingActionPistol.h"
@@ -145,6 +146,9 @@ protected:
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Attacking)
 	int32 ProjectilesShotMax;
+
+	class USoundCue* DeathCue;
+	class USoundCue* HurtCue;
 	
 	FCollisionQueryParams CollisionQueryParams;
 };

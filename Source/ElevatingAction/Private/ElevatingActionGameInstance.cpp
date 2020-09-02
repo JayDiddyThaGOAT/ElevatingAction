@@ -42,6 +42,11 @@ void UElevatingActionGameInstance::ResetGame()
     PlayerLives = 3;
 }
 
+int32 UElevatingActionGameInstance::GetNumberOfPlayerLives()
+{
+    return PlayerLives;
+}
+
 bool UElevatingActionGameInstance::IsOfficeBlackedOut() const
 {
     return bIsOfficeBlackedOut;

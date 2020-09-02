@@ -18,6 +18,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Score)
     void ResetGame();
 
+	UFUNCTION(BlueprintPure, Category = Score)
+    int32 GetNumberOfPlayerLives();
+
 	UFUNCTION(BlueprintPure, Category = Lighting)
     bool IsOfficeBlackedOut() const;
 
