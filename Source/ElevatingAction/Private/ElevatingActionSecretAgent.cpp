@@ -431,6 +431,7 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 
 				FVector TargetLocation = FVector(GetActorLocation().X, TargetLocationY, GetActorLocation().Z);
 				FVector DirectionToTarget = (TargetLocation - GetActorLocation()).GetSafeNormal();
+				AddMovementInput(DirectionToTarget);
 
 				if (GetLastMovementInputVector().Y < 0.0f)
 				{
@@ -448,15 +449,19 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 				else
 				{
 					FHitResult FrontHitResult;
-					FVector TraceStartLocation = GetMesh()->GetSocketLocation(TEXT("eyes"));
-					FVector TraceEndLocation = FVector(TargetLocation.X, TargetLocation.Y, TraceStartLocation.Z);
-					if (GetWorld()->LineTraceSingleByChannel(FrontHitResult, TraceStartLocation, TraceEndLocation, ECC_Visibility, CollisionQueryParams))
-						GetCharacterMovement()->MaxWalkSpeed = 0.0f;
+					FVector LeftToTargetLocation = FVector(TargetLocation.X - 125.0f, TargetLocationY, GetMesh()->GetSocketLocation(TEXT("spine_01")).Z);
+					FVector RightToTargetLocation = FVector(TargetLocation.X + 125.0f, TargetLocationY, GetMesh()->GetSocketLocation(TEXT("spine_01")).Z);
+					FCollisionObjectQueryParams PawnQueryParams;
+					PawnQueryParams.AddObjectTypesToQuery(ECC_Pawn);
+					if (GetWorld()->LineTraceSingleByObjectType(FrontHitResult, LeftToTargetLocation, RightToTargetLocation, PawnQueryParams, CollisionQueryParams))
+					{
+						if (Cast<AElevatingActionSecretAgent>(FrontHitResult.Actor))
+							GetCharacterMovement()->MaxWalkSpeed = 0.0f;
+					}
 					else
 						GetCharacterMovement()->MaxWalkSpeed = DefaultWalkSpeed;
 				}
 
-				AddMovementInput(DirectionToTarget);
 			}
 		}
 	}
