@@ -84,7 +84,7 @@ void AElevatingActionSecretAgent::BeginPlay()
 
 	FCollisionShape SmallSphere = FCollisionShape::MakeSphere(10.0f);
 
-	CurrentFloorNumber = 30 + FMath::TruncToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
+	CurrentFloorNumber = 30 + FMath::FloorToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
 	if (CurrentFloorNumber >= 31)
 		CurrentLocation = ELocationState::Roof;
 	else
@@ -182,14 +182,14 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	
-	CurrentFloorNumber = 30 + FMath::TruncToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
+	CurrentFloorNumber = 30 + FMath::FloorToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
 	if (CurrentFloorNumber >= 16 && CurrentFloorNumber <= 20)
 	{
 		FHitResult StairHitResult;
 		FVector FeetLocation = GetMesh()->GetSocketTransform(TEXT("Root")).GetLocation();
 		FCollisionShape SmallSphere = FCollisionShape::MakeSphere(2.5f);
 
-		if (GetWorld()->SweepSingleByChannel(StairHitResult, FeetLocation, FeetLocation, FQuat::Identity, ECC_WorldStatic, SmallSphere, CollisionQueryParams))
+		if (GetWorld()->SweepSingleByChannel(StairHitResult, FeetLocation, FeetLocation, FQuat::Identity, ECC_Visibility, SmallSphere, CollisionQueryParams))
 		{
 			if (StairHitResult.Actor->GetName().Contains("Stairs"))
 			{
