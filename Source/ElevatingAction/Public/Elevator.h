@@ -126,4 +126,8 @@ protected:
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true", ClampMin = "1", ClampMax = "31", UIMin = "1", UIMax = "31"), Category = "Floor Number")
 	int32 MaxFloorNumber;
+
+	class UAudioComponent* ElevatorMovingAudioComponent;
+	class USoundWave* ElevatorMovingUpSoundWave;
+	class USoundWave* ElevatorMovingDownSoundWave;
 };

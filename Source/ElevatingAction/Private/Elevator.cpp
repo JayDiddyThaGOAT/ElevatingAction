@@ -1,7 +1,6 @@
 
 #include "Elevator.h"
-
-#include "Kismet/KismetMathLibrary.h"
+#include "ElevatingActionSecretAgent.h"
 
 AElevator::AElevator()
 {
@@ -41,6 +40,17 @@ AElevator::AElevator()
     RightDoor->SetRelativeLocationAndRotation(RightDoorTargetLocation, FRotator(0.0f, 180.0f, 0.0f));
     if (ElevatorDoorMesh.Succeeded())
 		RightDoor->SetStaticMesh(ElevatorDoorMesh.Object);
+
+	ElevatorMovingAudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("MovingAudio"));
+	ElevatorMovingAudioComponent->SetAutoActivate(false);
+
+	static ConstructorHelpers::FObjectFinder<USoundWave> MovingUp(TEXT("SoundWave'/Game/ElevatingActionAudio/GameMasterAudio/ElevatorMoving/elevator_loop_02.elevator_loop_02'"));
+	if (MovingUp.Succeeded())
+		ElevatorMovingUpSoundWave = MovingUp.Object;
+
+	static ConstructorHelpers::FObjectFinder<USoundWave> MovingDown(TEXT("SoundWave'/Game/ElevatingActionAudio/GameMasterAudio/ElevatorMoving/elevator_loop_01.elevator_loop_01'"));
+	if (MovingDown.Succeeded())
+		ElevatorMovingDownSoundWave = MovingDown.Object;
 }
 
 void AElevator::BeginPlay()
@@ -178,14 +188,38 @@ bool AElevator::IsTargetFloorNumberSet() const
 void AElevator::GoToNextFloor(EDirectionState Direction)
 {
 	NextTargetFloorNumber = -1;
+	
 	ElevatorDirection = Direction;
-
 	if (ElevatorDirection == EDirectionState::Up)
-		CurrentTargetFloorNumber = FMath::Clamp(CurrentFloorNumber + 1, MinFloorNumber, MaxFloorNumber);
+	{
+		if (CurrentFloorNumber + 1 < MinFloorNumber || CurrentFloorNumber + 1 > MaxFloorNumber)
+			return;
+		
+		CurrentTargetFloorNumber = CurrentFloorNumber + 1;
+	}
 	else if (ElevatorDirection == EDirectionState::Down)
-		CurrentTargetFloorNumber = FMath::Clamp(CurrentFloorNumber - 1, MinFloorNumber, MaxFloorNumber);
+	{
+		if (CurrentFloorNumber - 1 < MinFloorNumber || CurrentFloorNumber - 1 > MaxFloorNumber)
+			return;
+		
+		CurrentTargetFloorNumber = CurrentFloorNumber - 1;
+	}
 
 	ElevatorStoppedTime = 0.0f;
+
+	if (GetOwner())
+	{
+		AElevatingActionSecretAgent* SecretAgent = Cast<AElevatingActionSecretAgent>(GetOwner());
+		if (Cast<APlayerController>(SecretAgent->GetController()))
+		{
+			if (ElevatorDirection == EDirectionState::Up)
+				ElevatorMovingAudioComponent->SetSound(ElevatorMovingUpSoundWave);
+			else if (ElevatorDirection == EDirectionState::Down)
+				ElevatorMovingAudioComponent->SetSound(ElevatorMovingDownSoundWave);
+			
+			ElevatorMovingAudioComponent->Play();
+		}
+	}
 }
 
 void AElevator::GoToFloor(int32 FloorNumber)
@@ -194,10 +228,24 @@ void AElevator::GoToFloor(int32 FloorNumber)
 		ElevatorDirection = EDirectionState::Up;
 	else if (FloorNumber < CurrentFloorNumber)
 		ElevatorDirection = EDirectionState::Down;
-
+	
 	CurrentTargetFloorNumber = FMath::Clamp(FloorNumber, MinFloorNumber, MaxFloorNumber);
 
 	ElevatorStoppedTime = 0.0f;
+
+	if (GetOwner())
+	{
+		AElevatingActionSecretAgent* SecretAgent = Cast<AElevatingActionSecretAgent>(GetOwner());
+		if (Cast<APlayerController>(SecretAgent->GetController()))
+		{
+			if (ElevatorDirection == EDirectionState::Up)
+				ElevatorMovingAudioComponent->SetSound(ElevatorMovingUpSoundWave);
+			else if (ElevatorDirection == EDirectionState::Down)
+				ElevatorMovingAudioComponent->SetSound(ElevatorMovingDownSoundWave);
+			
+			ElevatorMovingAudioComponent->Play();
+		}
+	}
 }
 
 void AElevator::SetTargetFloorNumber(int32 FloorNumber)
