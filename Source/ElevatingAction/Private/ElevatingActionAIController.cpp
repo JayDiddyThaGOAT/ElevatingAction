@@ -331,8 +331,20 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                         {
                             if (!Elevator->IsElevatorMoving())
                             {
-                                SecretAgentAI->StartTransition();
-                                SecretAgentAI->Transition();
+                                if (ElevatorTargetFloor == SecretAgentOttoFloorNumber)
+                                {
+                                    if (SecretAgentOttoLocation == ELocationState::Hallway && SecretAgentOttoTransition == ETransitionState::None)
+                                    {
+                                        SecretAgentAI->StartTransition();
+                                        SecretAgentAI->Transition();
+                                    }
+                                }
+                                else
+                                {
+                                    SecretAgentAI->StartTransition();
+                                    SecretAgentAI->Transition();
+                                }
+                                    
                             }
                         }
                     }
