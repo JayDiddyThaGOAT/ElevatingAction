@@ -116,13 +116,10 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                     {
                         if (ObjectBetweenSecretAgents().Actor == SecretAgentOtto)
                         {
-                            if (!(bCanGoLeft && bCanGoRight))
-                            {
-                                if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
-                                    DirectionVector = FVector::BackwardVector;
-                                else if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
-                                    DirectionVector = FVector::ForwardVector;
-                            }
+                            if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
+                                DirectionVector = FVector::BackwardVector;
+                            else if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
+                                DirectionVector = FVector::ForwardVector;
                             
                             PatrolTime = 0.0f;
                             
@@ -323,15 +320,25 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                     int32 ElevatorMaxFloorNumber = Elevator->GetMaxFloorNumber();
                     int32 ElevatorTargetFloor = FMath::Clamp(SecretAgentOttoFloorNumber, ElevatorMinFloorNumber, ElevatorMaxFloorNumber);
 
-                    if (Elevator->AreDoorsClosed() && !Elevator->AreDoorsMoving())
+                    if (Elevator->AreDoorsMoving() || !Elevator->AreDoorsClosed())
                     {
-                        if (Elevator->GetCurrentFloorNumber() != ElevatorTargetFloor)
-                            Elevator->GoToFloor(ElevatorTargetFloor);
-                        else
+                        if (Elevator->GetCurrentFloorNumber() == ElevatorTargetFloor)
+                        {
+                            SecretAgentAI->StartTransition();
+                            SecretAgentAI->Transition();
+                        }
+                    }
+                    else
+                    {
+                        if (Elevator->GetCurrentFloorNumber() > ElevatorTargetFloor)
+                            SecretAgentAI->MoveUp(-1.0f);
+                        else if (Elevator->GetCurrentFloorNumber() < ElevatorTargetFloor)
+                            SecretAgentAI->MoveUp(1.0f);
+                        else if (Elevator->GetCurrentFloorNumber() == ElevatorTargetFloor)
                         {
                             if (!Elevator->IsElevatorMoving())
                             {
-                                if (ElevatorTargetFloor == SecretAgentOttoFloorNumber)
+                                if (Elevator->GetCurrentFloorNumber() == SecretAgentOttoFloorNumber)
                                 {
                                     if (SecretAgentOttoLocation == ELocationState::Hallway && SecretAgentOttoTransition == ETransitionState::None)
                                     {
@@ -344,7 +351,6 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                     SecretAgentAI->StartTransition();
                                     SecretAgentAI->Transition();
                                 }
-                                    
                             }
                         }
                     }
@@ -357,10 +363,13 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                 FVector SecretAgentAIRightSide = SecretAgentAI->GetMesh()->GetSocketLocation(TEXT("spine_03")) + FVector::ForwardVector * 500.0f;
                 FCollisionQueryParams CollisionQueryParams = SecretAgentAI->GetCollisionQueryParams();
 
+                FCollisionObjectQueryParams WallObjectQueryParams;
+                WallObjectQueryParams.AddObjectTypesToQuery(ECC_WorldStatic);
+
                 if (SecretAgentAIFloorNumber == SecretAgentOttoFloorNumber)
                     PatrolTime = 0.0f;
 
-                if (GetWorld()->LineTraceSingleByChannel(WallHitResult, SecretAgentAILeftSide, SecretAgentAIRightSide, ECC_Visibility, CollisionQueryParams))
+                if (GetWorld()->LineTraceSingleByObjectType(WallHitResult, SecretAgentAILeftSide, SecretAgentAIRightSide, WallObjectQueryParams, CollisionQueryParams))
                 {
                     bBlockedByWall = true;
                     
@@ -385,8 +394,11 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                         DirectionVector = UKismetMathLibrary::RandomBool() ? FVector::ForwardVector : FVector::BackwardVector;
                 }
             }
-            else if (SecretAgentAITransition == ETransitionState::Enter && bBlockedByWall)
-                bBlockedByWall = false;
+            else if (SecretAgentAITransition == ETransitionState::Enter)
+            {
+                if (bBlockedByWall)
+                    bBlockedByWall = false;
+            }
         }
         else
             SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = 0.0f;

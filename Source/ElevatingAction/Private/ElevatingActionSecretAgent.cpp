@@ -181,6 +181,16 @@ void AElevatingActionSecretAgent::TraceOfficeWalls()
 void AElevatingActionSecretAgent::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	TArray<AActor*> SecretAgents;
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), StaticClass(), SecretAgents);
+	CollisionQueryParams.AddIgnoredActors(SecretAgents);
+
+	for (AActor* SecretAgentActor : SecretAgents)
+	{
+		if (SecretAgentActor != this)
+			MoveIgnoreActorAdd(SecretAgentActor);
+	}
 	
 	CurrentFloorNumber = 30 + FMath::FloorToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
 	if (CurrentFloorNumber >= 16 && CurrentFloorNumber <= 20)
@@ -225,6 +235,9 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 		else if (CurrentLocation == ELocationState::Elevator && TracedElevator)
 		{
 			AddMovementInput(FVector::RightVector);
+
+			if (Cast<APlayerController>(GetController()))
+				bCanTransition = !TracedElevator->IsElevatorMoving() && !TracedElevator->AreDoorsMoving() && TracedElevator->AreDoorsClosed();
 		}
 		else if (CurrentLocation == ELocationState::Hallway)
 		{
@@ -241,61 +254,21 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 			bool bIsFacingLeft = FMath::RoundToInt(GetActorRotation().Yaw) != -180;
 			bool bIsLeftSideBlocked = GetWorld()->LineTraceSingleByChannel(LeftHitResult, StartLocation, LeftEndLocation, ECC_Visibility, CollisionQueryParams);
 			if (bIsLeftSideBlocked)
-			{
-				if (LeftHitResult.Actor->GetName().Contains("Office"))
-					bCanGoLeft = bIsFacingLeft;
-				else if (LeftHitResult.Actor->GetName().Contains("SecretAgent"))
-				{
-					AElevatingActionSecretAgent* LeftSecretAgent = Cast<AElevatingActionSecretAgent>(LeftHitResult.Actor);
-					if (GetController()->GetClass() != LeftSecretAgent->GetController()->GetClass())
-						bCanGoLeft = true;
-					else
-						bCanGoLeft = bIsFacingLeft;
-				}
-				else
-					bCanGoLeft = true;
-			}
+				bCanGoLeft = bIsFacingLeft;
 			else
 				bCanGoLeft = true;
 
 			bool bIsFacingRight = FMath::RoundToInt(GetActorRotation().Yaw) != 0;
 			bool bIsRightSideBlocked = GetWorld()->LineTraceSingleByChannel(RightHitResult, StartLocation, RightEndLocation, ECC_Visibility, CollisionQueryParams);
 			if (bIsRightSideBlocked)
-			{
-				if (RightHitResult.Actor->GetName().Contains("Office"))
-					bCanGoRight = bIsFacingRight;
-				else if (RightHitResult.Actor->GetName().Contains("SecretAgent"))
-				{
-					AElevatingActionSecretAgent* RightSecretAgent = Cast<AElevatingActionSecretAgent>(RightHitResult.Actor);
-					if (GetController()->GetClass() != RightSecretAgent->GetController()->GetClass())
-						bCanGoRight = true;
-					else
-						bCanGoRight = bIsFacingRight;
-				}
-				else
-					bCanGoRight = true;
-			}	
+				bCanGoRight = bIsFacingRight;
 			else
 				bCanGoRight = true;
-
-			TArray<AActor*> SecretAgents;
-			UGameplayStatics::GetAllActorsOfClass(GetWorld(), StaticClass(), SecretAgents);
 			
 			if (GetCharacterMovement()->IsFalling() || bWasJumping)
 			{
 				if (!(bCanGoLeft && bCanGoRight))
 					GetCharacterMovement()->Velocity = FVector(0.0f, 0.0f, GetCharacterMovement()->Velocity.Z);
-				
-				CollisionQueryParams.AddIgnoredActors(SecretAgents);
-				for (AActor* SecretAgentActor : SecretAgents)
-					MoveIgnoreActorAdd(SecretAgentActor);
-			}
-			else
-			{
-				CollisionQueryParams.ClearIgnoredActors();
-				CollisionQueryParams.AddIgnoredActor(this);
-				for (AActor* SecretAgentActor : SecretAgents)
-					MoveIgnoreActorRemove(SecretAgentActor);
 			}
 
 			if (TracedElevator)
@@ -449,11 +422,18 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 				else
 				{
 					FHitResult FrontHitResult;
-					FVector LeftToTargetLocation = FVector(TargetLocation.X - 125.0f, TargetLocationY, GetMesh()->GetSocketLocation(TEXT("spine_01")).Z);
-					FVector RightToTargetLocation = FVector(TargetLocation.X + 125.0f, TargetLocationY, GetMesh()->GetSocketLocation(TEXT("spine_01")).Z);
+					FVector LeftToTargetLocation = FVector(TargetLocation.X - (250.0f - GetCapsuleComponent()->GetScaledCapsuleRadius()),
+						TargetLocationY, GetMesh()->GetSocketLocation(TEXT("spine_01")).Z);
+					FVector RightToTargetLocation = FVector(TargetLocation.X + (250.0f - GetCapsuleComponent()->GetScaledCapsuleRadius()),
+						TargetLocationY, GetMesh()->GetSocketLocation(TEXT("spine_01")).Z);
+					
 					FCollisionObjectQueryParams PawnQueryParams;
 					PawnQueryParams.AddObjectTypesToQuery(ECC_Pawn);
-					if (GetWorld()->LineTraceSingleByObjectType(FrontHitResult, LeftToTargetLocation, RightToTargetLocation, PawnQueryParams, CollisionQueryParams))
+					
+					FCollisionQueryParams IgnoreThisPawnQueryParams;
+					IgnoreThisPawnQueryParams.AddIgnoredActor(this);
+					
+					if (GetWorld()->LineTraceSingleByObjectType(FrontHitResult, LeftToTargetLocation, RightToTargetLocation, PawnQueryParams, IgnoreThisPawnQueryParams))
 					{
 						if (Cast<AElevatingActionSecretAgent>(FrontHitResult.Actor))
 							GetCharacterMovement()->MaxWalkSpeed = 0.0f;
@@ -515,7 +495,7 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 
 	GetMesh()->SetSimulatePhysics(true);
 	GetMesh()->SetAnimClass(nullptr);
-	GetMesh()->SetCollisionResponseToChannel(ECC_Pawn, ECollisionResponse::ECR_Overlap);
+	GetMesh()->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 
 	if (TracedElevator)
 	{
@@ -723,29 +703,16 @@ void AElevatingActionSecretAgent::MoveUp(float AxisValue)
 		return;
 
 	if (AxisValue == 0)
-	{
-		if (CurrentLocation == ELocationState::Elevator)
-			bCanTransition = !TracedElevator->IsElevatorMoving() && !TracedElevator->AreDoorsMoving() && TracedElevator->AreDoorsClosed();
-		
 		return;
-	}
 
 	if (CurrentLocation == ELocationState::Elevator)
 	{
 		if (!TracedElevator->IsElevatorMoving() && !TracedElevator->AreDoorsMoving() && TracedElevator->AreDoorsClosed())
 		{
-			TracedElevator->CloseDoors();
-			
 			if (AxisValue > 0.0f)
-			{
-				bCanTransition = false;
 				TracedElevator->GoToNextFloor(EDirectionState::Up);
-			}
 			else if (AxisValue < 0.0f)
-			{
-				bCanTransition = false;
 				TracedElevator->GoToNextFloor(EDirectionState::Down);
-			}
 		}
 	}
 }
