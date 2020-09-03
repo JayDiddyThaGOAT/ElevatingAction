@@ -3,7 +3,6 @@
 
 #include "CoreMinimal.h"
 #include "Components/StaticMeshComponent.h"
-#include "Sound/SoundCue.h"
 #include "Sound/SoundWave.h"
 #include "ElevatorButton.generated.h"
 
@@ -41,7 +40,9 @@ private:
 	class UMaterialInstance* ButtonMaterialInstance;
 	class UMaterialInstanceDynamic* ButtonMaterial;
 
-	class USoundCue* ElevatorButtonClickCue;
+	class UAudioComponent* ElevatorButtonAudioComponent;
+
+	class USoundWave* ElevatorButtonClickSound;
 	class USoundWave* ElevatorButtonHighlightSound;
 	class USoundWave* ElevatorArrivedAlarm;
 };

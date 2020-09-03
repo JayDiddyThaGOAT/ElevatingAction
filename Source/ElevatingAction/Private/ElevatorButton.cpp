@@ -17,21 +17,23 @@ UElevatorButton::UElevatorButton()
             ButtonMaterialInstance = WallMaterial.Object;
     }
 
-    static ConstructorHelpers::FObjectFinder<USoundCue> ElevatorButtonClickSound
-    (TEXT("SoundCue'/Game/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/S_ElevatorButtonClick_Cue.S_ElevatorButtonClick_Cue'"));
-    if (ElevatorButtonClickSound.Succeeded())
-    {
-        ElevatorButtonClickCue = ElevatorButtonClickSound.Object;
-    }
+    static ConstructorHelpers::FObjectFinder<USoundWave> ElevatorButtonClickSoundWave
+    (TEXT("SoundWave'/Game/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/switch_button_push_on_off_10.switch_button_push_on_off_10'"));
+    if (ElevatorButtonClickSoundWave.Succeeded())
+        ElevatorButtonClickSound = ElevatorButtonClickSoundWave.Object;
 
     static ConstructorHelpers::FObjectFinder<USoundWave> Alarm
     (TEXT("SoundWave'/Game/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/alarm_siren_loop_04.alarm_siren_loop_04'"));
     if (Alarm.Succeeded())
         ElevatorArrivedAlarm = Alarm.Object;
 
-    static ConstructorHelpers::FObjectFinder<USoundWave> Beep(TEXT("SoundWave'/Game/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/beep_08.beep_08'"));
-    if (Beep.Succeeded())
-        ElevatorButtonHighlightSound = Beep.Object;
+    static ConstructorHelpers::FObjectFinder<USoundWave> Hum
+    (TEXT("SoundWave'/Game/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/hum_electric_neon_light_loop_01.hum_electric_neon_light_loop_01'"));
+    if (Hum.Succeeded())
+        ElevatorButtonHighlightSound = Hum.Object;
+
+    ElevatorButtonAudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("ElevatorButtonAudio"));
+    ElevatorButtonAudioComponent->SetAutoActivate(false);
 }
 
 void UElevatorButton::BeginPlay()
@@ -71,7 +73,13 @@ void UElevatorButton::CallElevatorTo(int32 FloorNumber)
 
     AElevatingActionSecretAgent* SecretAgentOtto = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
     if (CurrentFloorNumber == SecretAgentOtto->GetCurrentFloorNumber())
-        UGameplayStatics::PlaySoundAtLocation(GetWorld(), ElevatorButtonClickCue, GetRelativeLocation());
+    {
+        if (ElevatorButtonAudioComponent->IsPlaying() && ElevatorButtonAudioComponent->Sound == ElevatorButtonHighlightSound)
+        {
+            ElevatorButtonAudioComponent->SetSound(ElevatorButtonClickSound);
+            ElevatorButtonAudioComponent->Play();
+        }
+    }
 }
 
 void UElevatorButton::SetButtonBrightness(float Brightness)
@@ -86,8 +94,27 @@ void UElevatorButton::SetButtonBrightness(float Brightness)
         SetMaterial(0, ButtonMaterial);
 
         AElevatingActionSecretAgent* SecretAgentOtto = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
-        if (CurrentFloorNumber == SecretAgentOtto->GetCurrentFloorNumber() && Brightness == 2.0f)
-            UGameplayStatics::PlaySoundAtLocation(GetWorld(), ElevatorButtonHighlightSound, GetRelativeLocation());
+        {
+            if (SecretAgentOtto->GetCurrentLocation() == ELocationState::Hallway)
+            {
+                if (CurrentFloorNumber == SecretAgentOtto->GetCurrentFloorNumber())
+                {
+                    if (Brightness == 2.0f)
+                    {
+                        if (!ElevatorButtonAudioComponent->IsPlaying())
+                        {
+                            ElevatorButtonAudioComponent->SetSound(ElevatorButtonHighlightSound);
+                            ElevatorButtonAudioComponent->Play();
+                        }
+                    }
+                    else if (Brightness == 1.0f)
+                    {
+                        if (ElevatorButtonAudioComponent->IsPlaying() && ElevatorButtonAudioComponent->Sound == ElevatorButtonHighlightSound)
+                            ElevatorButtonAudioComponent->Stop();
+                    }
+                }
+            }
+        }
     }
 }
 
