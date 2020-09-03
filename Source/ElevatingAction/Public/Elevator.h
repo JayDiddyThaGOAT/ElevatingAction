@@ -41,7 +41,7 @@ public:
 
 	UFUNCTION(BlueprintPure, Category = "Door Movement")
     bool AreDoorsClosed() const;
-
+	
 	UFUNCTION(BlueprintPure, Category = "Elevator Movement")
 	bool IsElevatorMoving() const;
 
@@ -75,12 +75,20 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Elevator Movement")
 	void SetTargetFloorNumber(int32 FloorNumber);
 
+	UAudioComponent* GetElevatorMovingAudioComponent() const;
+	USoundWave* GetElevatorMovingUpSoundWave() const;
+	USoundWave* GetElevatorMovingDownSoundWave() const;
+	USoundWave* GetElevatorLockedSoundWave() const;
+	
 protected:
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Doors")
 	class UStaticMeshComponent* LeftDoor;
 
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Doors")
-	class UStaticMeshComponent* RightDoor;	
+	class UStaticMeshComponent* RightDoor;
+
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Elevator Sounds")
+	class UAudioComponent* ElevatorMovingAudioComponent;
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Door Movement")
 	FVector LeftDoorTargetLocation;
@@ -94,7 +102,7 @@ protected:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Elevator Movement")
 	float ElevatorSpeed;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Elevator Movement")
+	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Elevator Movement")
 	float ElevatorStoppedTime;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Elevator Movement")
@@ -127,7 +135,8 @@ protected:
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true", ClampMin = "1", ClampMax = "31", UIMin = "1", UIMax = "31"), Category = "Floor Number")
 	int32 MaxFloorNumber;
 
-	class UAudioComponent* ElevatorMovingAudioComponent;
 	class USoundWave* ElevatorMovingUpSoundWave;
 	class USoundWave* ElevatorMovingDownSoundWave;
+	class USoundWave* ElevatorDoorsOpeningSoundWave;
+	class USoundWave* ElevatorDoorsClosingSoundWave;
 };
