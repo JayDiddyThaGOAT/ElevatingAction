@@ -553,6 +553,7 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 			UGameplayStatics::PlaySoundAtLocation(GetWorld(), DeathCue, GetMesh()->GetSocketLocation(TEXT("head")));
 	}
 
+	PrimaryActorTick.bCanEverTick = false;
 	bIsDamaged = true;
 	return DamageTaken;
 }
