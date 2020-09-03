@@ -436,7 +436,12 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 					if (GetWorld()->LineTraceSingleByObjectType(FrontHitResult, LeftToTargetLocation, RightToTargetLocation, PawnQueryParams, IgnoreThisPawnQueryParams))
 					{
 						if (Cast<AElevatingActionSecretAgent>(FrontHitResult.Actor))
+						{
 							GetCharacterMovement()->MaxWalkSpeed = 0.0f;
+
+							if (TracedElevator)
+								TracedElevator->ResetStopTime();
+						}
 					}
 					else
 						GetCharacterMovement()->MaxWalkSpeed = DefaultWalkSpeed;

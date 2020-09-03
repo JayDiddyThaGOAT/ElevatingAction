@@ -1,6 +1,7 @@
 
 #include "Elevator.h"
 #include "ElevatingActionSecretAgent.h"
+#include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 
 AElevator::AElevator()
@@ -112,8 +113,10 @@ void AElevator::Tick(float DeltaSeconds)
 
 		if (GetOwner())
 		{
-			AElevatingActionSecretAgent* SecretAgent = Cast<AElevatingActionSecretAgent>(GetOwner());
-			if (SecretAgent)
+			AElevatingActionSecretAgent* ThisSecretAgent = Cast<AElevatingActionSecretAgent>(GetOwner());
+			AElevatingActionSecretAgent* PlayerSecretAgent = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+			
+			if (Cast<APlayerController>(ThisSecretAgent->GetController()))
 			{
 				if (!ElevatorMovingAudioComponent->IsPlaying())
 				{
@@ -184,10 +187,17 @@ void AElevator::CloseDoors()
 
 	if (GetOwner())
 	{
-		if (!ElevatorMovingAudioComponent->IsPlaying())
+		AElevatingActionSecretAgent* PlayerSecretAgent = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+		if (IsValid(PlayerSecretAgent))
 		{
-			ElevatorMovingAudioComponent->SetSound(ElevatorDoorsClosingSoundWave);
-			ElevatorMovingAudioComponent->Play();
+			if (CurrentFloorNumber == PlayerSecretAgent->GetCurrentFloorNumber())
+			{
+				if (!ElevatorMovingAudioComponent->IsPlaying())
+				{
+					ElevatorMovingAudioComponent->SetSound(ElevatorDoorsClosingSoundWave);
+					ElevatorMovingAudioComponent->Play();
+				}
+			}
 		}
 	}
 }
@@ -199,10 +209,17 @@ void AElevator::OpenDoors()
 
 	if (GetOwner())
 	{
-		if (!ElevatorMovingAudioComponent->IsPlaying())
+		AElevatingActionSecretAgent* PlayerSecretAgent = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+		if (IsValid(PlayerSecretAgent))
 		{
-			ElevatorMovingAudioComponent->SetSound(ElevatorDoorsOpeningSoundWave);
-			ElevatorMovingAudioComponent->Play();
+			if (CurrentFloorNumber == PlayerSecretAgent->GetCurrentFloorNumber())
+			{
+				if (!ElevatorMovingAudioComponent->IsPlaying())
+				{
+					ElevatorMovingAudioComponent->SetSound(ElevatorDoorsOpeningSoundWave);
+					ElevatorMovingAudioComponent->Play();
+				}
+			}
 		}
 	}
 }
