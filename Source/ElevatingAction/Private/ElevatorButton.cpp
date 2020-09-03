@@ -1,5 +1,6 @@
 
 #include "ElevatorButton.h"
+#include "ElevatingActionSecretAgent.h"
 #include "Kismet/GameplayStatics.h"
 
 UElevatorButton::UElevatorButton()
@@ -15,6 +16,22 @@ UElevatorButton::UElevatorButton()
         if (WallMaterial.Succeeded())
             ButtonMaterialInstance = WallMaterial.Object;
     }
+
+    static ConstructorHelpers::FObjectFinder<USoundCue> ElevatorButtonClickSound
+    (TEXT("SoundCue'/Game/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/S_ElevatorButtonClick_Cue.S_ElevatorButtonClick_Cue'"));
+    if (ElevatorButtonClickSound.Succeeded())
+    {
+        ElevatorButtonClickCue = ElevatorButtonClickSound.Object;
+    }
+
+    static ConstructorHelpers::FObjectFinder<USoundWave> Alarm
+    (TEXT("SoundWave'/Game/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/alarm_siren_loop_04.alarm_siren_loop_04'"));
+    if (Alarm.Succeeded())
+        ElevatorArrivedAlarm = Alarm.Object;
+
+    static ConstructorHelpers::FObjectFinder<USoundWave> Beep(TEXT("SoundWave'/Game/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/beep_08.beep_08'"));
+    if (Beep.Succeeded())
+        ElevatorButtonHighlightSound = Beep.Object;
 }
 
 void UElevatorButton::BeginPlay()
@@ -27,6 +44,9 @@ void UElevatorButton::BeginPlay()
         ButtonMaterial->GetScalarParameterValue(TEXT("Base_EmissiveMultiplier"), ButtonBrightness);
         SetMaterial(0, ButtonMaterial);
     }
+
+    if (GetOwner())
+        CurrentFloorNumber = 30 + FMath::FloorToInt(GetOwner()->GetActorLocation().Z / 300);
 }
 
 AElevator* UElevatorButton::GetElevator() const
@@ -34,19 +54,40 @@ AElevator* UElevatorButton::GetElevator() const
     return Elevator;
 }
 
+USoundWave* UElevatorButton::GetElevatorArrivedAlarm() const
+{
+    return ElevatorArrivedAlarm;
+}
+
+int32 UElevatorButton::GetCurrentFloorNumber() const
+{
+    return CurrentFloorNumber;
+}
+
 void UElevatorButton::CallElevatorTo(int32 FloorNumber)
 {
     Elevator->SetTargetFloorNumber(FloorNumber);
+    Elevator->SetElevatorButtonCaller(this);
+
+    AElevatingActionSecretAgent* SecretAgentOtto = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+    if (CurrentFloorNumber == SecretAgentOtto->GetCurrentFloorNumber())
+        UGameplayStatics::PlaySoundAtLocation(GetWorld(), ElevatorButtonClickCue, GetRelativeLocation());
 }
 
 void UElevatorButton::SetButtonBrightness(float Brightness)
 {
     if (ButtonMaterial)
     {
+        if (ButtonBrightness == Brightness)
+            return;
+        
         ButtonBrightness = Brightness;
-
         ButtonMaterial->SetScalarParameterValue(TEXT("Base_EmissiveMultiplier"), ButtonBrightness);
         SetMaterial(0, ButtonMaterial);
+
+        AElevatingActionSecretAgent* SecretAgentOtto = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+        if (CurrentFloorNumber == SecretAgentOtto->GetCurrentFloorNumber() && Brightness == 2.0f)
+            UGameplayStatics::PlaySoundAtLocation(GetWorld(), ElevatorButtonHighlightSound, GetRelativeLocation());
     }
 }
 

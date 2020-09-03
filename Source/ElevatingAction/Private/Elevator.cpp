@@ -134,15 +134,26 @@ void AElevator::Tick(float DeltaSeconds)
 	{
 		ElevatorStoppedTime += DeltaSeconds;
 		
-		if (ElevatorMovingAudioComponent->IsPlaying() && ElevatorStoppedTime > 0.009f)
-		{
-			if (ElevatorMovingAudioComponent->Sound == ElevatorMovingUpSoundWave || ElevatorMovingAudioComponent->Sound == ElevatorMovingDownSoundWave)
-				ElevatorMovingAudioComponent->Stop();
-		}
-		
 		if (!HasElevatorPassedStopTime())
 		{
 			CurrentFloorNumber = CurrentTargetFloorNumber;
+			
+			if (ElevatorMovingAudioComponent->IsPlaying() && ElevatorStoppedTime > 0.009f)
+			{
+				if (ElevatorMovingAudioComponent->Sound == ElevatorMovingUpSoundWave || ElevatorMovingAudioComponent->Sound == ElevatorMovingDownSoundWave)
+					ElevatorMovingAudioComponent->Stop();
+				
+			}
+
+			if (ElevatorButtonCaller && CurrentFloorNumber == ElevatorButtonCaller->GetCurrentFloorNumber())
+			{
+				AElevatingActionSecretAgent* PlayerSecretAgent = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+				if (IsValid(PlayerSecretAgent) && CurrentFloorNumber == PlayerSecretAgent->GetCurrentFloorNumber())
+				{
+					UGameplayStatics::PlaySoundAtLocation(GetWorld(), ElevatorButtonCaller->GetElevatorArrivedAlarm(), ElevatorButtonCaller->GetRelativeLocation());
+					ElevatorButtonCaller = nullptr;
+				}
+			}
 			
 			if (!GetOwner())
 				OpenDoors();
@@ -292,6 +303,16 @@ void AElevator::GoToFloor(int32 FloorNumber)
 void AElevator::SetTargetFloorNumber(int32 FloorNumber)
 {
 	NextTargetFloorNumber = FMath::Clamp(FloorNumber, MinFloorNumber, MaxFloorNumber);
+}
+
+UElevatorButton* AElevator::GetElevatorButtonCaller() const
+{
+	return ElevatorButtonCaller;
+}
+
+void AElevator::SetElevatorButtonCaller(UElevatorButton* ElevatorButton)
+{
+	ElevatorButtonCaller = ElevatorButton;
 }
 
 int32 AElevator::GetCurrentFloorNumber() const

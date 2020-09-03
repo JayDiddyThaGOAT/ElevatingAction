@@ -3,6 +3,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/StaticMeshActor.h"
+#include "ElevatorButton.h"
 #include "Elevator.generated.h"
 
 UENUM()
@@ -74,11 +75,13 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Elevator Movement")
 	void SetTargetFloorNumber(int32 FloorNumber);
+	
+	void SetElevatorButtonCaller(UElevatorButton* ElevatorButton);
+	UElevatorButton* GetElevatorButtonCaller() const;
 
 	UAudioComponent* GetElevatorMovingAudioComponent() const;
 	USoundWave* GetElevatorMovingUpSoundWave() const;
 	USoundWave* GetElevatorMovingDownSoundWave() const;
-	USoundWave* GetElevatorLockedSoundWave() const;
 	
 protected:
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Doors")
@@ -110,6 +113,9 @@ protected:
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Elevator Movement")
 	EDirectionState ElevatorDirection;
+
+	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Elevator Movement")
+	class UElevatorButton* ElevatorButtonCaller;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Door Movement")
 	float ElevatorDoorsSpeed;
