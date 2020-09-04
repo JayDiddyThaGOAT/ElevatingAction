@@ -182,6 +182,9 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if(!IsValid(GetCapsuleComponent()))
+		return;
+
 	TArray<AActor*> SecretAgents;
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), StaticClass(), SecretAgents);
 	CollisionQueryParams.AddIgnoredActors(SecretAgents);
@@ -390,63 +393,60 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 	{
 		if (CurrentLocation != ELocationState::Sidewalk)
 		{
-			if (TracedElevator && TracedElevator->GetOwner())
+			if (TracedElevator)
 			{
 				if (!TracedElevator->AreDoorsMoving() && !TracedElevator->AreDoorsClosed())
-				{
-					TracedElevator->SetOwner(nullptr);
 					GetCharacterMovement()->MaxWalkSpeed = DefaultWalkSpeed;
+			}
+
+			float TargetLocationY = CurrentFloorNumber == 0 ? 375.0f : 125.0f;
+
+			FVector TargetLocation = FVector(GetActorLocation().X, TargetLocationY, GetActorLocation().Z);
+			FVector DirectionToTarget = (TargetLocation - GetActorLocation()).GetSafeNormal();
+			AddMovementInput(DirectionToTarget);
+
+			if (GetLastMovementInputVector().Y < 0.0f)
+			{
+				if (TracedDoor)
+					TracedDoor->Close();
+				else if (TracedElevator && TracedElevator->GetOwner())
+					TracedElevator->SetOwner(nullptr);
+					
+
+				if (CurrentFloorNumber == 0)
+					CurrentLocation = ELocationState::Sidewalk;
+				else
+				{
+					CurrentLocation = ELocationState::Hallway;
+					CurrentTransition = ETransitionState::None;
 				}
 			}
 			else
 			{
-				float TargetLocationY = CurrentFloorNumber == 0 ? 375.0f : 125.0f;
-
-				FVector TargetLocation = FVector(GetActorLocation().X, TargetLocationY, GetActorLocation().Z);
-				FVector DirectionToTarget = (TargetLocation - GetActorLocation()).GetSafeNormal();
-				AddMovementInput(DirectionToTarget);
-
-				if (GetLastMovementInputVector().Y < 0.0f)
+				FHitResult FrontHitResult;
+				FVector LeftToTargetLocation = FVector(TargetLocation.X - (250.0f - GetCapsuleComponent()->GetScaledCapsuleRadius()),
+                    TargetLocationY, GetMesh()->GetSocketLocation(TEXT("spine_01")).Z);
+				FVector RightToTargetLocation = FVector(TargetLocation.X + (250.0f - GetCapsuleComponent()->GetScaledCapsuleRadius()),
+                    TargetLocationY, GetMesh()->GetSocketLocation(TEXT("spine_01")).Z);
+					
+				FCollisionObjectQueryParams PawnQueryParams;
+				PawnQueryParams.AddObjectTypesToQuery(ECC_Pawn);
+					
+				FCollisionQueryParams IgnoreThisPawnQueryParams;
+				IgnoreThisPawnQueryParams.AddIgnoredActor(this);
+					
+				if (GetWorld()->LineTraceSingleByObjectType(FrontHitResult, LeftToTargetLocation, RightToTargetLocation, PawnQueryParams, IgnoreThisPawnQueryParams))
 				{
-					if (TracedDoor)
-						TracedDoor->Close();
-
-					if (CurrentFloorNumber == 0)
-						CurrentLocation = ELocationState::Sidewalk;
-					else
+					if (Cast<AElevatingActionSecretAgent>(FrontHitResult.Actor))
 					{
-						CurrentLocation = ELocationState::Hallway;
-						CurrentTransition = ETransitionState::None;
+						GetCharacterMovement()->MaxWalkSpeed = 0.0f;
+
+						if (TracedElevator)
+							TracedElevator->ResetStopTime();
 					}
 				}
 				else
-				{
-					FHitResult FrontHitResult;
-					FVector LeftToTargetLocation = FVector(TargetLocation.X - (250.0f - GetCapsuleComponent()->GetScaledCapsuleRadius()),
-						TargetLocationY, GetMesh()->GetSocketLocation(TEXT("spine_01")).Z);
-					FVector RightToTargetLocation = FVector(TargetLocation.X + (250.0f - GetCapsuleComponent()->GetScaledCapsuleRadius()),
-						TargetLocationY, GetMesh()->GetSocketLocation(TEXT("spine_01")).Z);
-					
-					FCollisionObjectQueryParams PawnQueryParams;
-					PawnQueryParams.AddObjectTypesToQuery(ECC_Pawn);
-					
-					FCollisionQueryParams IgnoreThisPawnQueryParams;
-					IgnoreThisPawnQueryParams.AddIgnoredActor(this);
-					
-					if (GetWorld()->LineTraceSingleByObjectType(FrontHitResult, LeftToTargetLocation, RightToTargetLocation, PawnQueryParams, IgnoreThisPawnQueryParams))
-					{
-						if (Cast<AElevatingActionSecretAgent>(FrontHitResult.Actor))
-						{
-							GetCharacterMovement()->MaxWalkSpeed = 0.0f;
-
-							if (TracedElevator)
-								TracedElevator->ResetStopTime();
-						}
-					}
-					else
-						GetCharacterMovement()->MaxWalkSpeed = DefaultWalkSpeed;
-				}
-
+					GetCharacterMovement()->MaxWalkSpeed = DefaultWalkSpeed;
 			}
 		}
 	}
@@ -552,8 +552,7 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 		if (IsValid(DeathCue))
 			UGameplayStatics::PlaySoundAtLocation(GetWorld(), DeathCue, GetMesh()->GetSocketLocation(TEXT("head")));
 	}
-
-	PrimaryActorTick.bCanEverTick = false;
+	
 	bIsDamaged = true;
 	return DamageTaken;
 }
