@@ -15,7 +15,7 @@ class ELEVATINGACTION_API AElevatingActionAIController : public AAIController
 {
 	GENERATED_BODY()
 
-	public:
+public:
 	AElevatingActionAIController();
 
 	virtual void TickActor(float DeltaTime, ELevelTick TickType, FActorTickFunction& ThisTickFunction) override;
@@ -32,11 +32,17 @@ class ELEVATINGACTION_API AElevatingActionAIController : public AAIController
 	
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccessOnly = "true"), Category = Attacking)
 	float ShootPistolDelay;
+	
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccessOnly = "true"), Category = Attacking)
+	float MaxShootPistolDistance;
 
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccessOnly = "true"), Category = Attacking)
-	float PatrolDuration;
+	float PatrolDuration;;
 
-	private:
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccessOnly = "true"), Category = Attacking)
+	float PercentRequiredAIShootPlayerWhileMoving;
+
+private:
 	class AElevatingActionSecretAgent* SecretAgentAI;
 	class AElevatingActionSecretAgent* SecretAgentOtto;
 	
@@ -45,6 +51,8 @@ class ELEVATINGACTION_API AElevatingActionAIController : public AAIController
 	bool bShouldGoUpStairs, bShouldGoDownStairs;
 	bool bCanGoToSecretAgentOtto, bBlockedByWall;
 	bool bCanGoLeft, bCanGoRight;
+
+	float PercentChanceAIShootPlayerWhileMoving;
 
 	FVector DirectionVector;
 };

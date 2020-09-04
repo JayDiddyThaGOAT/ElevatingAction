@@ -15,9 +15,13 @@ AElevatingActionAIController::AElevatingActionAIController()
 
     ShootPistolTime = 0.0f;
     ShootPistolDelay = 2.0f;
+    MaxShootPistolDistance = 250.0f;
 
     PatrolTime = 0.0f;
     PatrolDuration = 2.0f;
+    
+    PercentChanceAIShootPlayerWhileMoving = 0.0f;
+    PercentRequiredAIShootPlayerWhileMoving = 0.0f;
 
     bCanGoToSecretAgentOtto = true;
     bBlockedByWall = false;
@@ -126,7 +130,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                             bCanGoToSecretAgentOtto = true;
                             bBlockedByWall = false;
                            
-                            float DistanceRequiredToShootPlayer = !bIsOfficeBlackedOut ? 250.0f : 125.0f;
+                            float DistanceRequiredToShootPlayer = !bIsOfficeBlackedOut ? MaxShootPistolDistance : MaxShootPistolDistance - 125.0f;
                         
                             float DistanceBetweenAgents = FVector::Distance(SecretAgentOtto->GetActorLocation(), SecretAgentAI->GetActorLocation());
                             if (DistanceBetweenAgents <= DistanceRequiredToShootPlayer)
@@ -143,7 +147,22 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                 }
                             }
                             else
+                            {
                                 SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
+                                
+                                if (!UKismetMathLibrary::NearlyEqual_FloatFloat(PercentRequiredAIShootPlayerWhileMoving, 0.0f) &&
+                                    PercentRequiredAIShootPlayerWhileMoving > PercentChanceAIShootPlayerWhileMoving)
+                                {
+                                    float CurrentShootPistolDelay = !bIsOfficeBlackedOut ? ShootPistolDelay : ShootPistolDelay + 2.0f;
+                            
+                                    ShootPistolTime += DeltaTime;
+                                    if (ShootPistolTime >= CurrentShootPistolDelay)
+                                    {
+                                        SecretAgentAI->ShootPistol();
+                                        ShootPistolTime = 0.0f;
+                                    }
+                                }
+                            }
                         }
                         else
                         {
@@ -367,7 +386,10 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                 WallObjectQueryParams.AddObjectTypesToQuery(ECC_WorldStatic);
 
                 if (SecretAgentAIFloorNumber == SecretAgentOttoFloorNumber)
+                {
+                    PercentChanceAIShootPlayerWhileMoving = UKismetMathLibrary::RandomFloat();
                     PatrolTime = 0.0f;
+                }
 
                 if (GetWorld()->LineTraceSingleByObjectType(WallHitResult, SecretAgentAILeftSide, SecretAgentAIRightSide, WallObjectQueryParams, CollisionQueryParams))
                 {

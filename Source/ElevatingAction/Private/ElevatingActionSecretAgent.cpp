@@ -437,16 +437,25 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 					
 				if (GetWorld()->LineTraceSingleByObjectType(FrontHitResult, LeftToTargetLocation, RightToTargetLocation, PawnQueryParams, IgnoreThisPawnQueryParams))
 				{
-					if (Cast<AElevatingActionSecretAgent>(FrontHitResult.Actor))
+					AElevatingActionSecretAgent* SecretAgent = Cast<AElevatingActionSecretAgent>(FrontHitResult.Actor);
+					if (SecretAgent)
 					{
-						GetCharacterMovement()->MaxWalkSpeed = 0.0f;
+						if (SecretAgent->GetCharacterMovement()->MaxWalkSpeed > 0.0f && SecretAgent->CanGoLeft() && SecretAgent->CanGoRight())
+							GetCharacterMovement()->MaxWalkSpeed = 0.0f;
+						else
+							GetCharacterMovement()->MaxWalkSpeed = DefaultWalkSpeed;
 
 						if (TracedElevator)
 							TracedElevator->ResetStopTime();
 					}
 				}
 				else
-					GetCharacterMovement()->MaxWalkSpeed = DefaultWalkSpeed;
+				{
+					if (TracedElevator && TracedElevator->AreDoorsMoving())
+						GetCharacterMovement()->MaxWalkSpeed = 0.0f;
+					else
+						GetCharacterMovement()->MaxWalkSpeed = DefaultWalkSpeed;
+				}
 			}
 		}
 	}
