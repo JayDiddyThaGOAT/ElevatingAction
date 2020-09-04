@@ -14,6 +14,11 @@ UElevatingActionGameInstance::UElevatingActionGameInstance()
     BlackoutDuration = 4.0f;
     BlackoutElapsedTime = 0.0f;
 
+    MasterVolume = 0.5f;
+    MusicVolume = 0.5f;
+    FXVolume = 0.5f;
+    VoicesVolume = 0.5f;
+
     //InKey = Number Of Secret Files Spawned Per Level
     //InValue = How low or high each secret file can spawn in level
     SecretFileCounts.Add(5, FInt32Range(9, 20));	//Level 1

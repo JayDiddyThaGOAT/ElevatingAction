@@ -51,5 +51,17 @@ private:
 
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Blackout)
 	bool bIsOfficeBlackedOut;
+	
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Volume)
+    float MasterVolume;
+    
+    UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Volume)
+    float MusicVolume;
+    
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Volume)
+	float FXVolume;
+    
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Volume)
+	float VoicesVolume;
 };
 
