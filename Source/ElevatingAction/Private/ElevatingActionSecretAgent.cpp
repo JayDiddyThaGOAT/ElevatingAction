@@ -397,6 +397,8 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 			{
 				if (!TracedElevator->AreDoorsMoving() && !TracedElevator->AreDoorsClosed())
 					GetCharacterMovement()->MaxWalkSpeed = DefaultWalkSpeed;
+				else
+					GetCharacterMovement()->MaxWalkSpeed = 0.0f;
 			}
 
 			float TargetLocationY = CurrentFloorNumber == 0 ? 375.0f : 125.0f;
@@ -419,42 +421,6 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 				{
 					CurrentLocation = ELocationState::Hallway;
 					CurrentTransition = ETransitionState::None;
-				}
-			}
-			else
-			{
-				FHitResult FrontHitResult;
-				FVector LeftToTargetLocation = FVector(TargetLocation.X - (250.0f - GetCapsuleComponent()->GetScaledCapsuleRadius()),
-                    TargetLocationY, GetMesh()->GetSocketLocation(TEXT("spine_01")).Z);
-				FVector RightToTargetLocation = FVector(TargetLocation.X + (250.0f - GetCapsuleComponent()->GetScaledCapsuleRadius()),
-                    TargetLocationY, GetMesh()->GetSocketLocation(TEXT("spine_01")).Z);
-					
-				FCollisionObjectQueryParams PawnQueryParams;
-				PawnQueryParams.AddObjectTypesToQuery(ECC_Pawn);
-					
-				FCollisionQueryParams IgnoreThisPawnQueryParams;
-				IgnoreThisPawnQueryParams.AddIgnoredActor(this);
-					
-				if (GetWorld()->LineTraceSingleByObjectType(FrontHitResult, LeftToTargetLocation, RightToTargetLocation, PawnQueryParams, IgnoreThisPawnQueryParams))
-				{
-					AElevatingActionSecretAgent* SecretAgent = Cast<AElevatingActionSecretAgent>(FrontHitResult.Actor);
-					if (SecretAgent)
-					{
-						if (SecretAgent->GetCharacterMovement()->MaxWalkSpeed > 0.0f && SecretAgent->CanGoLeft() && SecretAgent->CanGoRight())
-							GetCharacterMovement()->MaxWalkSpeed = 0.0f;
-						else
-							GetCharacterMovement()->MaxWalkSpeed = DefaultWalkSpeed;
-
-						if (TracedElevator)
-							TracedElevator->ResetStopTime();
-					}
-				}
-				else
-				{
-					if (TracedElevator && TracedElevator->AreDoorsMoving())
-						GetCharacterMovement()->MaxWalkSpeed = 0.0f;
-					else
-						GetCharacterMovement()->MaxWalkSpeed = DefaultWalkSpeed;
 				}
 			}
 		}

@@ -110,25 +110,6 @@ void AElevator::Tick(float DeltaSeconds)
                 ElevatorDirection == EDirectionState::Down 	&& NextTargetFloorNumber < CurrentTargetFloorNumber)
                 	GoToFloor(NextTargetFloorNumber);
 		}
-
-		if (GetOwner())
-		{
-			AElevatingActionSecretAgent* ThisSecretAgent = Cast<AElevatingActionSecretAgent>(GetOwner());
-			AElevatingActionSecretAgent* PlayerSecretAgent = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
-			
-			if (Cast<APlayerController>(ThisSecretAgent->GetController()))
-			{
-				if (!ElevatorMovingAudioComponent->IsPlaying())
-				{
-					if (ElevatorDirection == EDirectionState::Up)
-						ElevatorMovingAudioComponent->SetSound(ElevatorMovingUpSoundWave);
-					else if (ElevatorDirection == EDirectionState::Down)
-						ElevatorMovingAudioComponent->SetSound(ElevatorMovingDownSoundWave);
-
-					ElevatorMovingAudioComponent->Play();
-				}
-			}
-		}
 	}
 	else
 	{
@@ -150,8 +131,11 @@ void AElevator::Tick(float DeltaSeconds)
 				AElevatingActionSecretAgent* PlayerSecretAgent = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 				if (IsValid(PlayerSecretAgent) && CurrentFloorNumber == PlayerSecretAgent->GetCurrentFloorNumber())
 				{
-					UGameplayStatics::PlaySoundAtLocation(GetWorld(), ElevatorButtonCaller->GetElevatorArrivedAlarm(), ElevatorButtonCaller->GetRelativeLocation());
-					ElevatorButtonCaller = nullptr;
+					if (PlayerSecretAgent->GetCurrentLocation() == ELocationState::Hallway)
+					{
+						UGameplayStatics::PlaySoundAtLocation(GetWorld(), ElevatorButtonCaller->GetElevatorArrivedAlarm(), ElevatorButtonCaller->GetRelativeLocation());
+						ElevatorButtonCaller = nullptr;
+					}
 				}
 			}
 			
@@ -185,7 +169,9 @@ void AElevator::Tick(float DeltaSeconds)
 			else
 			{
 				if (GetOwner() || (IsTargetFloorNumberSet() && CurrentTargetFloorNumber == NextTargetFloorNumber))
+				{
 					NextTargetFloorNumber = -1;
+				}
 			}
 		}
 	}
@@ -276,6 +262,20 @@ void AElevator::GoToNextFloor(EDirectionState Direction)
 			return;
 		
 		CurrentTargetFloorNumber = CurrentFloorNumber + 1;
+
+		if (GetOwner())
+		{
+			AElevatingActionSecretAgent* ThisSecretAgent = Cast<AElevatingActionSecretAgent>(GetOwner());
+			
+			if (Cast<APlayerController>(ThisSecretAgent->GetController()))
+			{
+				if (!ElevatorMovingAudioComponent->IsPlaying() || (ElevatorMovingAudioComponent->IsPlaying() && ElevatorMovingAudioComponent->Sound == ElevatorMovingDownSoundWave))
+				{
+					ElevatorMovingAudioComponent->SetSound(ElevatorMovingUpSoundWave);
+					ElevatorMovingAudioComponent->Play();
+				}
+			}
+		}
 	}
 	else if (ElevatorDirection == EDirectionState::Down)
 	{
@@ -283,6 +283,20 @@ void AElevator::GoToNextFloor(EDirectionState Direction)
 			return;
 		
 		CurrentTargetFloorNumber = CurrentFloorNumber - 1;
+
+		if (GetOwner())
+		{
+			AElevatingActionSecretAgent* ThisSecretAgent = Cast<AElevatingActionSecretAgent>(GetOwner());
+			
+			if (Cast<APlayerController>(ThisSecretAgent->GetController()))
+			{
+				if (!ElevatorMovingAudioComponent->IsPlaying() || (ElevatorMovingAudioComponent->IsPlaying() && ElevatorMovingAudioComponent->Sound == ElevatorMovingUpSoundWave))
+				{
+					ElevatorMovingAudioComponent->SetSound(ElevatorMovingDownSoundWave);
+					ElevatorMovingAudioComponent->Play();
+				}
+			}
+		}
 	}
 
 	ElevatorStoppedTime = 0.0f;
@@ -291,9 +305,35 @@ void AElevator::GoToNextFloor(EDirectionState Direction)
 void AElevator::GoToFloor(int32 FloorNumber)
 {
 	if (FloorNumber > CurrentFloorNumber)
+	{
 		ElevatorDirection = EDirectionState::Up;
+
+		if (GetOwner())
+		{
+			AElevatingActionSecretAgent* ThisSecretAgent = Cast<AElevatingActionSecretAgent>(GetOwner());
+			
+			if (Cast<APlayerController>(ThisSecretAgent->GetController()))
+			{
+				ElevatorMovingAudioComponent->SetSound(ElevatorMovingUpSoundWave);
+				ElevatorMovingAudioComponent->Play();
+			}
+		}
+	}
 	else if (FloorNumber < CurrentFloorNumber)
+	{
 		ElevatorDirection = EDirectionState::Down;
+
+		if (GetOwner())
+		{
+			AElevatingActionSecretAgent* ThisSecretAgent = Cast<AElevatingActionSecretAgent>(GetOwner());
+			
+			if (Cast<APlayerController>(ThisSecretAgent->GetController()))
+			{
+				ElevatorMovingAudioComponent->SetSound(ElevatorMovingDownSoundWave);
+				ElevatorMovingAudioComponent->Play();
+			}
+		}
+	}
 	
 	CurrentTargetFloorNumber = FMath::Clamp(FloorNumber, MinFloorNumber, MaxFloorNumber);
 
