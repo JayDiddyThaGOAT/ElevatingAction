@@ -189,11 +189,8 @@ void AElevator::CloseDoors()
 		{
 			if (CurrentFloorNumber == PlayerSecretAgent->GetCurrentFloorNumber())
 			{
-				if (!ElevatorMovingAudioComponent->IsPlaying())
-				{
-					ElevatorMovingAudioComponent->SetSound(ElevatorDoorsClosingSoundWave);
-					ElevatorMovingAudioComponent->Play();
-				}
+				ElevatorMovingAudioComponent->SetSound(ElevatorDoorsClosingSoundWave);
+				ElevatorMovingAudioComponent->Play();
 			}
 		}
 	}
@@ -211,11 +208,8 @@ void AElevator::OpenDoors()
 		{
 			if (CurrentFloorNumber == PlayerSecretAgent->GetCurrentFloorNumber())
 			{
-				if (!ElevatorMovingAudioComponent->IsPlaying())
-				{
-					ElevatorMovingAudioComponent->SetSound(ElevatorDoorsOpeningSoundWave);
-					ElevatorMovingAudioComponent->Play();
-				}
+				ElevatorMovingAudioComponent->SetSound(ElevatorDoorsOpeningSoundWave);
+				ElevatorMovingAudioComponent->Play();
 			}
 		}
 	}
@@ -253,6 +247,9 @@ bool AElevator::IsTargetFloorNumberSet() const
 
 void AElevator::GoToNextFloor(EDirectionState Direction)
 {
+	if (ElevatorMovingAudioComponent->IsPlaying() && ElevatorMovingAudioComponent->Sound == ElevatorDoorsClosingSoundWave)
+		return;
+	
 	NextTargetFloorNumber = -1;
 	
 	ElevatorDirection = Direction;
@@ -269,11 +266,8 @@ void AElevator::GoToNextFloor(EDirectionState Direction)
 			
 			if (Cast<APlayerController>(ThisSecretAgent->GetController()))
 			{
-				if (!ElevatorMovingAudioComponent->IsPlaying() || (ElevatorMovingAudioComponent->IsPlaying() && ElevatorMovingAudioComponent->Sound == ElevatorMovingDownSoundWave))
-				{
-					ElevatorMovingAudioComponent->SetSound(ElevatorMovingUpSoundWave);
-					ElevatorMovingAudioComponent->Play();
-				}
+				ElevatorMovingAudioComponent->SetSound(ElevatorMovingUpSoundWave);
+				ElevatorMovingAudioComponent->Play();
 			}
 		}
 	}
@@ -290,11 +284,8 @@ void AElevator::GoToNextFloor(EDirectionState Direction)
 			
 			if (Cast<APlayerController>(ThisSecretAgent->GetController()))
 			{
-				if (!ElevatorMovingAudioComponent->IsPlaying() || (ElevatorMovingAudioComponent->IsPlaying() && ElevatorMovingAudioComponent->Sound == ElevatorMovingUpSoundWave))
-				{
-					ElevatorMovingAudioComponent->SetSound(ElevatorMovingDownSoundWave);
-					ElevatorMovingAudioComponent->Play();
-				}
+				ElevatorMovingAudioComponent->SetSound(ElevatorMovingDownSoundWave);
+				ElevatorMovingAudioComponent->Play();
 			}
 		}
 	}
@@ -304,6 +295,9 @@ void AElevator::GoToNextFloor(EDirectionState Direction)
 
 void AElevator::GoToFloor(int32 FloorNumber)
 {
+	if (ElevatorMovingAudioComponent->IsPlaying() && ElevatorMovingAudioComponent->Sound == ElevatorDoorsClosingSoundWave)
+		return;
+	
 	if (FloorNumber > CurrentFloorNumber)
 	{
 		ElevatorDirection = EDirectionState::Up;
