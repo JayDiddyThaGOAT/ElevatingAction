@@ -9,9 +9,10 @@ UElevatingActionGameInstance::UElevatingActionGameInstance()
 
     LevelNumber = 1;
     PlayerLives = 3;
+    PercentChanceNewSecretAgentsSpawn = 0.0f;
 
     bIsOfficeBlackedOut = false;
-    BlackoutDuration = 4.0f;
+    BlackoutDuration = 5.0f;
     BlackoutElapsedTime = 0.0f;
 
     MasterVolume = 0.5f;
@@ -45,6 +46,8 @@ void UElevatingActionGameInstance::ResetGame()
 
     LevelNumber = 1;
     PlayerLives = 3;
+
+    PercentChanceNewSecretAgentsSpawn = 0.0f;
 }
 
 int32 UElevatingActionGameInstance::GetNumberOfPlayerLives()

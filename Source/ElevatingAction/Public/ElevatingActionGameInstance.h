@@ -39,6 +39,9 @@ private:
 
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Level)
 	int32 LevelNumber;
+	
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Level)
+  	float PercentChanceNewSecretAgentsSpawn;
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Level)
 	TMap<int32, FInt32Range> SecretFileCounts;
