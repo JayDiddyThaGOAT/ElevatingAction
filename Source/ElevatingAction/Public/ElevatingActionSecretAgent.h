@@ -76,6 +76,7 @@ public:
 	
 	int32 GetCurrentFloorNumber() const;
 
+	void SetShootButtonPressed(bool bButtonPressed);
 	void ShootPistol();
 
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Attacking)

@@ -76,7 +76,6 @@ void AElevatingActionSecretAgent::BeginPlay()
 	
 	Pistol = GetWorld()->SpawnActor<AElevatingActionPistol>(AElevatingActionPistol::StaticClass(), WeaponTransform, WeaponSpawnParameters);
 	Pistol->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, TEXT("Hand_R_PistolSocket"));
-	Pistol->SetFireRate(PistolFireRate);
 	Pistol->SetOwner(this);
 
 	FHitResult GroundHitResult;
@@ -643,10 +642,11 @@ void AElevatingActionSecretAgent::ShootPistol()
 	if (!(FMath::RoundToInt(GetActorRotation().Yaw) == 0 || FMath::RoundToInt(GetActorRotation().Yaw) == -180))
 		return;
 
-	if (bShootButtonPressed)
+	if (ProjectilesShotCount >= ProjectilesShotMax)
 		return;
 
-	bShootButtonPressed = true;
+	if (!bShootButtonPressed)
+		bShootButtonPressed = true;
 }
 
 void AElevatingActionSecretAgent::StartTransition()
@@ -775,4 +775,9 @@ UElevatingActionOfficeDoor* AElevatingActionSecretAgent::GetTracedDoor() const
 int32 AElevatingActionSecretAgent::GetCurrentFloorNumber() const
 {
 	return CurrentFloorNumber;
+}
+
+void AElevatingActionSecretAgent::SetShootButtonPressed(bool bButtonPressed)
+{
+	bShootButtonPressed = bButtonPressed;
 }

@@ -1,6 +1,4 @@
 
-
-
 #include "ElevatingActionPistol.h"
 #include "ElevatingActionSecretAgent.h"
 #include "Sound/SoundCue.h"
@@ -8,8 +6,6 @@
 AElevatingActionPistol::AElevatingActionPistol()
 {
     PrimaryActorTick.bCanEverTick = false;
-
-    FireRate = 1.0f;
     
     static ConstructorHelpers::FObjectFinder<USkeletalMesh> PistolMesh(TEXT("SkeletalMesh'/Game/PolygonSpy/Meshes/Weapons/SK_Wep_Pistol_01.SK_Wep_Pistol_01'"));
     if (PistolMesh.Succeeded())
@@ -36,23 +32,15 @@ AElevatingActionPistol::AElevatingActionPistol()
 
 void AElevatingActionPistol::PullTrigger()
 {
-    AActor* ProjetileShot = GetWorld()->SpawnActor<AActor>(Projectile, GetSkeletalMeshComponent()->GetSocketTransform(TEXT("SK_Wep_Projectile_Socket")));
-    ProjectileShotAudioComponent->Play();
-    
     AElevatingActionSecretAgent* SecretAgent = Cast<AElevatingActionSecretAgent>(GetOwner());
     if (SecretAgent)
     {
-        ProjetileShot->SetInstigator(SecretAgent);
+        FActorSpawnParameters ProjectileSpawnParameters;
+        ProjectileSpawnParameters.Instigator = SecretAgent;
+        GetWorld()->SpawnActor<AActor>(Projectile, GetSkeletalMeshComponent()->GetSocketTransform(TEXT("SK_Wep_Projectile_Socket")), ProjectileSpawnParameters);
+        ProjectileShotAudioComponent->Play();
+        
         SecretAgent->ProjectilesShotCount++;
+        SecretAgent->SetShootButtonPressed(false);
     }
-}
-
-float AElevatingActionPistol::GetFireRate() const
-{
-    return FireRate;
-}
-
-void AElevatingActionPistol::SetFireRate(float Rate)
-{
-    FireRate = Rate;
 }

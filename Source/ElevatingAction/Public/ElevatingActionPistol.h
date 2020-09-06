@@ -20,19 +20,10 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = Firing)
     void PullTrigger();
-
-	void SetFireRate(float FireRate);
-	float GetFireRate() const;
-
-protected:
-	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Firing)
-	class UAudioComponent* ProjectileShotAudioComponent;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Firing)
-	float FireRate;
-	
 	
 private:
+	class UAudioComponent* ProjectileShotAudioComponent;
+	
 	UClass* Projectile;
 	FTransform ProjectileSpawnTransform;
 };
