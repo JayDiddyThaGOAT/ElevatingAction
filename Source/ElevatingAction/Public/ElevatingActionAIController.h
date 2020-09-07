@@ -37,14 +37,19 @@ public:
 	float MaxShootPistolDistance;
 
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccessOnly = "true"), Category = Attacking)
-	float PatrolDuration;;
+	float PatrolDuration;
 
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccessOnly = "true"), Category = Attacking)
 	float PercentRequiredAIShootPlayerWhileMoving;
 
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccessOnly = "true"), Category = Attacking)
+	float PercentRequiredAIDodgesPlayerProjectiles;
+
 private:
 	class AElevatingActionSecretAgent* SecretAgentAI;
 	class AElevatingActionSecretAgent* SecretAgentOtto;
+
+	class AActor* SecretAgentOttoLastShotProjectile;
 	
 	float ShootPistolTime, PatrolTime;
 
@@ -53,6 +58,7 @@ private:
 	bool bCanGoLeft, bCanGoRight;
 
 	float PercentChanceAIShootPlayerWhileMoving;
+	float PercentChanceAIDodgesPlayerProjectiles;
 
 	FVector DirectionVector;
 };

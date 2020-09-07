@@ -87,13 +87,15 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = State)
 	void Transition();
+
+	UFUNCTION(BlueprintCallable, Category = State)
+    void ToggleCrouch();
 	
 	void MoveForward(float AxisValue);
 	void MoveUp(float AxisValue);
 
 private:
 	void TraceOfficeWalls();
-	void ToggleCrouch();
 
 protected:
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Floor)

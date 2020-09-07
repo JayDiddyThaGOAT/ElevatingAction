@@ -241,7 +241,7 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 			AddMovementInput(FVector::RightVector);
 
 			if (Cast<APlayerController>(GetController()))
-				bCanTransition = !TracedElevator->IsElevatorMoving() && !TracedElevator->AreDoorsMoving() && TracedElevator->AreDoorsClosed();
+				bCanTransition = CurrentFloorNumber <= 30 && !TracedElevator->IsElevatorMoving() && !TracedElevator->AreDoorsMoving() && TracedElevator->AreDoorsClosed();
 		}
 		else if (CurrentLocation == ELocationState::Hallway)
 		{

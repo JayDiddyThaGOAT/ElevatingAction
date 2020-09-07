@@ -23,6 +23,9 @@ AElevatingActionAIController::AElevatingActionAIController()
     PercentChanceAIShootPlayerWhileMoving = 0.0f;
     PercentRequiredAIShootPlayerWhileMoving = 0.0f;
 
+    PercentChanceAIDodgesPlayerProjectiles = 0.0f;
+    PercentRequiredAIDodgesPlayerProjectiles = 0.0f;
+
     bCanGoToSecretAgentOtto = true;
     bBlockedByWall = false;
 }
@@ -65,11 +68,10 @@ float AElevatingActionAIController::GetTargetLocationToUseStairs(AActor* Stairs,
 FHitResult AElevatingActionAIController::ObjectBetweenSecretAgents()
 {
     FHitResult HitResult;
-    FVector StartLocation = SecretAgentAI->GetMesh()->GetSocketLocation(TEXT("eyes"));
-    FVector EndLocation = SecretAgentOtto->GetMesh()->GetSocketLocation(TEXT("eyes"));
+    FVector StartLocation = SecretAgentAI->GetMesh()->GetSocketLocation(TEXT("Hand_R"));
+    FVector EndLocation = SecretAgentOtto->GetMesh()->GetSocketLocation(TEXT("Hand_R"));
 
     FCollisionQueryParams CollisionQueryParams;
-
     TArray<AActor*> SecretAgents;
     UGameplayStatics::GetAllActorsOfClass(GetWorld(), AElevatingActionSecretAgent::StaticClass(), SecretAgents);
     for (AActor* SecretAgent : SecretAgents)
@@ -78,7 +80,10 @@ FHitResult AElevatingActionAIController::ObjectBetweenSecretAgents()
             CollisionQueryParams.AddIgnoredActor(SecretAgent);
     }
 
-    GetWorld()->LineTraceSingleByChannel(HitResult, StartLocation, EndLocation, ECC_WorldStatic, CollisionQueryParams);
+    FCollisionObjectQueryParams CollisionObjectQueryParams;
+    CollisionObjectQueryParams.AddObjectTypesToQuery(ECC_WorldStatic);
+
+    GetWorld()->LineTraceSingleByObjectType(HitResult, StartLocation, EndLocation, CollisionObjectQueryParams, CollisionQueryParams);
 
     return HitResult;
 }
@@ -120,6 +125,17 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                     {
                         if (ObjectBetweenSecretAgents().Actor == SecretAgentOtto)
                         {
+                            if (SecretAgentAI->GetCharacterMovement()->IsCrouching())
+                            {
+                                if (IsValid(SecretAgentOttoLastShotProjectile))
+                                {
+                                    FVector ProjectileLocation = SecretAgentOttoLastShotProjectile->GetActorForwardVector();
+                                    FVector DirectionToProjectile = (SecretAgentAI->GetActorLocation() - SecretAgentOttoLastShotProjectile->GetActorLocation()).GetSafeNormal();
+                                    if (FVector::DotProduct(ProjectileLocation, DirectionToProjectile) < 0.0f)
+                                        SecretAgentAI->ToggleCrouch();
+                                }
+                            }
+                            
                             if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
                                 DirectionVector = FVector::BackwardVector;
                             else if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
@@ -164,8 +180,44 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                 }
                             }
                         }
-                        else
+                        else if (ObjectBetweenSecretAgents().Actor->GetInstigator() == SecretAgentOtto)
                         {
+                            if  (!UKismetMathLibrary::NearlyEqual_FloatFloat(PercentRequiredAIDodgesPlayerProjectiles, 0.0f) &&
+                                PercentRequiredAIDodgesPlayerProjectiles > PercentChanceAIDodgesPlayerProjectiles)
+                            {
+                                SecretAgentOttoLastShotProjectile = ObjectBetweenSecretAgents().GetActor();
+                               
+                                if (!SecretAgentOtto->GetCharacterMovement()->IsCrouching())
+                                {
+                                    if (!SecretAgentAI->GetCharacterMovement()->IsCrouching() && ObjectBetweenSecretAgents().Distance <= 250.0f)
+                                    {
+                                        SecretAgentAI->ToggleCrouch();
+                                        PercentChanceAIDodgesPlayerProjectiles = UKismetMathLibrary::RandomFloat();
+                                    }
+                                }
+                                else
+                                {
+                                    if (!SecretAgentAI->GetCharacterMovement()->IsFalling() && ObjectBetweenSecretAgents().Distance <= 250.0f)
+                                    {
+                                        SecretAgentAI->Jump();
+                                        PercentChanceAIDodgesPlayerProjectiles = UKismetMathLibrary::RandomFloat();
+                                    }
+                                }
+                            }
+                        }
+                        else if (ObjectBetweenSecretAgents().Actor->GetInstigator() != SecretAgentAI)
+                        {
+                            if (SecretAgentAI->GetCharacterMovement()->IsCrouching())
+                            {
+                                if (IsValid(SecretAgentOttoLastShotProjectile))
+                                {
+                                    FVector ProjectileLocation = SecretAgentOttoLastShotProjectile->GetActorForwardVector();
+                                    FVector DirectionToProjectile = (SecretAgentAI->GetActorLocation() - SecretAgentOttoLastShotProjectile->GetActorLocation()).GetSafeNormal();
+                                    if (FVector::DotProduct(ProjectileLocation, DirectionToProjectile) < 0.0f)
+                                        SecretAgentAI->ToggleCrouch();
+                                }
+                            }
+                            
                             PatrolTime += DeltaTime;
                             SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
                             
@@ -388,6 +440,8 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                 if (SecretAgentAIFloorNumber == SecretAgentOttoFloorNumber)
                 {
                     PercentChanceAIShootPlayerWhileMoving = UKismetMathLibrary::RandomFloat();
+                    PercentChanceAIDodgesPlayerProjectiles = UKismetMathLibrary::RandomFloat();
+                    
                     PatrolTime = 0.0f;
                 }
 
@@ -396,9 +450,9 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                     bBlockedByWall = true;
                     
                     if (WallHitResult.Location.X < SecretAgentAI->GetActorLocation().X)
-                        DirectionVector = FVector::ForwardVector;
-                    else if (WallHitResult.Location.X > SecretAgentAI->GetActorLocation().X)
                         DirectionVector = FVector::BackwardVector;
+                    else if (WallHitResult.Location.X > SecretAgentAI->GetActorLocation().X)
+                        DirectionVector = FVector::ForwardVector;
                 }
                 else
                 {
