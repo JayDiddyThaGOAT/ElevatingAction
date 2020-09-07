@@ -19,7 +19,9 @@ AElevatingActionSecretAgent::AElevatingActionSecretAgent()
 
 	ConstructorHelpers::FObjectFinder<USkeletalMesh> SecretAgentOttoMesh(TEXT("SkeletalMesh'/Game/ElevatingActionSecretAgent/Character/Player/SK_SecretAgent_Otto.SK_SecretAgent_Otto'"));
 	if (SecretAgentOttoMesh.Succeeded())
+	{
 		GetMesh()->SetSkeletalMesh(SecretAgentOttoMesh.Object);
+	}
 
 	ConstructorHelpers::FClassFinder<UAnimInstance> ElevatingActionAnimBP(TEXT("AnimBlueprint'/Game/ElevatingActionSecretAgent/Character/Animations/ABP_ElevatingActionCharacter.ABP_ElevatingActionCharacter_C'"));
 	if (ElevatingActionAnimBP.Succeeded())
@@ -637,9 +639,6 @@ void AElevatingActionSecretAgent::ShootPistol()
 		return;
 	
 	if (!(CurrentLocation == ELocationState::Hallway && CurrentTransition == ETransitionState::None))
-		return;
-	
-	if (!(FMath::RoundToInt(GetActorRotation().Yaw) == 0 || FMath::RoundToInt(GetActorRotation().Yaw) == -180))
 		return;
 
 	if (ProjectilesShotCount >= ProjectilesShotMax)

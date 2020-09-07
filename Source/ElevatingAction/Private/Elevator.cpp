@@ -12,8 +12,11 @@ AElevator::AElevator()
     static ConstructorHelpers::FObjectFinder<UStaticMesh> ElevatorDoorMesh(TEXT("/Game/PolygonOffice/Meshes/Buildings/SM_Bld_Elevator_01_Door"));
 
 	if (ElevatorMesh.Succeeded())
+	{
 		GetStaticMeshComponent()->SetStaticMesh(ElevatorMesh.Object);
-    GetStaticMeshComponent()->SetMobility(EComponentMobility::Movable);
+		GetStaticMeshComponent()->SetMobility(EComponentMobility::Movable);
+		GetStaticMeshComponent()->SetGenerateOverlapEvents(true);
+	}
 
     ElevatorDirection = EDirectionState::Down;
     ElevatorSpeed = 150.0f;
