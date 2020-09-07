@@ -205,7 +205,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                 }
                             }
                         }
-                        else if (ObjectBetweenSecretAgents().Actor->GetInstigator() != SecretAgentAI)
+                        else if (ObjectBetweenSecretAgents().Actor->GetName().Contains("Office"))
                         {
                             if (SecretAgentAI->GetCharacterMovement()->IsCrouching())
                             {
