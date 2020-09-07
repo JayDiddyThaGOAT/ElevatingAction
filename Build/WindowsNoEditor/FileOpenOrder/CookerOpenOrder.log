@@ -316,377 +316,378 @@
 "../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/points_ticker_bonus_score_reward_jingle_04.uasset" 315
 "../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Fonts/WildWest/Wild_West_USA.uasset" 316
 "../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Fonts/WildWest/Wild_West_USA_Font.uasset" 317
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Icons/arrowLeft.uasset" 318
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Icons/audioOn.uasset" 319
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_PauseMenu.uasset" 320
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Props/SM_Prop_Files_01.uasset" 321
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Player/BP_SecretAgent_Otto.uasset" 322
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Camera/ZoomCurve_ElevatingActionCamera.uasset" 323
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Camera/BP_ElevatingActionCamera.uasset" 324
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Camera/BP_Character_Otto_Camera.uasset" 325
-"../../../Engine/Content/Animation/DefaultAnimBoneCompressionSettings.uasset" 326
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Fire_Single.uasset" 327
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Fire_Single_Montage.uasset" 328
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Fire_Single.uasset" 329
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Fire_Single_Montage.uasset" 330
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/Driving.uasset" 331
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Aim_Equip_Get_From_MOB.uasset" 332
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Aim_Idle_IPC.uasset" 333
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/S_CrouchUp_Cue.uasset" 334
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Aim_To_Stand_Aim_IPC.uasset" 335
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Jump_RU_Air_IPC.uasset" 336
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/S_LandWhileMoving_Cue.uasset" 337
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Jump_RU_End_IPC.uasset" 338
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/S_Jump_Cue.uasset" 339
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Jump_RU_Start_IPC.uasset" 340
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Idle_IPC.uasset" 341
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Jump_Air_IPC.uasset" 342
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/S_LandWhileStanding_Cue.uasset" 343
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Jump_End_IPC.uasset" 344
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Jump_Start_IPC.uasset" 345
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/S_CrouchDown_Cue.uasset" 346
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_To_Crouch_Aim_IPC.uasset" 347
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Relaxed_Idle_IPC.uasset" 348
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Loop_IPC.uasset" 349
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Walk_Aim_F_Loop_IPC.uasset" 350
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/Aiming_Movement.uasset" 351
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/S_RunningInOffice_Cue.uasset" 352
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/S_WalkingInOffice_Cue.uasset" 353
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/S_RunningOutsideOffice_Cue.uasset" 354
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/ABP_ElevatingActionCharacter.uasset" 355
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_03_A.uasset" 356
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Materials/Mat_PolygonSpy_01_Otto.uasset" 357
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Player/SK_SecretAgent_Otto.uasset" 358
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Vehicle/Veh_SpyCar_DataConfig.uasset" 359
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_SpecialAgentOtto.uasset" 360
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Icons/audioOff.uasset" 361
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Door_04.uasset" 362
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_Normal_01.uasset" 363
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_Glass_Windows.uasset" 364
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Door_translucentGlass.uasset" 365
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Door_05.uasset" 366
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Elevator_01.uasset" 367
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Elevator_01_Door.uasset" 368
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Props/SK_Prop_ID_01.uasset" 369
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Weapons/SK_Wep_Pistol_01_PhysicsAsset.uasset" 370
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Weapons/SK_Wep_Pistol_01_Skeleton.uasset" 371
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Weapons/SK_Wep_Pistol_01.uasset" 372
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_02_A.uasset" 373
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_04_A.uasset" 374
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_Emission_01.uasset" 375
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ExplosionSounds/explosion_small_short_01.uasset" 376
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ExplosionSounds/explosion_small_short_02.uasset" 377
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Blueprints/BP_GAP_UnrealProjectile.uasset" 378
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01Grey.uasset" 379
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_AlphaBlended.uasset" 380
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Texturesheets/T_ToonProjectilesVol1_10X10_8K_part1.uasset" 381
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP1_10x10_AB.uasset" 382
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_Additive.uasset" 383
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP1_10x10_Add.uasset" 384
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Bullet01Blue.uasset" 385
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Bullet01Blue.uasset" 386
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/T_Projectile01.uasset" 387
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Projectile01.uasset" 388
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_Additive_Tex.uasset" 389
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Square/T_Square02.uasset" 390
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Square02.uasset" 391
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.uasset" 392
-"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_M.uasset" 393
-"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_N.uasset" 394
-"../../../Engine/Content/EngineMaterials/WorldGridMaterial.uasset" 395
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_BiPlanar01.uasset" 396
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Bullet01Blue.uasset" 397
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Blueprints/BP_Projectile_Bullet01Red.uasset" 398
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Beam01.uasset" 399
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_Quad.uasset" 400
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_RingMesh01.uasset" 401
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Ball01Blue.uasset" 402
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Bomb01Blue.uasset" 403
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Bomb02Blue.uasset" 404
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Bomb03Blue.uasset" 405
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Texturesheets/T_ToonProjectilesVol1_10X10_8K_part2.uasset" 406
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP2_10x10_Add.uasset" 407
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Fireball01Blue.uasset" 408
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_MegaBomb01Blue.uasset" 409
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Plasma01Blue.uasset" 410
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Plasma02Blue.uasset" 411
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Triangle01Blue.uasset" 412
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/T_Impact04.uasset" 413
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Impact04.uasset" 414
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP2_10x10_AB.uasset" 415
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_Cylinder01.uasset" 416
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Waterball01Blue.uasset" 417
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Ball01Blue.uasset" 418
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Bomb01Blue.uasset" 419
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Bomb02Blue.uasset" 420
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Bomb03Blue.uasset" 421
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_ElectricBall01Blue.uasset" 422
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Fireball01Blue.uasset" 423
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_MegaBomb01Blue.uasset" 424
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Plasma01Blue.uasset" 425
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Plasma02Blue.uasset" 426
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Triangle01Blue.uasset" 427
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Waterball01Blue.uasset" 428
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Ball01Blue.uasset" 429
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Bomb01Blue.uasset" 430
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Bomb02Blue.uasset" 431
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Texturesheets/T_ToonSmokeTrail01_3x3.uasset" 432
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonSmokeTrail01_AB_3x3.uasset" 433
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Bomb03Blue.uasset" 434
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_ElectricBall01Blue.uasset" 435
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_ElectricBall02Blue.uasset" 436
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Texturesheets/T_ToonCircle02_3x3.uasset" 437
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonCircle02_Add_3x3.uasset" 438
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_GradientCenter03.uasset" 439
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise01.uasset" 440
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise02.uasset" 441
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_AdditiveScroll01.uasset" 442
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Trail01_AddScroll.uasset" 443
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_QuadSkewed.uasset" 444
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_Ring01.uasset" 445
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Fireball01Blue.uasset" 446
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_MegaBomb01Blue.uasset" 447
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Plasma01Blue.uasset" 448
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Plasma02Blue.uasset" 449
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_TriangleBlue.uasset" 450
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_WaterBall01.uasset" 451
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01Orange.uasset" 452
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01Red.uasset" 453
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01Violet.uasset" 454
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01White.uasset" 455
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01Yellow.uasset" 456
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam02.uasset" 457
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_VignetteMask.uasset" 458
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_GradientCenter01.uasset" 459
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_GradientCenter02.uasset" 460
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_GradientCenter04.uasset" 461
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_aqua.uasset" 462
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_blue.uasset" 463
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_green.uasset" 464
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_greyscale.uasset" 465
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_red.uasset" 466
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_violet.uasset" 467
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_yellow.uasset" 468
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise00.uasset" 469
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise000.uasset" 470
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise03.uasset" 471
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise04.uasset" 472
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise05.uasset" 473
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise06.uasset" 474
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise07.uasset" 475
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise08.uasset" 476
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise09.uasset" 477
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise10.uasset" 478
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise11.uasset" 479
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise12.uasset" 480
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Square/T_Square01.uasset" 481
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Square/T_Square03.uasset" 482
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Square/T_Square04.uasset" 483
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Square/T_SunShafts01.uasset" 484
-"../../../Engine/Content/Animation/DefaultAnimCurveCompressionSettings.uasset" 485
-"../../../Engine/Content/ArtTools/RenderToTexture/Meshes/S_1_Unit_Plane.uasset" 486
-"../../../Engine/Content/EngineMaterials/DefaultMaterial.uasset" 487
-"../../../Engine/Content/BasicShapes/Cone.uasset" 488
-"../../../Engine/Content/BasicShapes/Cube.uasset" 489
-"../../../Engine/Content/BasicShapes/Cylinder.uasset" 490
-"../../../Engine/Content/BasicShapes/Plane.uasset" 491
-"../../../Engine/Content/BasicShapes/Sphere.uasset" 492
-"../../../Engine/Content/EditorLandscapeResources/DataLayer.uasset" 493
-"../../../Engine/Content/EditorMaterials/MAT_Groups_Toggle.uasset" 494
-"../../../Engine/Content/EditorMaterials/MAT_Groups_Visibility.uasset" 495
-"../../../Engine/Content/EditorMaterials/PreviewShadowIndicator.uasset" 496
-"../../../Engine/Content/EditorMaterials/PreviewShadowIndicatorMaterial.uasset" 497
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_ColorTrack.uasset" 498
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Anim.uasset" 499
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_AudioMaster.uasset" 500
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Director.uasset" 501
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Event.uasset" 502
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Fade.uasset" 503
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Float.uasset" 504
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Move.uasset" 505
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Slomo.uasset" 506
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Sound.uasset" 507
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Vector.uasset" 508
-"../../../Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset" 509
-"../../../Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_OOD.uasset" 510
-"../../../Engine/Content/EditorMaterials/Camera/CineMat.uasset" 511
-"../../../Engine/Content/EditorMaterials/Camera/MI_CineMat_Rig.uasset" 512
-"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Arm.uasset" 513
-"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Base.uasset" 514
-"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Body.uasset" 515
-"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Mount.uasset" 516
-"../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Mount.uasset" 517
-"../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Track.uasset" 518
-"../../../Engine/Content/EditorResources/BSPVertex.uasset" 519
-"../../../Engine/Content/EditorResources/EmptyActor.uasset" 520
-"../../../Engine/Content/EditorResources/S_Actor.uasset" 521
-"../../../Engine/Content/EditorResources/S_Note.uasset" 522
-"../../../Engine/Content/EditorResources/S_Solver.uasset" 523
-"../../../Engine/Content/EditorResources/S_Trigger.uasset" 524
-"../../../Engine/Content/EditorResources/AudioIcons/S_AudioComponent.uasset" 525
-"../../../Engine/Content/EditorResources/SequenceRecorder/Countdown.uasset" 526
-"../../../Engine/Content/EditorResources/SequenceRecorder/RecordingIndicator.uasset" 527
-"../../../Engine/Content/EditorSounds/Notifications/CompileFailed.uasset" 528
-"../../../Engine/Content/EditorSounds/Notifications/CompileFailed_Cue.uasset" 529
-"../../../Engine/Content/EditorSounds/Notifications/CompileSuccess.uasset" 530
-"../../../Engine/Content/EditorSounds/Notifications/CompileStart_Cue.uasset" 531
-"../../../Engine/Content/EditorSounds/Notifications/CompileSuccess_Cue.uasset" 532
-"../../../Engine/Content/EngineDamageTypes/DmgTypeBP_Environmental.uasset" 533
-"../../../Engine/Content/EngineDebugMaterials/DebugEditorMaterial.uasset" 534
-"../../../Engine/Content/EngineDebugMaterials/DebugMeshMaterial.uasset" 535
-"../../../Engine/Content/EngineDebugMaterials/M_SimpleUnlitTranslucent.uasset" 536
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.uasset" 537
-"../../../Engine/Content/EngineDebugMaterials/VolumeToRender.uasset" 538
-"../../../Engine/Content/EngineDebugMaterials/M_VolumeRenderSphereTracePP.uasset" 539
-"../../../Engine/Content/EngineDebugMaterials/WireframeMaterial.uasset" 540
-"../../../Engine/Content/EngineFonts/Faces/DroidSansFallback.uasset" 541
-"../../../Engine/Content/EngineFonts/Faces/RobotoBold.uasset" 542
-"../../../Engine/Content/EngineFonts/Faces/RobotoBoldItalic.uasset" 543
-"../../../Engine/Content/EngineFonts/Faces/RobotoItalic.uasset" 544
-"../../../Engine/Content/EngineFonts/Faces/RobotoLight.uasset" 545
-"../../../Engine/Content/EngineFonts/Faces/RobotoRegular.uasset" 546
-"../../../Engine/Content/EngineFonts/Roboto.uasset" 547
-"../../../Engine/Content/EngineMaterials/BaseFlattenDiffuseMap.uasset" 548
-"../../../Engine/Content/EngineMaterials/BaseFlattenEmissiveMap.uasset" 549
-"../../../Engine/Content/EngineMaterials/BaseFlattenGrayscaleMap.uasset" 550
-"../../../Engine/Content/EngineMaterials/BaseFlattenNormalMap.uasset" 551
-"../../../Engine/Content/EngineMaterials/BaseFlattenMaterial.uasset" 552
-"../../../Engine/Content/EngineMaterials/BlueNoise.uasset" 553
-"../../../Engine/Content/EngineMaterials/DefaultBloomKernel.uasset" 554
-"../../../Engine/Content/EngineMaterials/DefaultBokeh.uasset" 555
-"../../../Engine/Content/EngineMaterials/DefaultDiffuse.uasset" 556
-"../../../Engine/Content/EngineMaterials/DefaultDeferredDecalMaterial.uasset" 557
-"../../../Engine/Content/EngineMaterials/DefaultLightFunctionMaterial.uasset" 558
-"../../../Engine/Content/EngineMaterials/DefaultPhysicalMaterial.uasset" 559
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.uasset" 560
-"../../../Engine/Content/EngineMaterials/DefaultPostProcessMaterial.uasset" 561
-"../../../Engine/Content/EngineMaterials/DefaultTextMaterialOpaque.uasset" 562
-"../../../Engine/Content/EngineMaterials/DefaultWhiteGrid.uasset" 563
-"../../../Engine/Content/EngineMaterials/DefaultWhiteGrid_Low.uasset" 564
-"../../../Engine/Content/EngineMaterials/EmissiveMeshMaterial.uasset" 565
-"../../../Engine/Content/EngineMaterials/GizmoMaterial.uasset" 566
-"../../../Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.uasset" 567
-"../../../Engine/Content/EngineMaterials/MiniFont.uasset" 568
-"../../../Engine/Content/EngineMaterials/InvalidLightmapSettings.uasset" 569
-"../../../Engine/Content/EngineMaterials/M_InvalidLightmapSettings.uasset" 570
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset.uasset" 571
-"../../../Engine/Content/EngineMaterials/PhAT_JointLimitMaterial.uasset" 572
-"../../../Engine/Content/EngineMaterials/PreintegratedSkinBRDF.uasset" 573
-"../../../Engine/Content/EngineMaterials/RemoveSurfaceMaterial.uasset" 574
-"../../../Engine/Content/EngineMaterials/WeightMapPlaceholderTexture.uasset" 575
-"../../../Engine/Content/EngineResources/WhiteSquareTexture.uasset" 576
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough.uasset" 577
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked.uasset" 578
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque.uasset" 579
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked_OneSided.uasset" 580
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque_OneSided.uasset" 581
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent.uasset" 582
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent_OneSided.uasset" 583
-"../../../Engine/Content/EngineMeshes/Cylinder.uasset" 584
-"../../../Engine/Content/EngineMeshes/Sphere.uasset" 585
-"../../../Engine/Content/EngineResources/Black.uasset" 586
-"../../../Engine/Content/EngineResources/DefaultTexture.uasset" 587
-"../../../Engine/Content/EngineResources/DefaultTextureCube.uasset" 588
-"../../../Engine/Content/EngineResources/DefaultVolumeTexture2D.uasset" 589
-"../../../Engine/Content/EngineResources/DefaultVolumeTexture.uasset" 590
-"../../../Engine/Content/EngineResources/GradientTexture0.uasset" 591
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.uasset" 592
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness.uasset" 593
-"../../../Engine/Content/Maps/Templates/Thumbnails/Default.uasset" 594
-"../../../Engine/Content/Maps/Templates/Thumbnails/TimeOfDay.uasset" 595
-"../../../Engine/Content/Maps/Templates/Thumbnails/VR-Basic.uasset" 596
-"../../../Engine/Content/MobileResources/T_MobileControls_texture.uasset" 597
-"../../../Engine/Content/MobileResources/T_MobileMenu2.uasset" 598
-"../../../Engine/Content/MobileResources/HUD/AnalogHat.uasset" 599
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset" 600
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset" 601
-"../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset" 602
-"../../../Engine/Content/MobileResources/HUD/LeftVirtualJoystickOnly.uasset" 603
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_off.uasset" 604
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_on.uasset" 605
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_off.uasset" 606
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_on.uasset" 607
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton3.uasset" 608
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButtonFire.uasset" 609
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad.uasset" 610
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad2.uasset" 611
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad3.uasset" 612
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionStick.uasset" 613
-"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickInner.uasset" 614
-"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickOutter.uasset" 615
-"../../../Engine/Content/Tutorial/ContentIntroCurve.uasset" 616
-"../../../Engine/Content/Tutorial/Basics/LevelEditorAttract.uasset" 617
-"../../../Engine/Content/Tutorial/Basics/TutorialAssets/icon_tab_Levels_40x.uasset" 618
-"../../../Engine/Content/Tutorial/Basics/LevelEditorOverview.uasset" 619
-"../../../Engine/Content/VREditor/LaserPointer/VR_LaserPower_01.uasset" 620
-"../../../Engine/Content/VREditor/TransformGizmo/TransformGizmoMaterial.uasset" 621
-"../../../Engine/Content/VREditor/TransformGizmo/TranslucentTransformGizmoMaterial.uasset" 622
-"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxCorner.uasset" 623
-"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxEdge.uasset" 624
-"../../../Engine/Content/VREditor/TransformGizmo/PlaneTranslationHandle.uasset" 625
-"../../../Engine/Content/VREditor/TransformGizmo/Main.uasset" 626
-"../../../Engine/Content/VREditor/TransformGizmo/Xray.uasset" 627
-"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Key.uasset" 628
-"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Node.uasset" 629
-"../../Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset" 630
-"../../Plugins/2D/Paper2D/Content/DummySprite.uasset" 631
-"../../Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset" 632
-"../../Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset" 633
-"../../Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset" 634
-"../../Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset" 635
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraBooleanLogicOps.uasset" 636
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCoordinateSpace.uasset" 637
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraExpansionMode.uasset" 638
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraOrientationAxis.uasset" 639
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessMode.uasset" 640
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 641
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2.uasset" 642
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.uasset" 643
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey.uasset" 644
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey_Lit.uasset" 645
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_OpaqueColoredMaterial.uasset" 646
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_WhiteMaterial.uasset" 647
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/LampBreakingSounds/S_CeilingLampGlassBreak_Cue.uasset" 648
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Props/Roof/SM_Prop_Light_04.uasset" 649
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_ElectricBall01Blue.uasset" 650
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Ceiling_Lamp.uasset" 651
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Meshes/SM_Bld_ElevatorButton.uasset" 652
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Elevator_01.uasset" 653
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_03.uasset" 654
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_03_Glass.uasset" 655
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_04.uasset" 656
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_04_Glass.uasset" 657
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Window_Awning_01.uasset" 658
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Window_Cover_Pole_01.uasset" 659
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Basement.uasset" 660
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Materials/Mat_PolygonOffice_01_A.uasset" 661
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Roof_01.uasset" 662
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Roof.uasset" 663
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Brick_Elevator_01.uasset" 664
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Roof_Elevator.uasset" 665
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Stairs_Carpet_02.uasset" 666
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Stairs_Top_Cube_01.uasset" 667
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Stairs_Wood_02.uasset" 668
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Stairs.uasset" 669
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Wall_Blank.uasset" 670
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Wall_Elevator.uasset" 671
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Road_01.uasset" 672
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Road_Normal.uasset" 673
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_Texture_Road_01.uasset" 674
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Meshes/Environments/SM_Env_Road_YellowLines_02.uasset" 675
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Emissive_01.uasset" 676
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_01_A.uasset" 677
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_Metallic.uasset" 678
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_Roughness.uasset" 679
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_Texture_01_A.uasset" 680
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Meshes/Environments/SM_Env_Sidewalk_Straight_02.uasset" 681
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Env_Street.uasset" 682
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/game_over_dark_bell_chime_01.uasset" 683
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_SpecialAgentOtto_HUD.uasset" 684
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_PolygonOffice_02_A.uasset" 685
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_PolygonOffice_03_A.uasset" 686
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/Maps/Office.umap" 687
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_StartMenu.uasset" 688
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/Maps/StartMenu.umap" 689
-"../../../Engine/Content/Maps/Entry_BuiltData.uasset" 690
-"../../../Engine/Content/Maps/Entry.umap" 691
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_VolumeBox.uasset" 318
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Icons/arrowLeft.uasset" 319
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Icons/audioOff.uasset" 320
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Icons/audioOn.uasset" 321
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_PauseMenu.uasset" 322
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Props/SM_Prop_Files_01.uasset" 323
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Player/BP_SecretAgent_Otto.uasset" 324
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Camera/ZoomCurve_ElevatingActionCamera.uasset" 325
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Camera/BP_ElevatingActionCamera.uasset" 326
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Camera/BP_Character_Otto_Camera.uasset" 327
+"../../../Engine/Content/Animation/DefaultAnimBoneCompressionSettings.uasset" 328
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Fire_Single.uasset" 329
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Fire_Single_Montage.uasset" 330
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Fire_Single.uasset" 331
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Fire_Single_Montage.uasset" 332
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/Driving.uasset" 333
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Aim_Equip_Get_From_MOB.uasset" 334
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Aim_Idle_IPC.uasset" 335
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/S_CrouchUp_Cue.uasset" 336
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Aim_To_Stand_Aim_IPC.uasset" 337
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Jump_RU_Air_IPC.uasset" 338
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/S_LandWhileMoving_Cue.uasset" 339
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Jump_RU_End_IPC.uasset" 340
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/S_Jump_Cue.uasset" 341
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Jump_RU_Start_IPC.uasset" 342
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Idle_IPC.uasset" 343
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Jump_Air_IPC.uasset" 344
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/S_LandWhileStanding_Cue.uasset" 345
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Jump_End_IPC.uasset" 346
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Jump_Start_IPC.uasset" 347
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/S_CrouchDown_Cue.uasset" 348
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_To_Crouch_Aim_IPC.uasset" 349
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Relaxed_Idle_IPC.uasset" 350
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Loop_IPC.uasset" 351
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Walk_Aim_F_Loop_IPC.uasset" 352
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/Aiming_Movement.uasset" 353
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/S_RunningInOffice_Cue.uasset" 354
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/S_WalkingInOffice_Cue.uasset" 355
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/S_RunningOutsideOffice_Cue.uasset" 356
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/ABP_ElevatingActionCharacter.uasset" 357
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_03_A.uasset" 358
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Materials/Mat_PolygonSpy_01_Otto.uasset" 359
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Player/SK_SecretAgent_Otto.uasset" 360
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Vehicle/Veh_SpyCar_DataConfig.uasset" 361
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_SpecialAgentOtto.uasset" 362
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Door_04.uasset" 363
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_Normal_01.uasset" 364
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_Glass_Windows.uasset" 365
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Door_translucentGlass.uasset" 366
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Door_05.uasset" 367
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Elevator_01.uasset" 368
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Elevator_01_Door.uasset" 369
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Props/SK_Prop_ID_01.uasset" 370
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Weapons/SK_Wep_Pistol_01_PhysicsAsset.uasset" 371
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Weapons/SK_Wep_Pistol_01_Skeleton.uasset" 372
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Weapons/SK_Wep_Pistol_01.uasset" 373
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_02_A.uasset" 374
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_04_A.uasset" 375
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_Emission_01.uasset" 376
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ExplosionSounds/explosion_small_short_01.uasset" 377
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ExplosionSounds/explosion_small_short_02.uasset" 378
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Blueprints/BP_GAP_UnrealProjectile.uasset" 379
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01Grey.uasset" 380
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_AlphaBlended.uasset" 381
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Texturesheets/T_ToonProjectilesVol1_10X10_8K_part1.uasset" 382
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP1_10x10_AB.uasset" 383
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_Additive.uasset" 384
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP1_10x10_Add.uasset" 385
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Bullet01Blue.uasset" 386
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Bullet01Blue.uasset" 387
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/T_Projectile01.uasset" 388
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Projectile01.uasset" 389
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_Additive_Tex.uasset" 390
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Square/T_Square02.uasset" 391
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Square02.uasset" 392
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.uasset" 393
+"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_M.uasset" 394
+"../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_N.uasset" 395
+"../../../Engine/Content/EngineMaterials/WorldGridMaterial.uasset" 396
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_BiPlanar01.uasset" 397
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Bullet01Blue.uasset" 398
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Blueprints/BP_Projectile_Bullet01Red.uasset" 399
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Beam01.uasset" 400
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_Quad.uasset" 401
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_RingMesh01.uasset" 402
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Ball01Blue.uasset" 403
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Bomb01Blue.uasset" 404
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Bomb02Blue.uasset" 405
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Bomb03Blue.uasset" 406
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Texturesheets/T_ToonProjectilesVol1_10X10_8K_part2.uasset" 407
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP2_10x10_Add.uasset" 408
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Fireball01Blue.uasset" 409
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_MegaBomb01Blue.uasset" 410
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Plasma01Blue.uasset" 411
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Plasma02Blue.uasset" 412
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Triangle01Blue.uasset" 413
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/T_Impact04.uasset" 414
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Impact04.uasset" 415
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP2_10x10_AB.uasset" 416
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_Cylinder01.uasset" 417
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Waterball01Blue.uasset" 418
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Ball01Blue.uasset" 419
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Bomb01Blue.uasset" 420
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Bomb02Blue.uasset" 421
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Bomb03Blue.uasset" 422
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_ElectricBall01Blue.uasset" 423
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Fireball01Blue.uasset" 424
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_MegaBomb01Blue.uasset" 425
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Plasma01Blue.uasset" 426
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Plasma02Blue.uasset" 427
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Triangle01Blue.uasset" 428
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Waterball01Blue.uasset" 429
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Ball01Blue.uasset" 430
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Bomb01Blue.uasset" 431
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Bomb02Blue.uasset" 432
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Texturesheets/T_ToonSmokeTrail01_3x3.uasset" 433
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonSmokeTrail01_AB_3x3.uasset" 434
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Bomb03Blue.uasset" 435
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_ElectricBall01Blue.uasset" 436
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_ElectricBall02Blue.uasset" 437
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Texturesheets/T_ToonCircle02_3x3.uasset" 438
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonCircle02_Add_3x3.uasset" 439
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_GradientCenter03.uasset" 440
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise01.uasset" 441
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise02.uasset" 442
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_AdditiveScroll01.uasset" 443
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Trail01_AddScroll.uasset" 444
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_QuadSkewed.uasset" 445
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_Ring01.uasset" 446
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Fireball01Blue.uasset" 447
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_MegaBomb01Blue.uasset" 448
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Plasma01Blue.uasset" 449
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Plasma02Blue.uasset" 450
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_TriangleBlue.uasset" 451
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_WaterBall01.uasset" 452
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01Orange.uasset" 453
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01Red.uasset" 454
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01Violet.uasset" 455
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01White.uasset" 456
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01Yellow.uasset" 457
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam02.uasset" 458
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_VignetteMask.uasset" 459
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_GradientCenter01.uasset" 460
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_GradientCenter02.uasset" 461
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_GradientCenter04.uasset" 462
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_aqua.uasset" 463
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_blue.uasset" 464
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_green.uasset" 465
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_greyscale.uasset" 466
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_red.uasset" 467
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_violet.uasset" 468
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Gradients/T_Gradient_yellow.uasset" 469
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise00.uasset" 470
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise000.uasset" 471
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise03.uasset" 472
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise04.uasset" 473
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise05.uasset" 474
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise06.uasset" 475
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise07.uasset" 476
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise08.uasset" 477
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise09.uasset" 478
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise10.uasset" 479
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise11.uasset" 480
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Noise/T_Noise12.uasset" 481
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Square/T_Square01.uasset" 482
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Square/T_Square03.uasset" 483
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Square/T_Square04.uasset" 484
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Square/T_SunShafts01.uasset" 485
+"../../../Engine/Content/Animation/DefaultAnimCurveCompressionSettings.uasset" 486
+"../../../Engine/Content/ArtTools/RenderToTexture/Meshes/S_1_Unit_Plane.uasset" 487
+"../../../Engine/Content/EngineMaterials/DefaultMaterial.uasset" 488
+"../../../Engine/Content/BasicShapes/Cone.uasset" 489
+"../../../Engine/Content/BasicShapes/Cube.uasset" 490
+"../../../Engine/Content/BasicShapes/Cylinder.uasset" 491
+"../../../Engine/Content/BasicShapes/Plane.uasset" 492
+"../../../Engine/Content/BasicShapes/Sphere.uasset" 493
+"../../../Engine/Content/EditorLandscapeResources/DataLayer.uasset" 494
+"../../../Engine/Content/EditorMaterials/MAT_Groups_Toggle.uasset" 495
+"../../../Engine/Content/EditorMaterials/MAT_Groups_Visibility.uasset" 496
+"../../../Engine/Content/EditorMaterials/PreviewShadowIndicator.uasset" 497
+"../../../Engine/Content/EditorMaterials/PreviewShadowIndicatorMaterial.uasset" 498
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_ColorTrack.uasset" 499
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Anim.uasset" 500
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_AudioMaster.uasset" 501
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Director.uasset" 502
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Event.uasset" 503
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Fade.uasset" 504
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Float.uasset" 505
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Move.uasset" 506
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Slomo.uasset" 507
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Sound.uasset" 508
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Vector.uasset" 509
+"../../../Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset" 510
+"../../../Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_OOD.uasset" 511
+"../../../Engine/Content/EditorMaterials/Camera/CineMat.uasset" 512
+"../../../Engine/Content/EditorMaterials/Camera/MI_CineMat_Rig.uasset" 513
+"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Arm.uasset" 514
+"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Base.uasset" 515
+"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Body.uasset" 516
+"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Mount.uasset" 517
+"../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Mount.uasset" 518
+"../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Track.uasset" 519
+"../../../Engine/Content/EditorResources/BSPVertex.uasset" 520
+"../../../Engine/Content/EditorResources/EmptyActor.uasset" 521
+"../../../Engine/Content/EditorResources/S_Actor.uasset" 522
+"../../../Engine/Content/EditorResources/S_Note.uasset" 523
+"../../../Engine/Content/EditorResources/S_Solver.uasset" 524
+"../../../Engine/Content/EditorResources/S_Trigger.uasset" 525
+"../../../Engine/Content/EditorResources/AudioIcons/S_AudioComponent.uasset" 526
+"../../../Engine/Content/EditorResources/SequenceRecorder/Countdown.uasset" 527
+"../../../Engine/Content/EditorResources/SequenceRecorder/RecordingIndicator.uasset" 528
+"../../../Engine/Content/EditorSounds/Notifications/CompileFailed.uasset" 529
+"../../../Engine/Content/EditorSounds/Notifications/CompileFailed_Cue.uasset" 530
+"../../../Engine/Content/EditorSounds/Notifications/CompileSuccess.uasset" 531
+"../../../Engine/Content/EditorSounds/Notifications/CompileStart_Cue.uasset" 532
+"../../../Engine/Content/EditorSounds/Notifications/CompileSuccess_Cue.uasset" 533
+"../../../Engine/Content/EngineDamageTypes/DmgTypeBP_Environmental.uasset" 534
+"../../../Engine/Content/EngineDebugMaterials/DebugEditorMaterial.uasset" 535
+"../../../Engine/Content/EngineDebugMaterials/DebugMeshMaterial.uasset" 536
+"../../../Engine/Content/EngineDebugMaterials/M_SimpleUnlitTranslucent.uasset" 537
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.uasset" 538
+"../../../Engine/Content/EngineDebugMaterials/VolumeToRender.uasset" 539
+"../../../Engine/Content/EngineDebugMaterials/M_VolumeRenderSphereTracePP.uasset" 540
+"../../../Engine/Content/EngineDebugMaterials/WireframeMaterial.uasset" 541
+"../../../Engine/Content/EngineFonts/Faces/DroidSansFallback.uasset" 542
+"../../../Engine/Content/EngineFonts/Faces/RobotoBold.uasset" 543
+"../../../Engine/Content/EngineFonts/Faces/RobotoBoldItalic.uasset" 544
+"../../../Engine/Content/EngineFonts/Faces/RobotoItalic.uasset" 545
+"../../../Engine/Content/EngineFonts/Faces/RobotoLight.uasset" 546
+"../../../Engine/Content/EngineFonts/Faces/RobotoRegular.uasset" 547
+"../../../Engine/Content/EngineFonts/Roboto.uasset" 548
+"../../../Engine/Content/EngineMaterials/BaseFlattenDiffuseMap.uasset" 549
+"../../../Engine/Content/EngineMaterials/BaseFlattenEmissiveMap.uasset" 550
+"../../../Engine/Content/EngineMaterials/BaseFlattenGrayscaleMap.uasset" 551
+"../../../Engine/Content/EngineMaterials/BaseFlattenNormalMap.uasset" 552
+"../../../Engine/Content/EngineMaterials/BaseFlattenMaterial.uasset" 553
+"../../../Engine/Content/EngineMaterials/BlueNoise.uasset" 554
+"../../../Engine/Content/EngineMaterials/DefaultBloomKernel.uasset" 555
+"../../../Engine/Content/EngineMaterials/DefaultBokeh.uasset" 556
+"../../../Engine/Content/EngineMaterials/DefaultDiffuse.uasset" 557
+"../../../Engine/Content/EngineMaterials/DefaultDeferredDecalMaterial.uasset" 558
+"../../../Engine/Content/EngineMaterials/DefaultLightFunctionMaterial.uasset" 559
+"../../../Engine/Content/EngineMaterials/DefaultPhysicalMaterial.uasset" 560
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.uasset" 561
+"../../../Engine/Content/EngineMaterials/DefaultPostProcessMaterial.uasset" 562
+"../../../Engine/Content/EngineMaterials/DefaultTextMaterialOpaque.uasset" 563
+"../../../Engine/Content/EngineMaterials/DefaultWhiteGrid.uasset" 564
+"../../../Engine/Content/EngineMaterials/DefaultWhiteGrid_Low.uasset" 565
+"../../../Engine/Content/EngineMaterials/EmissiveMeshMaterial.uasset" 566
+"../../../Engine/Content/EngineMaterials/GizmoMaterial.uasset" 567
+"../../../Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.uasset" 568
+"../../../Engine/Content/EngineMaterials/MiniFont.uasset" 569
+"../../../Engine/Content/EngineMaterials/InvalidLightmapSettings.uasset" 570
+"../../../Engine/Content/EngineMaterials/M_InvalidLightmapSettings.uasset" 571
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset.uasset" 572
+"../../../Engine/Content/EngineMaterials/PhAT_JointLimitMaterial.uasset" 573
+"../../../Engine/Content/EngineMaterials/PreintegratedSkinBRDF.uasset" 574
+"../../../Engine/Content/EngineMaterials/RemoveSurfaceMaterial.uasset" 575
+"../../../Engine/Content/EngineMaterials/WeightMapPlaceholderTexture.uasset" 576
+"../../../Engine/Content/EngineResources/WhiteSquareTexture.uasset" 577
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough.uasset" 578
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked.uasset" 579
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque.uasset" 580
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked_OneSided.uasset" 581
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque_OneSided.uasset" 582
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent.uasset" 583
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent_OneSided.uasset" 584
+"../../../Engine/Content/EngineMeshes/Cylinder.uasset" 585
+"../../../Engine/Content/EngineMeshes/Sphere.uasset" 586
+"../../../Engine/Content/EngineResources/Black.uasset" 587
+"../../../Engine/Content/EngineResources/DefaultTexture.uasset" 588
+"../../../Engine/Content/EngineResources/DefaultTextureCube.uasset" 589
+"../../../Engine/Content/EngineResources/DefaultVolumeTexture2D.uasset" 590
+"../../../Engine/Content/EngineResources/DefaultVolumeTexture.uasset" 591
+"../../../Engine/Content/EngineResources/GradientTexture0.uasset" 592
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.uasset" 593
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness.uasset" 594
+"../../../Engine/Content/Maps/Templates/Thumbnails/Default.uasset" 595
+"../../../Engine/Content/Maps/Templates/Thumbnails/TimeOfDay.uasset" 596
+"../../../Engine/Content/Maps/Templates/Thumbnails/VR-Basic.uasset" 597
+"../../../Engine/Content/MobileResources/T_MobileControls_texture.uasset" 598
+"../../../Engine/Content/MobileResources/T_MobileMenu2.uasset" 599
+"../../../Engine/Content/MobileResources/HUD/AnalogHat.uasset" 600
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset" 601
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset" 602
+"../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset" 603
+"../../../Engine/Content/MobileResources/HUD/LeftVirtualJoystickOnly.uasset" 604
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_off.uasset" 605
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_on.uasset" 606
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_off.uasset" 607
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_on.uasset" 608
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton3.uasset" 609
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButtonFire.uasset" 610
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad.uasset" 611
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad2.uasset" 612
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad3.uasset" 613
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionStick.uasset" 614
+"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickInner.uasset" 615
+"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickOutter.uasset" 616
+"../../../Engine/Content/Tutorial/ContentIntroCurve.uasset" 617
+"../../../Engine/Content/Tutorial/Basics/LevelEditorAttract.uasset" 618
+"../../../Engine/Content/Tutorial/Basics/TutorialAssets/icon_tab_Levels_40x.uasset" 619
+"../../../Engine/Content/Tutorial/Basics/LevelEditorOverview.uasset" 620
+"../../../Engine/Content/VREditor/LaserPointer/VR_LaserPower_01.uasset" 621
+"../../../Engine/Content/VREditor/TransformGizmo/TransformGizmoMaterial.uasset" 622
+"../../../Engine/Content/VREditor/TransformGizmo/TranslucentTransformGizmoMaterial.uasset" 623
+"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxCorner.uasset" 624
+"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxEdge.uasset" 625
+"../../../Engine/Content/VREditor/TransformGizmo/PlaneTranslationHandle.uasset" 626
+"../../../Engine/Content/VREditor/TransformGizmo/Main.uasset" 627
+"../../../Engine/Content/VREditor/TransformGizmo/Xray.uasset" 628
+"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Key.uasset" 629
+"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Node.uasset" 630
+"../../Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset" 631
+"../../Plugins/2D/Paper2D/Content/DummySprite.uasset" 632
+"../../Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset" 633
+"../../Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset" 634
+"../../Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset" 635
+"../../Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset" 636
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraBooleanLogicOps.uasset" 637
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCoordinateSpace.uasset" 638
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraExpansionMode.uasset" 639
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraOrientationAxis.uasset" 640
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessMode.uasset" 641
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 642
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2.uasset" 643
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.uasset" 644
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey.uasset" 645
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey_Lit.uasset" 646
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_OpaqueColoredMaterial.uasset" 647
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_WhiteMaterial.uasset" 648
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/LampBreakingSounds/S_CeilingLampGlassBreak_Cue.uasset" 649
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Props/Roof/SM_Prop_Light_04.uasset" 650
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_ElectricBall01Blue.uasset" 651
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Ceiling_Lamp.uasset" 652
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Meshes/SM_Bld_ElevatorButton.uasset" 653
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Elevator_01.uasset" 654
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_03.uasset" 655
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_03_Glass.uasset" 656
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_04.uasset" 657
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_04_Glass.uasset" 658
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Window_Awning_01.uasset" 659
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Window_Cover_Pole_01.uasset" 660
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Basement.uasset" 661
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Materials/Mat_PolygonOffice_01_A.uasset" 662
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Roof_01.uasset" 663
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Roof.uasset" 664
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Brick_Elevator_01.uasset" 665
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Roof_Elevator.uasset" 666
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Stairs_Carpet_02.uasset" 667
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Stairs_Top_Cube_01.uasset" 668
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Stairs_Wood_02.uasset" 669
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Stairs.uasset" 670
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Wall_Blank.uasset" 671
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Wall_Elevator.uasset" 672
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Road_01.uasset" 673
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Road_Normal.uasset" 674
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_Texture_Road_01.uasset" 675
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Meshes/Environments/SM_Env_Road_YellowLines_02.uasset" 676
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Emissive_01.uasset" 677
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_01_A.uasset" 678
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_Metallic.uasset" 679
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_Roughness.uasset" 680
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_Texture_01_A.uasset" 681
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Meshes/Environments/SM_Env_Sidewalk_Straight_02.uasset" 682
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Env_Street.uasset" 683
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/game_over_dark_bell_chime_01.uasset" 684
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_SpecialAgentOtto_HUD.uasset" 685
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_PolygonOffice_02_A.uasset" 686
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_PolygonOffice_03_A.uasset" 687
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/Maps/Office.umap" 688
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_StartMenu.uasset" 689
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/Maps/StartMenu.umap" 690
+"../../../Engine/Content/Maps/Entry_BuiltData.uasset" 691
+"../../../Engine/Content/Maps/Entry.umap" 692
