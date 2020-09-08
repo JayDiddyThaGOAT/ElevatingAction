@@ -125,15 +125,12 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                     {
                         if (ObjectBetweenSecretAgents().Actor == SecretAgentOtto)
                         {
-                            if (SecretAgentAI->GetCharacterMovement()->IsCrouching())
+                            if (SecretAgentAI->GetCharacterMovement()->IsCrouching() && IsValid(SecretAgentOttoLastShotProjectile))
                             {
-                                if (IsValid(SecretAgentOttoLastShotProjectile))
-                                {
-                                    FVector ProjectileLocation = SecretAgentOttoLastShotProjectile->GetActorForwardVector();
-                                    FVector DirectionToProjectile = (SecretAgentAI->GetActorLocation() - SecretAgentOttoLastShotProjectile->GetActorLocation()).GetSafeNormal();
-                                    if (FVector::DotProduct(ProjectileLocation, DirectionToProjectile) < 0.0f)
-                                        SecretAgentAI->ToggleCrouch();
-                                }
+                                FVector ProjectileLocation = SecretAgentOttoLastShotProjectile->GetActorForwardVector();
+                                FVector DirectionToProjectile = (SecretAgentAI->GetActorLocation() - SecretAgentOttoLastShotProjectile->GetActorLocation()).GetSafeNormal();
+                                if (FVector::DotProduct(ProjectileLocation, DirectionToProjectile) < 0.0f)
+                                    SecretAgentAI->ToggleCrouch();
                             }
                             
                             if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
@@ -166,8 +163,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                             {
                                 SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
                                 
-                                if (!UKismetMathLibrary::NearlyEqual_FloatFloat(PercentRequiredAIShootPlayerWhileMoving, 0.0f) &&
-                                    PercentRequiredAIShootPlayerWhileMoving > PercentChanceAIShootPlayerWhileMoving)
+                                if (PercentRequiredAIShootPlayerWhileMoving < PercentChanceAIShootPlayerWhileMoving)
                                 {
                                     float CurrentShootPistolDelay = !bIsOfficeBlackedOut ? ShootPistolDelay : ShootPistolDelay + 2.0f;
                             
@@ -182,8 +178,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                         }
                         else if (ObjectBetweenSecretAgents().Actor->GetInstigator() == SecretAgentOtto)
                         {
-                            if  (!UKismetMathLibrary::NearlyEqual_FloatFloat(PercentRequiredAIDodgesPlayerProjectiles, 0.0f) &&
-                                PercentRequiredAIDodgesPlayerProjectiles > PercentChanceAIDodgesPlayerProjectiles)
+                            if (PercentRequiredAIDodgesPlayerProjectiles < PercentChanceAIDodgesPlayerProjectiles)
                             {
                                 SecretAgentOttoLastShotProjectile = ObjectBetweenSecretAgents().GetActor();
                                
