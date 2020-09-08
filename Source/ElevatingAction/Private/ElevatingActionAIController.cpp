@@ -289,10 +289,10 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                 {
                                     int32 ElevatorMinFloorNumber = Elevator->GetMinFloorNumber();
                                     int32 ElevatorMaxFloorNumber = Elevator->GetMaxFloorNumber();
-                           
+                       
                                     bool bElevatorCantGoDownToOtto = SecretAgentAIFloorNumber == ElevatorMinFloorNumber && SecretAgentAIFloorNumber > SecretAgentOttoFloorNumber;
                                     bool bElevatorCantGoUpToOtto = SecretAgentAIFloorNumber == ElevatorMaxFloorNumber && SecretAgentAIFloorNumber < SecretAgentOttoFloorNumber;
-                           
+                       
                                     if (UKismetMathLibrary::NearlyEqual_FloatFloat(DistanceX, 0.0f, 1.0f) && !bElevatorCantGoDownToOtto && !bElevatorCantGoUpToOtto)
                                     {
                                         SecretAgentAI->Transition();
@@ -315,6 +315,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                             else if (TracedElevator && !TracedElevator->GetOwner())
                             {
                                 SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
+                                
                                 PatrolTime += DeltaTime;
                             
                                 AElevator* Elevator = SecretAgentAI->GetTracedElevator();
@@ -323,7 +324,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                         
                                 float DistanceX = ((TracedElevator->GetActorLocation() + FVector::ForwardVector * 125.0f) - SecretAgentAI->GetActorLocation()).X;
 
-                                bool bAtMiddleOfElevator = UKismetMathLibrary::NearlyEqual_FloatFloat(DistanceX, 0.0f, 1.0f);
+                                bool bAtMiddleOfElevator = UKismetMathLibrary::NearlyEqual_FloatFloat(DistanceX, 0.0f, 5.0f);
                                 bool bCantGoLeftOrRight = !(bCanGoLeft && bCanGoRight);
                                 bool bElevatorCantGoDownToOtto = SecretAgentAIFloorNumber == ElevatorMinFloorNumber && SecretAgentAIFloorNumber > SecretAgentOttoFloorNumber;
                                 bool bElevatorCantGoUpToOtto = SecretAgentAIFloorNumber == ElevatorMaxFloorNumber && SecretAgentAIFloorNumber < SecretAgentOttoFloorNumber;
@@ -436,33 +437,54 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                 {
                     PercentChanceAIShootPlayerWhileMoving = UKismetMathLibrary::RandomFloat();
                     PercentChanceAIDodgesPlayerProjectiles = UKismetMathLibrary::RandomFloat();
+
+                    if (ObjectBetweenSecretAgents().Actor == SecretAgentOtto)
+                    {
+                        bBlockedByWall = false;
+                        
+                        if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
+                            DirectionVector = FVector::ForwardVector;
+                        else if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
+                            DirectionVector = FVector::BackwardVector;
+                    }
+                    else if (ObjectBetweenSecretAgents().Actor->GetName().Contains("Office"))
+                    {
+                        bBlockedByWall = true;
+                        
+                        if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
+                            DirectionVector = FVector::BackwardVector;
+                        else if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
+                            DirectionVector = FVector::ForwardVector;
+                    }
                     
                     PatrolTime = 0.0f;
                 }
-
-                if (GetWorld()->LineTraceSingleByObjectType(WallHitResult, SecretAgentAILeftSide, SecretAgentAIRightSide, WallObjectQueryParams, CollisionQueryParams))
-                {
-                    bBlockedByWall = true;
-                    
-                    if (WallHitResult.Location.X < SecretAgentAI->GetActorLocation().X)
-                        DirectionVector = FVector::BackwardVector;
-                    else if (WallHitResult.Location.X > SecretAgentAI->GetActorLocation().X)
-                        DirectionVector = FVector::ForwardVector;
-                }
                 else
                 {
-                    bBlockedByWall = false;
-                    
-                    AActor* TracedStairs = SecretAgentAI->GetTracedStairs();
-                    if (TracedStairs)
+                    if (GetWorld()->LineTraceSingleByObjectType(WallHitResult, SecretAgentAILeftSide, SecretAgentAIRightSide, WallObjectQueryParams, CollisionQueryParams))
                     {
-                        if (TracedStairs->GetName().Contains("Left") && SecretAgentAIFloorNumber >= 17)
-                            DirectionVector = FVector::ForwardVector;
-                        else if (TracedStairs->GetName().Contains("Right") && SecretAgentAIFloorNumber >= 16)
+                        bBlockedByWall = true;
+                    
+                        if (WallHitResult.Location.X < SecretAgentAI->GetActorLocation().X)
                             DirectionVector = FVector::BackwardVector;
+                        else if (WallHitResult.Location.X > SecretAgentAI->GetActorLocation().X)
+                            DirectionVector = FVector::ForwardVector;
                     }
                     else
-                        DirectionVector = UKismetMathLibrary::RandomBool() ? FVector::ForwardVector : FVector::BackwardVector;
+                    {
+                        bBlockedByWall = false;
+                    
+                        AActor* TracedStairs = SecretAgentAI->GetTracedStairs();
+                        if (TracedStairs)
+                        {
+                            if (TracedStairs->GetName().Contains("Left") && SecretAgentAIFloorNumber >= 17)
+                                DirectionVector = FVector::ForwardVector;
+                            else if (TracedStairs->GetName().Contains("Right") && SecretAgentAIFloorNumber >= 16)
+                                DirectionVector = FVector::BackwardVector;
+                        }
+                        else
+                            DirectionVector = UKismetMathLibrary::RandomBool() ? FVector::ForwardVector : FVector::BackwardVector;
+                    }
                 }
             }
             else if (SecretAgentAITransition == ETransitionState::Enter)
