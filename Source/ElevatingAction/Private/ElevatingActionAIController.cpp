@@ -25,6 +25,9 @@ AElevatingActionAIController::AElevatingActionAIController()
 
     PercentChanceAIDodgesPlayerProjectiles = 0.0f;
     PercentRequiredAIDodgesPlayerProjectiles = 0.0f;
+    
+    PercentChanceAIFollowsPlayerCrouching = 0.0f;
+    PercentRequiredAIFollowsPlayerCrouching = 0.0f;
 
     bCanGoToSecretAgentOtto = true;
     bBlockedByWall = false;
@@ -158,6 +161,17 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                     SecretAgentAI->ShootPistol();
                                     ShootPistolTime = 0.0f;
                                 }
+                                else
+                                {
+                                    if (PercentChanceAIFollowsPlayerCrouching > PercentRequiredAIFollowsPlayerCrouching)
+                                    {
+                                        if (SecretAgentAI->GetCharacterMovement()->IsCrouching() != SecretAgentOtto->GetCharacterMovement()->IsCrouching())
+                                        {
+                                            SecretAgentAI->ToggleCrouch();
+                                            PercentChanceAIFollowsPlayerCrouching = UKismetMathLibrary::RandomFloat();
+                                        }
+                                    }
+                                }
                             }
                             else
                             {
@@ -172,6 +186,17 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                     {
                                         SecretAgentAI->ShootPistol();
                                         ShootPistolTime = 0.0f;
+                                    }
+                                    else
+                                    {
+                                        if (PercentChanceAIFollowsPlayerCrouching > PercentRequiredAIFollowsPlayerCrouching)
+                                        {
+                                            if (SecretAgentAI->GetCharacterMovement()->IsCrouching() != SecretAgentOtto->GetCharacterMovement()->IsCrouching())
+                                            {
+                                                SecretAgentAI->ToggleCrouch();
+                                                PercentChanceAIFollowsPlayerCrouching = UKismetMathLibrary::RandomFloat();
+                                            }
+                                        }
                                     }
                                 }
                             }

@@ -45,6 +45,9 @@ public:
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccessOnly = "true"), Category = Attacking)
 	float PercentRequiredAIDodgesPlayerProjectiles;
 
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccessOnly = "true"), Category = Attacking)
+	float PercentRequiredAIFollowsPlayerCrouching;
+
 private:
 	class AElevatingActionSecretAgent* SecretAgentAI;
 	class AElevatingActionSecretAgent* SecretAgentOtto;
@@ -59,6 +62,7 @@ private:
 
 	float PercentChanceAIShootPlayerWhileMoving;
 	float PercentChanceAIDodgesPlayerProjectiles;
+	float PercentChanceAIFollowsPlayerCrouching;
 
 	FVector DirectionVector;
 };
