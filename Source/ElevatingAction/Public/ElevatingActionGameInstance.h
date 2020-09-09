@@ -18,12 +18,16 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Score)
     void ResetGame();
 
-	UFUNCTION(BlueprintPure, Category = Score)
-    int32 GetNumberOfPlayerLives();
-
 	UFUNCTION(BlueprintPure, Category = Lighting)
     bool IsOfficeBlackedOut() const;
 
+	UFUNCTION(BlueprintPure, Category = Level)
+    bool IsMaxSecretAgentsMovingReached() const;
+	
+	void SetCurrentSecretAgentsMoving(int32 CurrentSecretAgentsMoving);
+	int32 GetNumberOfPlayerLives();
+	int32 GetCurrentSecretAgentsMoving() const;
+	
 private:
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Health)
 	int32 PlayerLives;
@@ -45,6 +49,12 @@ private:
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Level)
 	TMap<int32, FInt32Range> SecretFileCounts;
+
+	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Level)
+	int32 MaxSecretAgentsMoving;
+
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Level)
+	int32 CurrentSecretAgentsMoving;
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Blackout)
 	float BlackoutDuration;

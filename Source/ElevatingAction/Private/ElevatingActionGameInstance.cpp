@@ -10,6 +10,8 @@ UElevatingActionGameInstance::UElevatingActionGameInstance()
     LevelNumber = 1;
     PlayerLives = 3;
     PercentChanceNewSecretAgentsSpawn = 0.0f;
+    MaxSecretAgentsMoving = 15;
+    CurrentSecretAgentsMoving = 0;
 
     bIsOfficeBlackedOut = false;
     BlackoutDuration = 5.0f;
@@ -48,6 +50,8 @@ void UElevatingActionGameInstance::ResetGame()
     PlayerLives = 3;
 
     PercentChanceNewSecretAgentsSpawn = 0.0f;
+    MaxSecretAgentsMoving = 15;
+    CurrentSecretAgentsMoving = 0;
 }
 
 int32 UElevatingActionGameInstance::GetNumberOfPlayerLives()
@@ -58,4 +62,19 @@ int32 UElevatingActionGameInstance::GetNumberOfPlayerLives()
 bool UElevatingActionGameInstance::IsOfficeBlackedOut() const
 {
     return bIsOfficeBlackedOut;
+}
+
+bool UElevatingActionGameInstance::IsMaxSecretAgentsMovingReached() const
+{
+    return CurrentSecretAgentsMoving >= MaxSecretAgentsMoving;
+}
+
+int32 UElevatingActionGameInstance::GetCurrentSecretAgentsMoving() const
+{
+    return CurrentSecretAgentsMoving;
+}
+
+void UElevatingActionGameInstance::SetCurrentSecretAgentsMoving(int32 CurrentSecretAgents)
+{
+    CurrentSecretAgentsMoving = CurrentSecretAgents;
 }

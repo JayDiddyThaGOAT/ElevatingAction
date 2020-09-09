@@ -466,6 +466,7 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 				Score = FMath::RoundToInt(DamageTaken);
 
 			GameInstance->AddPlayerScore(Score);
+			GameInstance->SetCurrentSecretAgentsMoving(GameInstance->GetCurrentSecretAgentsMoving() - 1);
 		}
 	}
 	else
@@ -480,7 +481,8 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 
 	if (TracedElevator)
 	{
-		TracedElevator->SetOwner(nullptr);
+		if (TracedElevator->GetOwner() == this)
+			TracedElevator->SetOwner(nullptr);
 
 		if (!TracedElevator->HasElevatorPassedStopTime())
 			TracedElevator->ResetStopTime();
@@ -537,16 +539,19 @@ void AElevatingActionSecretAgent::Destroyed()
 {
 	Super::Destroyed();
 
+	UElevatingActionGameInstance* GameInstance = Cast<UElevatingActionGameInstance>(GetWorld()->GetGameInstance());
+	if (GameInstance)
+		GameInstance->SetCurrentSecretAgentsMoving(GameInstance->GetCurrentSecretAgentsMoving() - 1);
+
 	if (IsValid(Pistol))
 		Pistol->Destroy();
 
 	if (IsValid(TracedElevator))
 	{
-		TracedElevator->SetOwner(nullptr);
-
 		if (!TracedElevator->HasElevatorPassedStopTime())
 			TracedElevator->ResetStopTime();
-		
+
+		TracedElevator->SetOwner(nullptr);
 		TracedElevator = nullptr;
 	}
 	else if (IsValid(TracedDoor))
