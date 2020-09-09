@@ -1,6 +1,5 @@
 
 #include "ElevatingActionAIController.h"
-
 #include "ElevatingActionGameInstance.h"
 #include "Components/CapsuleComponent.h"
 #include "Elevator.h"
@@ -440,71 +439,78 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
             else if (SecretAgentAITransition == ETransitionState::Exit)
             {
                 FHitResult WallHitResult;
-                FVector SecretAgentAILeftSide = SecretAgentAI->GetMesh()->GetSocketLocation(TEXT("spine_03")) + FVector::BackwardVector * 500.0f;
-                FVector SecretAgentAIRightSide = SecretAgentAI->GetMesh()->GetSocketLocation(TEXT("spine_03")) + FVector::ForwardVector * 500.0f;
-                FCollisionQueryParams CollisionQueryParams = SecretAgentAI->GetCollisionQueryParams();
-
-                FCollisionObjectQueryParams WallObjectQueryParams;
-                WallObjectQueryParams.AddObjectTypesToQuery(ECC_WorldStatic);
-
-                if (SecretAgentAIFloorNumber == SecretAgentOttoFloorNumber)
+                
+                FVector SecretAgentAILeftSide = FVector::ZeroVector;
+                FVector SecretAgentAIRightSide = FVector::ZeroVector;
+                
+                if (SecretAgentAILocation == ELocationState::Room || SecretAgentAILocation == ELocationState::Elevator)
                 {
-                    PercentChanceAIShootPlayerWhileMoving = UKismetMathLibrary::RandomFloat();
-                    PercentChanceAIDodgesPlayerProjectiles = UKismetMathLibrary::RandomFloat();
-
-                    if (ObjectBetweenSecretAgents().Actor == SecretAgentOtto)
-                    {
-                        bBlockedByWall = false;
-                        
-                        if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
-                            DirectionVector = FVector::ForwardVector;
-                        else if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
-                            DirectionVector = FVector::BackwardVector;
-                    }
-                    else if (ObjectBetweenSecretAgents().Actor->GetName().Contains("Office"))
-                    {
-                        bBlockedByWall = true;
-                        
-                        if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
-                            DirectionVector = FVector::BackwardVector;
-                        else if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
-                            DirectionVector = FVector::ForwardVector;
-                    }
-                    
-                    PatrolTime = 0.0f;
+                    SecretAgentAILeftSide = SecretAgentAI->GetMesh()->GetSocketLocation(TEXT("eyes")) + FVector::BackwardVector * 120.0f;
+                    SecretAgentAIRightSide = SecretAgentAI->GetMesh()->GetSocketLocation(TEXT("eyes")) + FVector::ForwardVector * 120.0f;
                 }
-                else
+                else if (SecretAgentAILocation == ELocationState::Stairs)
                 {
-                    if (GetWorld()->LineTraceSingleByObjectType(WallHitResult, SecretAgentAILeftSide, SecretAgentAIRightSide, WallObjectQueryParams, CollisionQueryParams))
+                    AActor* SecretAgentAITracedStairs = SecretAgentAI->GetTracedStairs();
+
+                    if (SecretAgentAI->CanGoUpStairs())
                     {
-                        bBlockedByWall = true;
-                    
-                        if (WallHitResult.Location.X < SecretAgentAI->GetActorLocation().X)
-                            DirectionVector = FVector::BackwardVector;
-                        else if (WallHitResult.Location.X > SecretAgentAI->GetActorLocation().X)
+                        if (SecretAgentAITracedStairs->GetActorLocation().X < 0.0f)
                             DirectionVector = FVector::ForwardVector;
+                        else if (SecretAgentAITracedStairs->GetActorLocation().X > 0.0f)
+                            DirectionVector = FVector::BackwardVector;
+                    }
+                    else if (SecretAgentAI->CanGoDownStairs())
+                    {
+                        if (SecretAgentAIFloorNumber == 17 && SecretAgentAITracedStairs->GetActorLocation().X < 0.0f)
+                            DirectionVector = FVector::ForwardVector;
+                        else if (SecretAgentAIFloorNumber == 16 && SecretAgentAITracedStairs->GetActorLocation().X > 0.0f)
+                            DirectionVector = FVector::BackwardVector;
+                        else
+                        {
+                            if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
+                                DirectionVector = FVector::BackwardVector;
+                            else if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
+                                DirectionVector = FVector::ForwardVector;
+                        }
+                    }
+                }
+
+                if (SecretAgentAILeftSide.Equals(SecretAgentAIRightSide))
+                    return;
+
+                if (DirectionVector.Equals(FVector::ZeroVector))
+                {
+                    if (GetWorld()->LineTraceSingleByChannel(WallHitResult, SecretAgentAILeftSide, SecretAgentAIRightSide,
+                            ECC_Visibility, SecretAgentAI->GetCollisionQueryParams()))
+                    {
+                        if (WallHitResult.Component->GetName() == TEXT("HallwayWalls"))
+                        {
+                            if (WallHitResult.Location.X < SecretAgentAI->GetActorLocation().X)
+                                DirectionVector = FVector::BackwardVector;
+                            else if (WallHitResult.Location.X > SecretAgentAI->GetActorLocation().X)
+                                DirectionVector = FVector::ForwardVector;
+                        }
                     }
                     else
                     {
-                        bBlockedByWall = false;
-                    
-                        AActor* TracedStairs = SecretAgentAI->GetTracedStairs();
-                        if (TracedStairs)
+                        if ((SecretAgentOttoLocation == ELocationState::Hallway || SecretAgentOttoLocation == ELocationState::Stairs) &&
+                            SecretAgentOttoFloorNumber > SecretAgentAIFloorNumber)
                         {
-                            if (TracedStairs->GetName().Contains("Left") && SecretAgentAIFloorNumber >= 17)
-                                DirectionVector = FVector::ForwardVector;
-                            else if (TracedStairs->GetName().Contains("Right") && SecretAgentAIFloorNumber >= 16)
+                            if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
                                 DirectionVector = FVector::BackwardVector;
+                            else if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
+                                DirectionVector = FVector::ForwardVector;
                         }
                         else
                             DirectionVector = UKismetMathLibrary::RandomBool() ? FVector::ForwardVector : FVector::BackwardVector;
                     }
                 }
+                
             }
             else if (SecretAgentAITransition == ETransitionState::Enter)
             {
-                if (bBlockedByWall)
-                    bBlockedByWall = false;
+                bBlockedByWall = false;
+                DirectionVector = FVector::ZeroVector;
             }
         }
         else
