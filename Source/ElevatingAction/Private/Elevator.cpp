@@ -2,7 +2,6 @@
 #include "Elevator.h"
 #include "ElevatingActionSecretAgent.h"
 #include "Kismet/GameplayStatics.h"
-#include "Kismet/KismetMathLibrary.h"
 
 AElevator::AElevator()
 {
@@ -274,7 +273,6 @@ void AElevator::GoToNextFloor(EDirectionState Direction)
 				{
 					ElevatorMovingAudioComponent->SetSound(ElevatorMovingUpSoundWave);
 					ElevatorMovingAudioComponent->Play();
-					UE_LOG(LogTemp, Warning, TEXT("PLAYING UP"));
 				}
 			}
 		}
@@ -297,7 +295,6 @@ void AElevator::GoToNextFloor(EDirectionState Direction)
 				{
 					ElevatorMovingAudioComponent->SetSound(ElevatorMovingDownSoundWave);
 					ElevatorMovingAudioComponent->Play();
-					UE_LOG(LogTemp, Warning, TEXT("PLAYING DOWN"));
 				}
 			}
 		}
@@ -308,42 +305,12 @@ void AElevator::GoToNextFloor(EDirectionState Direction)
 
 void AElevator::GoToFloor(int32 FloorNumber)
 {
-	if (ElevatorMovingAudioComponent->IsPlaying() && ElevatorMovingAudioComponent->Sound == ElevatorDoorsClosingSoundWave)
-		return;
-	
 	if (FloorNumber > CurrentFloorNumber)
-	{
 		ElevatorDirection = EDirectionState::Up;
-
-		if (GetOwner())
-		{
-			AElevatingActionSecretAgent* ThisSecretAgent = Cast<AElevatingActionSecretAgent>(GetOwner());
-			
-			if (Cast<APlayerController>(ThisSecretAgent->GetController()))
-			{
-				ElevatorMovingAudioComponent->SetSound(ElevatorMovingUpSoundWave);
-				ElevatorMovingAudioComponent->Play();
-			}
-		}
-	}
 	else if (FloorNumber < CurrentFloorNumber)
-	{
 		ElevatorDirection = EDirectionState::Down;
-
-		if (GetOwner())
-		{
-			AElevatingActionSecretAgent* ThisSecretAgent = Cast<AElevatingActionSecretAgent>(GetOwner());
-			
-			if (Cast<APlayerController>(ThisSecretAgent->GetController()))
-			{
-				ElevatorMovingAudioComponent->SetSound(ElevatorMovingDownSoundWave);
-				ElevatorMovingAudioComponent->Play();
-			}
-		}
-	}
 	
 	CurrentTargetFloorNumber = FMath::Clamp(FloorNumber, MinFloorNumber, MaxFloorNumber);
-
 	ElevatorStoppedTime = 0.0f;
 }
 
