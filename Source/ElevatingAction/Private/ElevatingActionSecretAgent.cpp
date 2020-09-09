@@ -2,6 +2,7 @@
 #include "ElevatingActionSecretAgent.h"
 
 #include "DrawDebugHelpers.h"
+#include "ElevatingActionAIController.h"
 #include "ElevatingActionGameInstance.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -529,6 +530,8 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 	{
 		if (IsValid(DeathCue))
 			UGameplayStatics::PlaySoundAtLocation(GetWorld(), DeathCue, GetMesh()->GetSocketLocation(TEXT("head")));
+		
+		GetController()->Destroy();
 	}
 	
 	bIsDamaged = true;
@@ -571,6 +574,12 @@ void AElevatingActionSecretAgent::Destroyed()
 	{
 		TracedElevatorButton->SetButtonBrightness(1.0f);
 		TracedElevatorButton = nullptr;
+	}
+
+	if (Cast<AElevatingActionAIController>(GetController()))
+	{
+		if (IsValid(GetController()))
+			GetController()->Destroy();
 	}
 }
 

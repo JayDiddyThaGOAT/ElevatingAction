@@ -413,7 +413,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
 
                     if (Elevator->AreDoorsMoving() || !Elevator->AreDoorsClosed())
                     {
-                        if (Elevator->GetCurrentFloorNumber() == ElevatorTargetFloor)
+                        if (Elevator->GetCurrentFloorNumber() == ElevatorTargetFloor && SecretAgentOttoLocation == ELocationState::Hallway)
                         {
                             SecretAgentAI->StartTransition();
                             SecretAgentAI->Transition();
@@ -438,6 +438,33 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
             }
             else if (SecretAgentAITransition == ETransitionState::Exit)
             {
+                if (SecretAgentOttoFloorNumber == SecretAgentAIFloorNumber && SecretAgentOttoLocation == ELocationState::Hallway)
+                {
+                    PercentChanceAIShootPlayerWhileMoving = UKismetMathLibrary::RandomFloat();
+                    PercentChanceAIDodgesPlayerProjectiles = UKismetMathLibrary::RandomFloat();
+                    
+                    if (ObjectBetweenSecretAgents().Actor == SecretAgentOtto)
+                    {
+                        bBlockedByWall = false;
+                        
+                        if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
+                            DirectionVector = FVector::ForwardVector;
+                        else if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
+                            DirectionVector = FVector::BackwardVector;
+                    }
+                    else if (ObjectBetweenSecretAgents().Component->GetName().Equals(TEXT("HallwayWalls")))
+                    {
+                        bBlockedByWall = true;
+                        
+                        if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
+                            DirectionVector = FVector::BackwardVector;
+                        else if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
+                            DirectionVector = FVector::ForwardVector;
+                    }
+                    
+                    PatrolTime = 0.0f;
+                }
+                
                 FHitResult WallHitResult;
                 
                 FVector SecretAgentAILeftSide = FVector::ZeroVector;
@@ -452,25 +479,28 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                 {
                     AActor* SecretAgentAITracedStairs = SecretAgentAI->GetTracedStairs();
 
-                    if (SecretAgentAI->CanGoUpStairs())
+                    if (IsValid(SecretAgentAITracedStairs))
                     {
-                        if (SecretAgentAITracedStairs->GetActorLocation().X < 0.0f)
-                            DirectionVector = FVector::ForwardVector;
-                        else if (SecretAgentAITracedStairs->GetActorLocation().X > 0.0f)
-                            DirectionVector = FVector::BackwardVector;
-                    }
-                    else if (SecretAgentAI->CanGoDownStairs())
-                    {
-                        if (SecretAgentAIFloorNumber == 17 && SecretAgentAITracedStairs->GetActorLocation().X < 0.0f)
-                            DirectionVector = FVector::ForwardVector;
-                        else if (SecretAgentAIFloorNumber == 16 && SecretAgentAITracedStairs->GetActorLocation().X > 0.0f)
-                            DirectionVector = FVector::BackwardVector;
-                        else
+                        if (SecretAgentAI->CanGoUpStairs())
                         {
-                            if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
-                                DirectionVector = FVector::BackwardVector;
-                            else if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
+                            if (SecretAgentAITracedStairs->GetActorLocation().X < 0.0f)
                                 DirectionVector = FVector::ForwardVector;
+                            else if (SecretAgentAITracedStairs->GetActorLocation().X > 0.0f)
+                                DirectionVector = FVector::BackwardVector;
+                        }
+                        else if (SecretAgentAI->CanGoDownStairs())
+                        {
+                            if (SecretAgentAIFloorNumber == 17 && SecretAgentAITracedStairs->GetActorLocation().X < 0.0f)
+                                DirectionVector = FVector::ForwardVector;
+                            else if (SecretAgentAIFloorNumber == 16 && SecretAgentAITracedStairs->GetActorLocation().X > 0.0f)
+                                DirectionVector = FVector::BackwardVector;
+                            else
+                            {
+                                if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
+                                    DirectionVector = FVector::BackwardVector;
+                                else if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
+                                    DirectionVector = FVector::ForwardVector;
+                            }
                         }
                     }
                 }
@@ -485,6 +515,8 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                     {
                         if (WallHitResult.Component->GetName() == TEXT("HallwayWalls"))
                         {
+                            bBlockedByWall = true;
+                            
                             if (WallHitResult.Location.X < SecretAgentAI->GetActorLocation().X)
                                 DirectionVector = FVector::BackwardVector;
                             else if (WallHitResult.Location.X > SecretAgentAI->GetActorLocation().X)
@@ -493,6 +525,8 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                     }
                     else
                     {
+                        bBlockedByWall = false;
+                        
                         if ((SecretAgentOttoLocation == ELocationState::Hallway || SecretAgentOttoLocation == ELocationState::Stairs) &&
                             SecretAgentOttoFloorNumber > SecretAgentAIFloorNumber)
                         {
