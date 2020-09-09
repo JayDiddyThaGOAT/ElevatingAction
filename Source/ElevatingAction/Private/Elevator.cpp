@@ -269,8 +269,13 @@ void AElevator::GoToNextFloor(EDirectionState Direction)
 			
 			if (Cast<APlayerController>(ThisSecretAgent->GetController()))
 			{
-				ElevatorMovingAudioComponent->SetSound(ElevatorMovingUpSoundWave);
-				ElevatorMovingAudioComponent->Play();
+				if (!ElevatorMovingAudioComponent->IsPlaying() ||
+                    (ElevatorMovingAudioComponent->IsPlaying() && ElevatorMovingAudioComponent->Sound == ElevatorMovingDownSoundWave))
+				{
+					ElevatorMovingAudioComponent->SetSound(ElevatorMovingUpSoundWave);
+					ElevatorMovingAudioComponent->Play();
+					UE_LOG(LogTemp, Warning, TEXT("PLAYING UP"));
+				}
 			}
 		}
 	}
@@ -287,8 +292,13 @@ void AElevator::GoToNextFloor(EDirectionState Direction)
 			
 			if (Cast<APlayerController>(ThisSecretAgent->GetController()))
 			{
-				ElevatorMovingAudioComponent->SetSound(ElevatorMovingDownSoundWave);
-				ElevatorMovingAudioComponent->Play();
+				if (!ElevatorMovingAudioComponent->IsPlaying() ||
+					(ElevatorMovingAudioComponent->IsPlaying() && ElevatorMovingAudioComponent->Sound == ElevatorMovingUpSoundWave))
+				{
+					ElevatorMovingAudioComponent->SetSound(ElevatorMovingDownSoundWave);
+					ElevatorMovingAudioComponent->Play();
+					UE_LOG(LogTemp, Warning, TEXT("PLAYING DOWN"));
+				}
 			}
 		}
 	}
