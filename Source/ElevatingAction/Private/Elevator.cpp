@@ -46,6 +46,7 @@ AElevator::AElevator()
 		RightDoor->SetStaticMesh(ElevatorDoorMesh.Object);
 
 	ElevatorMovingAudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("MovingAudio"));
+	ElevatorMovingAudioComponent->SetupAttachment(RootComponent);
 	ElevatorMovingAudioComponent->SetRelativeLocation(FVector(125.0f, -125.0f, 90.15f));
 	ElevatorMovingAudioComponent->SetAutoActivate(false);
 
