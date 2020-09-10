@@ -46,6 +46,7 @@ AElevator::AElevator()
 		RightDoor->SetStaticMesh(ElevatorDoorMesh.Object);
 
 	ElevatorMovingAudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("MovingAudio"));
+	ElevatorMovingAudioComponent->SetRelativeLocation(FVector(125.0f, -125.0f, 90.15f));
 	ElevatorMovingAudioComponent->SetAutoActivate(false);
 
 	static ConstructorHelpers::FObjectFinder<USoundWave> MovingUp(TEXT("SoundWave'/Game/ElevatingActionAudio/GameMasterAudio/ElevatorMoving/elevator_loop_02.elevator_loop_02'"));
@@ -121,22 +122,24 @@ void AElevator::Tick(float DeltaSeconds)
 		{
 			CurrentFloorNumber = CurrentTargetFloorNumber;
 			
-			if (ElevatorMovingAudioComponent->IsPlaying() && ElevatorStoppedTime > 0.009f)
+			if (ElevatorStoppedTime > 0.009f)
 			{
-				if (ElevatorMovingAudioComponent->Sound == ElevatorMovingUpSoundWave || ElevatorMovingAudioComponent->Sound == ElevatorMovingDownSoundWave)
-					ElevatorMovingAudioComponent->Stop();
-				
-			}
-
-			if (ElevatorButtonCaller && CurrentFloorNumber == ElevatorButtonCaller->GetCurrentFloorNumber())
-			{
-				AElevatingActionSecretAgent* PlayerSecretAgent = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
-				if (IsValid(PlayerSecretAgent) && CurrentFloorNumber == PlayerSecretAgent->GetCurrentFloorNumber())
+				if (ElevatorMovingAudioComponent->IsPlaying())
 				{
-					if (PlayerSecretAgent->GetCurrentLocation() == ELocationState::Hallway)
+					if (ElevatorMovingAudioComponent->Sound == ElevatorMovingUpSoundWave || ElevatorMovingAudioComponent->Sound == ElevatorMovingDownSoundWave)
+						ElevatorMovingAudioComponent->Stop();
+				}
+
+				if (ElevatorButtonCaller && CurrentFloorNumber == ElevatorButtonCaller->GetCurrentFloorNumber())
+				{
+					AElevatingActionSecretAgent* PlayerSecretAgent = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+					if (IsValid(PlayerSecretAgent) && CurrentFloorNumber == PlayerSecretAgent->GetCurrentFloorNumber())
 					{
-						UGameplayStatics::PlaySoundAtLocation(GetWorld(), ElevatorButtonCaller->GetElevatorArrivedAlarm(), ElevatorButtonCaller->GetRelativeLocation());
-						ElevatorButtonCaller = nullptr;
+						if (PlayerSecretAgent->GetCurrentLocation() == ELocationState::Hallway)
+						{
+							UGameplayStatics::PlaySoundAtLocation(GetWorld(), ElevatorButtonCaller->GetElevatorArrivedAlarm(), ElevatorButtonCaller->GetRelativeLocation());
+							ElevatorButtonCaller = nullptr;
+						}
 					}
 				}
 			}
