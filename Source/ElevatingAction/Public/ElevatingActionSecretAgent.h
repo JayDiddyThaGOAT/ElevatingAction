@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Sound/SoundCue.h"
+#include "Sound/SoundWave.h"
 #include "Elevator.h"
 #include "ElevatorButton.h"
 #include "ElevatingActionPistol.h"
@@ -152,6 +153,7 @@ protected:
 
 	class USoundCue* DeathCue;
 	class USoundCue* HurtCue;
+	class USoundWave* SecretFileCollectingSound;
 	
 	FCollisionQueryParams CollisionQueryParams;
 };

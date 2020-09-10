@@ -38,6 +38,10 @@ AElevatingActionSecretAgent::AElevatingActionSecretAgent()
 	if (HurtSound.Succeeded())
 		HurtCue = HurtSound.Object;
 
+	ConstructorHelpers::FObjectFinder<USoundWave> ChimeSound(TEXT("SoundWave'/Game/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/collect_item_chime_04.collect_item_chime_04'"));
+	if (ChimeSound.Succeeded())
+		SecretFileCollectingSound = ChimeSound.Object;
+
 	GetMesh()->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, -90.0f), FRotator(0.0f, -90.0f, 0.0f));
 	GetMesh()->SetCollisionProfileName(TEXT("BlockAll"));
 
@@ -112,7 +116,7 @@ void AElevatingActionSecretAgent::TraceOfficeWalls()
 {
 	FHitResult WallHitResult;
 
-	FVector StartLocation = GetMesh()->GetSocketLocation(TEXT("spine_03"));
+	FVector StartLocation = GetMesh()->GetSocketLocation(TEXT("eyes"));
 	FVector EndLocation = StartLocation + FVector::LeftVector * 500.0f;
 
 	if (GetWorld()->LineTraceSingleByChannel(WallHitResult, StartLocation, EndLocation, ECC_WorldStatic, CollisionQueryParams))
@@ -153,7 +157,9 @@ void AElevatingActionSecretAgent::TraceOfficeWalls()
 
 			if (Cast<AElevator>(WallHitResult.Actor))
 			{
-				TracedElevator = Cast<AElevator>(WallHitResult.Actor);
+				if (!WallHitResult.Component->GetName().Contains("Door"))
+					TracedElevator = Cast<AElevator>(WallHitResult.Actor);
+				
 				TracedDoor = nullptr;
 			}
 			else if (Cast<UElevatingActionOfficeDoor>(WallHitResult.Component))
@@ -615,6 +621,9 @@ void AElevatingActionSecretAgent::Transition()
 		else if (TracedDoor)
 		{
 			TracedDoor->Open();
+
+			if (Cast<APlayerController>(GetController()))
+				UGameplayStatics::PlaySound2D(GetWorld(), SecretFileCollectingSound);
 
 			CurrentTransition = ETransitionState::Enter;
 			bCanTransition = false;
