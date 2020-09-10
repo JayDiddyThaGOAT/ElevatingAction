@@ -200,10 +200,7 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 	CollisionQueryParams.AddIgnoredActors(SecretAgents);
 
 	for (AActor* SecretAgentActor : SecretAgents)
-	{
-		if (SecretAgentActor != this)
-			MoveIgnoreActorAdd(SecretAgentActor);
-	}
+		MoveIgnoreActorAdd(SecretAgentActor);
 	
 	CurrentFloorNumber = 30 + FMath::FloorToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
 	if (CurrentFloorNumber >= 16 && CurrentFloorNumber <= 20)
