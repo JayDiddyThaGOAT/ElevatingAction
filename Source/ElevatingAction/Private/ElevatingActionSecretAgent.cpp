@@ -17,11 +17,13 @@ AElevatingActionSecretAgent::AElevatingActionSecretAgent()
 	bAllowTickBeforeBeginPlay = false;
 
 	GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
+	GetCapsuleComponent()->SetGenerateOverlapEvents(false);
 
 	ConstructorHelpers::FObjectFinder<USkeletalMesh> SecretAgentOttoMesh(TEXT("SkeletalMesh'/Game/ElevatingActionSecretAgent/Character/Player/SK_SecretAgent_Otto.SK_SecretAgent_Otto'"));
 	if (SecretAgentOttoMesh.Succeeded())
 	{
 		GetMesh()->SetSkeletalMesh(SecretAgentOttoMesh.Object);
+		GetMesh()->SetGenerateOverlapEvents(true);
 	}
 
 	ConstructorHelpers::FClassFinder<UAnimInstance> ElevatingActionAnimBP(TEXT("AnimBlueprint'/Game/ElevatingActionSecretAgent/Character/Animations/ABP_ElevatingActionCharacter.ABP_ElevatingActionCharacter_C'"));
@@ -530,8 +532,9 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 	{
 		if (IsValid(DeathCue))
 			UGameplayStatics::PlaySoundAtLocation(GetWorld(), DeathCue, GetMesh()->GetSocketLocation(TEXT("head")));
-		
-		GetController()->Destroy();
+
+		if (IsValid(GetController()))
+			GetController()->Destroy();
 	}
 	
 	bIsDamaged = true;
