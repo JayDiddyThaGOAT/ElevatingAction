@@ -10,7 +10,7 @@ UElevatingActionGameInstance::UElevatingActionGameInstance()
     LevelNumber = 1;
     PlayerLives = 3;
     PercentChanceNewSecretAgentsSpawn = 0.0f;
-    MaxSecretAgentsMoving = 15;
+    MaxSecretAgentsMoving = 20;
     CurrentSecretAgentsMoving = 0;
 
     bIsOfficeBlackedOut = false;
@@ -50,7 +50,7 @@ void UElevatingActionGameInstance::ResetGame()
     PlayerLives = 3;
 
     PercentChanceNewSecretAgentsSpawn = 0.0f;
-    MaxSecretAgentsMoving = 15;
+    MaxSecretAgentsMoving = 20;
     CurrentSecretAgentsMoving = 0;
 }
 
