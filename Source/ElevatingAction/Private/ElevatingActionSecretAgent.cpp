@@ -247,9 +247,7 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 		else if (CurrentLocation == ELocationState::Elevator && TracedElevator)
 		{
 			AddMovementInput(FVector::RightVector);
-
-			if (Cast<APlayerController>(GetController()))
-				bCanTransition = CurrentFloorNumber <= 30 && !TracedElevator->IsElevatorMoving() && !TracedElevator->AreDoorsMoving() && TracedElevator->AreDoorsClosed();
+			bCanTransition = CurrentFloorNumber <= 30 && !TracedElevator->IsElevatorMoving() && !TracedElevator->AreDoorsMoving() && TracedElevator->AreDoorsClosed();
 		}
 		else if (CurrentLocation == ELocationState::Hallway)
 		{
@@ -284,7 +282,10 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 			}
 
 			if (TracedElevator)
-				bCanTransition = TracedElevator->GetOwner() == nullptr && !TracedElevator->IsElevatorMoving() && !TracedElevator->HasElevatorPassedStopTime();
+				bCanTransition = TracedElevator->GetOwner() == nullptr &&
+								!TracedElevator->IsElevatorMoving() &&
+								!TracedElevator->AreDoorsClosed() &&
+								!TracedElevator->HasElevatorPassedStopTime();
 			else if (TracedElevatorButton)
 				bCanTransition = UKismetMathLibrary::EqualEqual_FloatFloat(TracedElevatorButton->GetButtonBrightness(), 2.0f);
 			else if (TracedStairs)
@@ -711,7 +712,7 @@ void AElevatingActionSecretAgent::MoveUp(float AxisValue)
 
 	if (CurrentLocation == ELocationState::Elevator)
 	{
-		if (!TracedElevator->IsElevatorMoving() && !TracedElevator->AreDoorsMoving() && TracedElevator->AreDoorsClosed())
+		if (bCanTransition)
 		{
 			if (AxisValue > 0.0f)
 				TracedElevator->GoToNextFloor(EDirectionState::Up);

@@ -94,7 +94,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
 {
     Super::TickActor(DeltaTime, TickType, ThisTickFunction);
 
-    if (!SecretAgentAI && !SecretAgentOtto)
+    if (!IsValid(SecretAgentAI) && !IsValid(SecretAgentOtto))
     {
         SecretAgentAI = Cast<AElevatingActionSecretAgent>(GetCharacter());
         SecretAgentOtto = Cast<AElevatingActionSecretAgent>(GetWorld()->GetFirstPlayerController()->GetCharacter());
@@ -336,7 +336,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                         DirectionVector = FVector::BackwardVector;
                                 }
                             }
-                            else if (TracedElevator && !TracedElevator->GetOwner())
+                            else if (TracedElevator && SecretAgentAI->CanTransition())
                             {
                                 SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
                                 
@@ -358,7 +358,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                     SecretAgentAI->Transition();
                                 }
                             }
-                            else if (TracedStairs)
+                            else if (TracedStairs && SecretAgentAI->CanTransition())
                             {
                                 SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
                                 PatrolTime += DeltaTime;
@@ -382,8 +382,6 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                             (bBothAgentsOnLeftSide || bBothAgentsOnRightSide || bOnBottomLeftStairs || bOnBottomRightStairs || bBlockedByWall))
                                         {
                                             PatrolTime = 0.0f;
-                                        
-                                            SecretAgentAI->StartTransition();
                                             SecretAgentAI->Transition();
                                         }
                                     }
@@ -404,35 +402,30 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
 
                     SecretAgentAI->MoveForward(DirectionVector.X);
                 }
-                else if (SecretAgentAILocation == ELocationState::Elevator)
+                else if (SecretAgentAILocation == ELocationState::Elevator && SecretAgentAI->GetTracedElevator())
                 {
                     AElevator* Elevator = SecretAgentAI->GetTracedElevator();
+                    int32 ElevatorCurrentFloorNumber = Elevator->GetCurrentFloorNumber();
                     int32 ElevatorMinFloorNumber = Elevator->GetMinFloorNumber();
                     int32 ElevatorMaxFloorNumber = Elevator->GetMaxFloorNumber();
                     int32 ElevatorTargetFloor = FMath::Clamp(SecretAgentOttoFloorNumber, ElevatorMinFloorNumber, ElevatorMaxFloorNumber);
+                    
+                    if (SecretAgentAI->CanTransition())
+                    {
+                        if (ElevatorCurrentFloorNumber == ElevatorTargetFloor)
+                        {
+                            bool bInHallway = SecretAgentOttoLocation == ELocationState::Hallway;
+                            bool bInRoom = SecretAgentOttoLocation == ELocationState::Room;
+                            bool bUpStairs = SecretAgentOttoLocation == ELocationState::Stairs && SecretAgentAI->CanGoUpStairs() && Elevator->IsMovingUp();
+                            bool bDownStairs = SecretAgentOttoLocation == ELocationState::Stairs && SecretAgentAI->CanGoDownStairs() && !Elevator->IsMovingUp();
 
-                    if (Elevator->AreDoorsMoving() || !Elevator->AreDoorsClosed())
-                    {
-                        if (Elevator->GetCurrentFloorNumber() == ElevatorTargetFloor && SecretAgentOttoLocation == ELocationState::Hallway)
-                        {
-                            SecretAgentAI->StartTransition();
-                            SecretAgentAI->Transition();
-                        }
-                    }
-                    else
-                    {
-                        if (Elevator->GetCurrentFloorNumber() > ElevatorTargetFloor)
-                            SecretAgentAI->MoveUp(-1.0f);
-                        else if (Elevator->GetCurrentFloorNumber() < ElevatorTargetFloor)
-                            SecretAgentAI->MoveUp(1.0f);
-                        else if (Elevator->GetCurrentFloorNumber() == ElevatorTargetFloor)
-                        {
-                            if (!Elevator->IsElevatorMoving())
-                            {
-                                SecretAgentAI->StartTransition();
+                            if (bInHallway || bInRoom || bUpStairs || bDownStairs)
                                 SecretAgentAI->Transition();
-                            }
                         }
+                        else if (ElevatorCurrentFloorNumber > ElevatorTargetFloor)
+                            SecretAgentAI->MoveUp(-1.0f);
+                        else if (ElevatorCurrentFloorNumber < ElevatorTargetFloor)
+                            SecretAgentAI->MoveUp(1.0f);
                     }
                 }
             }

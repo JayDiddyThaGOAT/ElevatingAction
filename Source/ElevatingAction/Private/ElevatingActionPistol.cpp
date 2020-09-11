@@ -11,8 +11,7 @@ AElevatingActionPistol::AElevatingActionPistol()
     if (PistolMesh.Succeeded())
     {
         GetSkeletalMeshComponent()->SetSkeletalMesh(PistolMesh.Object);
-        GetSkeletalMeshComponent()->SetCollisionProfileName(TEXT("IgnoreOnlyPawn"));
-        GetSkeletalMeshComponent()->SetCollisionResponseToChannel(ECC_Vehicle, ECR_Ignore);
+        GetSkeletalMeshComponent()->SetCollisionProfileName(TEXT("NoCollision"));
         GetSkeletalMeshComponent()->SetSimulatePhysics(false);
 
         ConstructorHelpers::FObjectFinder<UClass> DefaultProjectile(TEXT("Blueprint'/Game/ToonProjectilesVol1/Blueprints/BP_Projectile_Bullet01Red.BP_Projectile_Bullet01Red_C'"));

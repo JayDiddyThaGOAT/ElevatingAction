@@ -104,9 +104,9 @@ void AElevator::Tick(float DeltaSeconds)
 	{
 		if (LeftDoorLocation.X >= 0.0f && RightDoorLocation.X >= 250.0f)
 			ElevatorDoorsState = EDoorsState::Closed;
-		else
-			ElevatorDoorsState = EDoorsState::Open;
 	}
+	else
+		ElevatorDoorsState = EDoorsState::Open;
 
 	//Elevator Movement
 	ElevatorTargetLocation = FVector(GetActorLocation().X, GetActorLocation().Y, 300 * (CurrentTargetFloorNumber - 30));
@@ -243,6 +243,11 @@ bool AElevator::IsElevatorMoving() const
 	return !GetActorLocation().Equals(ElevatorTargetLocation);
 }
 
+bool AElevator::IsMovingUp() const
+{
+	return ElevatorDirection == EDirectionState::Up;
+}
+
 bool AElevator::HasElevatorPassedStopTime() const
 {
 	return ElevatorStoppedTime >= ElevatorStoppedDuration;
@@ -316,6 +321,9 @@ void AElevator::GoToNextFloor(EDirectionState Direction)
 
 void AElevator::GoToFloor(int32 FloorNumber)
 {
+	if (GetOwner())
+		return;
+
 	if (FloorNumber > CurrentFloorNumber)
 		ElevatorDirection = EDirectionState::Up;
 	else if (FloorNumber < CurrentFloorNumber)

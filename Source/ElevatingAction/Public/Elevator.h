@@ -48,6 +48,9 @@ public:
 	bool IsElevatorMoving() const;
 
 	UFUNCTION(BlueprintPure, Category = "Elevator Movement")
+    bool IsMovingUp() const;
+
+	UFUNCTION(BlueprintPure, Category = "Elevator Movement")
 	bool HasElevatorPassedStopTime() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Elevator Movement")
