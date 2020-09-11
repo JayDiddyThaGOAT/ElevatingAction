@@ -119,7 +119,7 @@ void AElevatingActionSecretAgent::TraceOfficeWalls()
 	FVector StartLocation = GetMesh()->GetSocketLocation(TEXT("eyes"));
 	FVector EndLocation = StartLocation + FVector::LeftVector * 500.0f;
 
-	if (GetWorld()->LineTraceSingleByChannel(WallHitResult, StartLocation, EndLocation, ECC_WorldStatic, CollisionQueryParams))
+	if (GetWorld()->LineTraceSingleByObjectType(WallHitResult, StartLocation, EndLocation, FCollisionObjectQueryParams::AllObjects, CollisionQueryParams))
 	{
 		TracedStairs = nullptr;
 		TracedStairsLocation = FVector::ZeroVector;
@@ -157,8 +157,10 @@ void AElevatingActionSecretAgent::TraceOfficeWalls()
 
 			if (Cast<AElevator>(WallHitResult.Actor))
 			{
-				if (!WallHitResult.Component->GetName().Contains("Door"))
+				if (WallHitResult.Component->GetName().Equals(TEXT("InsideElevatorArea")))
+				{
 					TracedElevator = Cast<AElevator>(WallHitResult.Actor);
+				}
 				
 				TracedDoor = nullptr;
 			}

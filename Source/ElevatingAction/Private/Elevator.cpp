@@ -50,6 +50,13 @@ AElevator::AElevator()
 	ElevatorMovingAudioComponent->SetRelativeLocation(FVector(125.0f, -125.0f, 90.15f));
 	ElevatorMovingAudioComponent->SetAutoActivate(false);
 
+	InsideElevatorArea = CreateDefaultSubobject<UBoxComponent>(TEXT("InsideElevatorArea"));
+	InsideElevatorArea->SetupAttachment(RootComponent);
+	InsideElevatorArea->InitBoxExtent(FVector::OneVector * 75.0f);
+	InsideElevatorArea->SetRelativeLocation(FVector(125.0f, -125.0f, 125.0f));
+	InsideElevatorArea->SetGenerateOverlapEvents(true);
+	InsideElevatorArea->SetCollisionProfileName(TEXT("OverlapAll"));
+
 	static ConstructorHelpers::FObjectFinder<USoundWave> MovingUp(TEXT("SoundWave'/Game/ElevatingActionAudio/GameMasterAudio/ElevatorMoving/elevator_loop_02.elevator_loop_02'"));
 	if (MovingUp.Succeeded())
 		ElevatorMovingUpSoundWave = MovingUp.Object;

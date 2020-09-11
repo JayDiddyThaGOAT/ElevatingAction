@@ -4,6 +4,7 @@
 #include "CoreMinimal.h"
 #include "Engine/StaticMeshActor.h"
 #include "ElevatorButton.h"
+#include "Components/BoxComponent.h"
 #include "Elevator.generated.h"
 
 UENUM()
@@ -92,6 +93,9 @@ protected:
 
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Elevator Sounds")
 	class UAudioComponent* ElevatorMovingAudioComponent;
+
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Inside Elevator")
+	class UBoxComponent* InsideElevatorArea;
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Door Movement")
 	FVector LeftDoorTargetLocation;
