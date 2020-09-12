@@ -26,18 +26,12 @@ public:
 
 	UFUNCTION(BlueprintPure, Category = Patrolling)
     bool IsPatrollingLong();
-
-	UFUNCTION(BlueprintCallable, Category = Patrolling)
-    void SetPatrolTime(float Time);
 	
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccessOnly = "true"), Category = Attacking)
 	float ShootPistolDelay;
 	
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccessOnly = "true"), Category = Attacking)
 	float MaxShootPistolDistance;
-
-	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccessOnly = "true"), Category = Attacking)
-	float PatrolDuration;
 
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccessOnly = "true"), Category = Attacking)
 	float PercentRequiredAIShootPlayerWhileMoving;
@@ -54,7 +48,7 @@ private:
 
 	class AActor* SecretAgentOttoLastShotProjectile;
 	
-	float ShootPistolTime, PatrolTime;
+	float ShootPistolTime;
 
 	bool bShouldGoUpStairs, bShouldGoDownStairs;
 	bool bCanGoToSecretAgentOtto, bBlockedByWall;

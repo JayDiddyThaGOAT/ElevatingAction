@@ -15,9 +15,6 @@ AElevatingActionAIController::AElevatingActionAIController()
     ShootPistolTime = 0.0f;
     ShootPistolDelay = 2.0f;
     MaxShootPistolDistance = 250.0f;
-
-    PatrolTime = 0.0f;
-    PatrolDuration = 2.0f;
     
     PercentChanceAIShootPlayerWhileMoving = 0.0f;
     PercentRequiredAIShootPlayerWhileMoving = 0.0f;
@@ -34,12 +31,8 @@ AElevatingActionAIController::AElevatingActionAIController()
 
 bool AElevatingActionAIController::IsPatrollingLong()
 {
-    return PatrolTime >= PatrolDuration;
-}
-
-void AElevatingActionAIController::SetPatrolTime(float Time)
-{
-    PatrolTime = Time;
+    bool bIsAbovePlayer = SecretAgentAI->GetCurrentFloorNumber() > SecretAgentOtto->GetCurrentFloorNumber();
+    return !SecretAgentAI->WasRecentlyRendered(5.0f) && bIsAbovePlayer;
 }
 
 float AElevatingActionAIController::GetTargetLocationToUseStairs(AActor* Stairs, bool CanGoUpStairs, bool CanGoDownStairs) const
@@ -140,8 +133,6 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                             else if (SecretAgentAI->GetActorLocation().X < SecretAgentOtto->GetActorLocation().X)
                                 DirectionVector = FVector::ForwardVector;
                             
-                            PatrolTime = 0.0f;
-                            
                             bCanGoToSecretAgentOtto = true;
                             bBlockedByWall = false;
                            
@@ -150,7 +141,10 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                             float DistanceBetweenAgents = FVector::Distance(SecretAgentOtto->GetActorLocation(), SecretAgentAI->GetActorLocation());
                             if (DistanceBetweenAgents <= DistanceRequiredToShootPlayer)
                             {
-                                SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = 0.0f;
+                                if (PercentRequiredAIShootPlayerWhileMoving >= PercentChanceAIShootPlayerWhileMoving)
+                                    SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = 0.0f;
+                                else
+                                    SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
                                 
                                 float CurrentShootPistolDelay = !bIsOfficeBlackedOut ? ShootPistolDelay : ShootPistolDelay + 2.0f;
                             
@@ -159,6 +153,9 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                 {
                                     SecretAgentAI->ShootPistol();
                                     ShootPistolTime = 0.0f;
+                                    
+                                    PercentChanceAIFollowsPlayerCrouching = UKismetMathLibrary::RandomFloat();
+                                    PercentChanceAIDodgesPlayerProjectiles = UKismetMathLibrary::RandomFloat();
                                 }
                                 else
                                 {
@@ -185,6 +182,9 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                     {
                                         SecretAgentAI->ShootPistol();
                                         ShootPistolTime = 0.0f;
+                                        
+                                        PercentChanceAIFollowsPlayerCrouching = UKismetMathLibrary::RandomFloat();
+                                        PercentChanceAIDodgesPlayerProjectiles = UKismetMathLibrary::RandomFloat();
                                     }
                                     else
                                     {
@@ -237,7 +237,6 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                 }
                             }
                             
-                            PatrolTime += DeltaTime;
                             SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
                             
                             bCanGoToSecretAgentOtto = false;
@@ -273,8 +272,6 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
 
                                     if ((bShouldGoUpStairs || bShouldGoDownStairs) && bInMiddleOfStairPlatform)
                                     {
-                                        PatrolTime = 0.0f;
-                                    
                                         SecretAgentAI->StartTransition();
                                         SecretAgentAI->Transition();
                                     }
@@ -322,13 +319,10 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                         SecretAgentAI->Transition();
                                         SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = 0.0f;
                                     }
-                                    else
-                                        PatrolTime += DeltaTime;
                                 }
                                 else if (TracedElevatorButtonBrightness == 1.0f && SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed == 0.0f)
                                 {
                                     SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
-                                    PatrolTime += DeltaTime;
 
                                     if (Elevator->GetActorLocation().X + 125.0f > SecretAgentAI->GetActorLocation().X)
                                         DirectionVector = FVector::ForwardVector;
@@ -339,8 +333,6 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                             else if (TracedElevator && SecretAgentAI->CanTransition())
                             {
                                 SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
-                                
-                                PatrolTime += DeltaTime;
                             
                                 AElevator* Elevator = SecretAgentAI->GetTracedElevator();
                                 int32 ElevatorMinFloorNumber = Elevator->GetMinFloorNumber();
@@ -353,15 +345,11 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                 bool bElevatorCantGoDownToOtto = SecretAgentAIFloorNumber == ElevatorMinFloorNumber && SecretAgentAIFloorNumber > SecretAgentOttoFloorNumber;
                                 bool bElevatorCantGoUpToOtto = SecretAgentAIFloorNumber == ElevatorMaxFloorNumber && SecretAgentAIFloorNumber < SecretAgentOttoFloorNumber;
                                 if ((bCantGoLeftOrRight || bAtMiddleOfElevator) && !bElevatorCantGoDownToOtto && !bElevatorCantGoUpToOtto)
-                                {
-                                    PatrolTime = 0.0f;
                                     SecretAgentAI->Transition();
-                                }
                             }
                             else if (TracedStairs && SecretAgentAI->CanTransition())
                             {
                                 SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
-                                PatrolTime += DeltaTime;
                             
                                 bShouldGoUpStairs = SecretAgentAI->CanGoUpStairs() && SecretAgentAIFloorNumber < SecretAgentOttoFloorNumber;
                                 bShouldGoDownStairs = SecretAgentAI->CanGoDownStairs() && SecretAgentAIFloorNumber > SecretAgentOttoFloorNumber;
@@ -380,10 +368,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                     {
                                         if ((bShouldGoUpStairs || bShouldGoDownStairs) &&
                                             (bBothAgentsOnLeftSide || bBothAgentsOnRightSide || bOnBottomLeftStairs || bOnBottomRightStairs || bBlockedByWall))
-                                        {
-                                            PatrolTime = 0.0f;
                                             SecretAgentAI->Transition();
-                                        }
                                     }
                                 }
                                 else
@@ -395,7 +380,6 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                             else
                             {
                                 SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
-                                PatrolTime += DeltaTime;
                             }
                         }
                     }
@@ -454,8 +438,6 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                         else if (SecretAgentAI->GetActorLocation().X > SecretAgentOtto->GetActorLocation().X)
                             DirectionVector = FVector::ForwardVector;
                     }
-                    
-                    PatrolTime = 0.0f;
                 }
                 
                 FHitResult WallHitResult;

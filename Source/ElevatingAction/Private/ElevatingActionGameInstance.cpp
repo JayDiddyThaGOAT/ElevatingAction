@@ -3,19 +3,7 @@
 
 UElevatingActionGameInstance::UElevatingActionGameInstance()
 {
-    CurrentScore = 0;
-    PreviousScore = 0;
-    BonusScore = 1000;
-
-    LevelNumber = 1;
-    PlayerLives = 3;
-    PercentChanceNewSecretAgentsSpawn = 0.0f;
-    MaxSecretAgentsMoving = 20;
-    CurrentSecretAgentsMoving = 0;
-
-    bIsOfficeBlackedOut = false;
-    BlackoutDuration = 5.0f;
-    BlackoutElapsedTime = 0.0f;
+    ResetGame();
 
     MasterVolume = 0.5f;
     MusicVolume = 0.5f;
@@ -44,13 +32,14 @@ void UElevatingActionGameInstance::ResetGame()
     BonusScore = 1000;
 
     bIsOfficeBlackedOut = false;
+    BlackoutDuration = 5.0f;
     BlackoutElapsedTime = 0.0f;
 
     LevelNumber = 1;
     PlayerLives = 3;
 
     PercentChanceNewSecretAgentsSpawn = 0.0f;
-    MaxSecretAgentsMoving = 20;
+    MaxSecretAgentsMoving = 41;
     CurrentSecretAgentsMoving = 0;
 }
 
