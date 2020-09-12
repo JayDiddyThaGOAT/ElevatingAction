@@ -39,7 +39,7 @@ void UElevatingActionGameInstance::ResetGame()
     PlayerLives = 3;
 
     PercentChanceNewSecretAgentsSpawn = 0.0f;
-    MaxSecretAgentsMoving = 41;
+    MaxSecretAgentsMoving = 21;
     CurrentSecretAgentsMoving = 0;
 }
 
