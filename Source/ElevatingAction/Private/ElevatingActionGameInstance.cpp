@@ -35,7 +35,7 @@ void UElevatingActionGameInstance::ResetGame()
     BlackoutDuration = 5.0f;
     BlackoutElapsedTime = 0.0f;
 
-    LevelNumber = 1;
+    LevelNumber = 0;
     PlayerLives = 3;
 
     PercentChanceNewSecretAgentsSpawn = 0.0f;
