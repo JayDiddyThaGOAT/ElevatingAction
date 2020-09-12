@@ -31,8 +31,9 @@ AElevatingActionAIController::AElevatingActionAIController()
 
 bool AElevatingActionAIController::IsPatrollingLong()
 {
+    ELocationState SecretAgentAILocation = SecretAgentAI->GetCurrentLocation();
     bool bIsAbovePlayer = SecretAgentAI->GetCurrentFloorNumber() > SecretAgentOtto->GetCurrentFloorNumber();
-    return !SecretAgentAI->WasRecentlyRendered(5.0f) && bIsAbovePlayer;
+    return !SecretAgentAI->WasRecentlyRendered(5.0f) && bIsAbovePlayer && SecretAgentAILocation == ELocationState::Hallway;
 }
 
 float AElevatingActionAIController::GetTargetLocationToUseStairs(AActor* Stairs, bool CanGoUpStairs, bool CanGoDownStairs) const
@@ -342,7 +343,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                         
                                 float DistanceX = ((TracedElevator->GetActorLocation() + FVector::ForwardVector * 125.0f) - SecretAgentAI->GetActorLocation()).X;
 
-                                bool bAtMiddleOfElevator = UKismetMathLibrary::NearlyEqual_FloatFloat(DistanceX, 0.0f, 5.0f);
+                                bool bAtMiddleOfElevator = UKismetMathLibrary::NearlyEqual_FloatFloat(DistanceX, 0.0f, 15.0f);
                                 bool bCantGoLeftOrRight = !(bCanGoLeft && bCanGoRight);
                                 bool bElevatorCantGoDownToOtto = SecretAgentAIFloorNumber == ElevatorMinFloorNumber && SecretAgentAIFloorNumber > SecretAgentOttoFloorNumber;
                                 bool bElevatorCantGoUpToOtto = SecretAgentAIFloorNumber == ElevatorMaxFloorNumber && SecretAgentAIFloorNumber < SecretAgentOttoFloorNumber;
