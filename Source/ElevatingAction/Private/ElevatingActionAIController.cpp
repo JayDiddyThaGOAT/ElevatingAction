@@ -283,6 +283,8 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                     {
                         if (!(bCanGoLeft && bCanGoRight))
                         {
+                            bBlockedByWall = true;
+                            
                             if (DirectionVector == FVector::BackwardVector)
                                 DirectionVector = FVector::ForwardVector;
                             else if (DirectionVector == FVector::ForwardVector)
@@ -347,7 +349,7 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                 if ((bCantGoLeftOrRight || bAtMiddleOfElevator) && !bElevatorCantGoDownToOtto && !bElevatorCantGoUpToOtto)
                                     SecretAgentAI->Transition();
                             }
-                            else if (TracedStairs && SecretAgentAI->CanTransition())
+                            else if (TracedStairs)
                             {
                                 SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
                             
@@ -368,7 +370,10 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                     {
                                         if ((bShouldGoUpStairs || bShouldGoDownStairs) &&
                                             (bBothAgentsOnLeftSide || bBothAgentsOnRightSide || bOnBottomLeftStairs || bOnBottomRightStairs || bBlockedByWall))
+                                        {
+                                            SecretAgentAI->StartTransition();
                                             SecretAgentAI->Transition();
+                                        }
                                     }
                                 }
                                 else
