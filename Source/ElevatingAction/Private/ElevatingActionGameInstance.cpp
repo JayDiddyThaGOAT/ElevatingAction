@@ -18,6 +18,11 @@ UElevatingActionGameInstance::UElevatingActionGameInstance()
     SecretFileCounts.Add(8, FInt32Range(2, 21));	//Level 4
     SecretFileCounts.Add(9, FInt32Range(2, 30));	//Level 5
     SecretFileCounts.Add(10, FInt32Range(1, 30)); //Level 6 & Up
+
+    GoalScores.Add(10000);
+    GoalScores.Add(15000);
+    GoalScores.Add(20000);
+    GoalScores.Add(25000);
 }
 
 void UElevatingActionGameInstance::AddPlayerScore(int32 Points)
@@ -30,6 +35,9 @@ void UElevatingActionGameInstance::ResetGame()
     CurrentScore = 0;
     PreviousScore = 0;
     BonusScore = 1000;
+    
+    CurrentGoalScoreIndex = 0;
+    bIsAllGoalsPassed = false;
 
     bIsOfficeBlackedOut = false;
     BlackoutDuration = 5.0f;
@@ -41,6 +49,11 @@ void UElevatingActionGameInstance::ResetGame()
     PercentChanceNewSecretAgentsSpawn = 0.0f;
     MaxSecretAgentsMoving = 21;
     CurrentSecretAgentsMoving = 0;
+}
+
+void UElevatingActionGameInstance::SetNumberOfPlayerLives(int32 Lives)
+{
+    PlayerLives = Lives;
 }
 
 int32 UElevatingActionGameInstance::GetNumberOfPlayerLives()

@@ -25,8 +25,10 @@ public:
     bool IsMaxSecretAgentsMovingReached() const;
 	
 	void SetCurrentSecretAgentsMoving(int32 CurrentSecretAgentsMoving);
-	int32 GetNumberOfPlayerLives();
 	int32 GetCurrentSecretAgentsMoving() const;
+
+	void SetNumberOfPlayerLives(int32 Lives);
+	int32 GetNumberOfPlayerLives();
 	
 private:
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Health)
@@ -40,6 +42,15 @@ private:
 
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Score)
 	int32 BonusScore;
+
+	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = Score)
+	TArray<int32> GoalScores;
+
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Score)
+	int32 CurrentGoalScoreIndex;
+
+	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Score)
+	bool bIsAllGoalsPassed;
 
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Level)
 	int32 LevelNumber;

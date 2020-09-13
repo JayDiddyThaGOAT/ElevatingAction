@@ -469,9 +469,9 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 
 	float DamageTaken = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 
+	UElevatingActionGameInstance* GameInstance = Cast<UElevatingActionGameInstance>(GetWorld()->GetGameInstance());
 	if (!Cast<APlayerController>(GetController()))
 	{
-		UElevatingActionGameInstance* GameInstance = Cast<UElevatingActionGameInstance>(GetWorld()->GetGameInstance());
 		if (GameInstance)
 		{
 			int32 Score;
@@ -485,7 +485,10 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 		}
 	}
 	else
+	{
 		Pistol->Destroy();
+		GameInstance->SetNumberOfPlayerLives(GameInstance->GetNumberOfPlayerLives() - 1);
+	}
 
 	GetCharacterMovement()->DisableMovement();
 	GetCapsuleComponent()->DestroyComponent();
@@ -523,7 +526,6 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 		TracedElevatorButton = nullptr;
 	}
 
-	UElevatingActionGameInstance* GameInstance = Cast<UElevatingActionGameInstance>(GetGameInstance());
 	if (Cast<APlayerController>(GetController()))
 	{
 		if (GameInstance)
