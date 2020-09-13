@@ -14,12 +14,15 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = Score)
     void AddPlayerScore(int32 Score);
-	
+    
 	UFUNCTION(BlueprintCallable, Category = Score)
-    void ResetGame();
+    void UpdateGoalScore();
 
 	UFUNCTION(BlueprintPure, Category = Lighting)
     bool IsOfficeBlackedOut() const;
+
+	UFUNCTION(BlueprintCallable, Category = Level)
+    void ResetGame();
 
 	UFUNCTION(BlueprintPure, Category = Level)
     bool IsMaxSecretAgentsMovingReached() const;

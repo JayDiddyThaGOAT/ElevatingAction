@@ -30,6 +30,16 @@ void UElevatingActionGameInstance::AddPlayerScore(int32 Points)
     CurrentScore += Points;
 }
 
+void UElevatingActionGameInstance::UpdateGoalScore()
+{
+    while (!bIsAllGoalsPassed && CurrentScore > GoalScores[CurrentGoalScoreIndex])
+    {
+        PlayerLives++;
+        CurrentGoalScoreIndex++;
+        bIsAllGoalsPassed = CurrentGoalScoreIndex == GoalScores.Num() - 1;
+    }
+}
+
 void UElevatingActionGameInstance::ResetGame()
 {
     CurrentScore = 0;
