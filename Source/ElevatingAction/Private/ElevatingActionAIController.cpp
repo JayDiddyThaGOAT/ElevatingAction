@@ -291,6 +291,9 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                             else if (DirectionVector == FVector::ForwardVector)
                                 DirectionVector = FVector::BackwardVector;
                         }
+
+                        if (SecretAgentAI->GetCharacterMovement()->IsCrouching())
+                            SecretAgentAI->ToggleCrouch();
                         
                         UElevatorButton* TracedElevatorButton = SecretAgentAI->GetTracedElevatorButton();
                         AElevator* TracedElevator = SecretAgentAI->GetTracedElevator();
