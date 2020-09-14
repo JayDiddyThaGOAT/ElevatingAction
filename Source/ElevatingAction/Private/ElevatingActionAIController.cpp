@@ -407,12 +407,10 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                     {
                         if (ElevatorCurrentFloorNumber == ElevatorTargetFloor)
                         {
-                            bool bInHallway = SecretAgentOttoLocation == ELocationState::Hallway;
-                            bool bInRoom = SecretAgentOttoLocation == ELocationState::Room;
-                            bool bUpStairs = SecretAgentOttoLocation == ELocationState::Stairs && SecretAgentAI->CanGoUpStairs() && Elevator->IsMovingUp();
-                            bool bDownStairs = SecretAgentOttoLocation == ELocationState::Stairs && SecretAgentAI->CanGoDownStairs() && !Elevator->IsMovingUp();
+                            bool bIsInHallway = SecretAgentOttoLocation == ELocationState::Hallway && SecretAgentOttoTransition != ETransitionState::Enter;
+                            bool bIsGettingOutRoom = SecretAgentOttoLocation == ELocationState::Room && SecretAgentOttoTransition == ETransitionState::Exit;
 
-                            if (bInHallway || bInRoom || bUpStairs || bDownStairs)
+                            if (bIsInHallway || bIsGettingOutRoom)
                                 SecretAgentAI->Transition();
                         }
                         else if (ElevatorCurrentFloorNumber > ElevatorTargetFloor)
