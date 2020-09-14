@@ -16,7 +16,7 @@ public:
     void AddPlayerScore(int32 Score);
     
 	UFUNCTION(BlueprintCallable, Category = Score)
-    void UpdateGoalScore();
+    void UpdateHighScore();
 
 	UFUNCTION(BlueprintPure, Category = Lighting)
     bool IsOfficeBlackedOut() const;

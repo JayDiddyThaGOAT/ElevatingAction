@@ -1,5 +1,7 @@
 
 #include "ElevatingActionGameInstance.h"
+#include "ElevatingActionSaveGame.h"
+#include "Kismet/GameplayStatics.h"
 
 UElevatingActionGameInstance::UElevatingActionGameInstance()
 {
@@ -30,13 +32,40 @@ void UElevatingActionGameInstance::AddPlayerScore(int32 Points)
     CurrentScore += Points;
 }
 
-void UElevatingActionGameInstance::UpdateGoalScore()
+void UElevatingActionGameInstance::UpdateHighScore()
 {
-    while (!bIsAllGoalsPassed && CurrentScore > GoalScores[CurrentGoalScoreIndex])
+    if (!bIsAllGoalsPassed)
     {
-        PlayerLives++;
-        CurrentGoalScoreIndex++;
-        bIsAllGoalsPassed = CurrentGoalScoreIndex == GoalScores.Num() - 1;
+        while (CurrentScore >= GoalScores[CurrentGoalScoreIndex] && CurrentGoalScoreIndex + 1 < GoalScores.Num())
+        {
+            PlayerLives++;
+            CurrentGoalScoreIndex++;
+            bIsAllGoalsPassed = CurrentGoalScoreIndex == GoalScores.Num() - 1;
+
+            if (!UGameplayStatics::DoesSaveGameExist(TEXT("HighScore"), 0))
+            {
+                UElevatingActionSaveGame* NewSaveGame = Cast<UElevatingActionSaveGame>(UGameplayStatics::CreateSaveGameObject(UElevatingActionSaveGame::StaticClass()));
+
+                if (!bIsAllGoalsPassed)
+                    NewSaveGame->SetHighScore(GoalScores[CurrentGoalScoreIndex]);
+                else
+                    NewSaveGame->SetHighScore(CurrentScore);
+            }
+            else
+            {
+                UElevatingActionSaveGame* LastSavedGame = Cast<UElevatingActionSaveGame>(UGameplayStatics::LoadGameFromSlot(TEXT("HighScore"), 0));
+
+                if (!bIsAllGoalsPassed)
+                    LastSavedGame->SetHighScore(GoalScores[CurrentGoalScoreIndex]);
+                else
+                    LastSavedGame->SetHighScore(CurrentScore);
+            }\
+        }
+    }
+    else
+    {
+        UElevatingActionSaveGame* LastSavedGame = Cast<UElevatingActionSaveGame>(UGameplayStatics::LoadGameFromSlot(TEXT("HighScore"), 0));
+        LastSavedGame->SetHighScore(CurrentScore);
     }
 }
 
