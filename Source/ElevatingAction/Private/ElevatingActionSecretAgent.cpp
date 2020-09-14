@@ -469,6 +469,10 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 
 	float DamageTaken = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 
+	Pistol->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
+	Pistol->GetSkeletalMeshComponent()->SetSimulatePhysics(true);
+	Pistol->GetSkeletalMeshComponent()->SetCollisionProfileName(TEXT("BlockAll"));
+
 	UElevatingActionGameInstance* GameInstance = Cast<UElevatingActionGameInstance>(GetWorld()->GetGameInstance());
 	if (!Cast<APlayerController>(GetController()))
 	{
@@ -485,10 +489,7 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 		}
 	}
 	else
-	{
-		Pistol->Destroy();
 		GameInstance->SetNumberOfPlayerLives(GameInstance->GetNumberOfPlayerLives() - 1);
-	}
 
 	GetCharacterMovement()->DisableMovement();
 	GetCapsuleComponent()->DestroyComponent();
