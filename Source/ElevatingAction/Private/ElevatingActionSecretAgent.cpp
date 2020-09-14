@@ -472,6 +472,7 @@ float AElevatingActionSecretAgent::TakeDamage(float DamageAmount, FDamageEvent c
 	Pistol->DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
 	Pistol->GetSkeletalMeshComponent()->SetSimulatePhysics(true);
 	Pistol->GetSkeletalMeshComponent()->SetCollisionProfileName(TEXT("BlockAll"));
+	Pistol->GetSkeletalMeshComponent()->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 
 	UElevatingActionGameInstance* GameInstance = Cast<UElevatingActionGameInstance>(GetWorld()->GetGameInstance());
 	if (!Cast<APlayerController>(GetController()))
