@@ -145,7 +145,16 @@ void AElevatingActionAIController::TickActor(float DeltaTime, ELevelTick TickTyp
                                 if (PercentRequiredAIShootPlayerWhileMoving >= PercentChanceAIShootPlayerWhileMoving)
                                     SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = 0.0f;
                                 else
-                                    SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
+                                {
+                                    float SecretAgentAIRadius = SecretAgentAI->GetCapsuleComponent()->GetScaledCapsuleRadius();
+                                    float SecretAgentOttoRadius = SecretAgentOtto->GetCapsuleComponent()->GetScaledCapsuleRadius();
+                                    float MinDistanceToShootPlayer = (SecretAgentAIRadius + SecretAgentOttoRadius) + 45.0f;
+                                    
+                                    if (DistanceBetweenAgents > MinDistanceToShootPlayer)
+                                        SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = SecretAgentAI->GetDefaultWalkSpeed();
+                                    else
+                                        SecretAgentAI->GetCharacterMovement()->MaxWalkSpeed = 0.0f;
+                                }
                                 
                                 float CurrentShootPistolDelay = !bIsOfficeBlackedOut ? ShootPistolDelay : ShootPistolDelay + 2.0f;
                             
