@@ -317,507 +317,508 @@
 "../../../Engine/Content/Tutorial/Basics/LevelEditorOverview.uasset" 316
 "../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Blueprint_64x.uasset" 317
 "../../../Engine/Content/Tutorial/BlueprintTutorials/BlueprintEditorTutorial.uasset" 318
-"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_MacroLib.uasset" 319
-"../../../Engine/Content/VREditor/LaserPointer/VR_LaserPower_01.uasset" 320
-"../../../Engine/Content/VREditor/TransformGizmo/TransformGizmoMaterial.uasset" 321
-"../../../Engine/Content/VREditor/TransformGizmo/TranslucentTransformGizmoMaterial.uasset" 322
-"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxCorner.uasset" 323
-"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxEdge.uasset" 324
-"../../../Engine/Content/VREditor/TransformGizmo/PlaneTranslationHandle.uasset" 325
-"../../../Engine/Content/VREditor/TransformGizmo/Main.uasset" 326
-"../../../Engine/Content/VREditor/TransformGizmo/Xray.uasset" 327
-"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Key.uasset" 328
-"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Node.uasset" 329
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__1.uasset" 330
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__10.uasset" 331
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__2.uasset" 332
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__4.uasset" 333
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__6.uasset" 334
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__8.uasset" 335
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__9.uasset" 336
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/S_Music_Class.uasset" 337
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/S_Voices_Class.uasset" 338
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/S_Master_Class.uasset" 339
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/S_SoundEffects_Class.uasset" 340
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/alarm_siren_loop_04.uasset" 341
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/hum_electric_neon_light_loop_01.uasset" 342
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/switch_button_push_on_off_10.uasset" 343
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorMoving/door_metal_draw_slide_close_02.uasset" 344
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorMoving/door_metal_draw_slide_open_01.uasset" 345
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorMoving/elevator_loop_01.uasset" 346
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorMoving/elevator_loop_02.uasset" 347
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/LampBreakingSounds/glass_smashable_small_break_01.uasset" 348
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/LampBreakingSounds/glass_smashable_small_break_02.uasset" 349
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/LampBreakingSounds/glass_smashable_small_break_03.uasset" 350
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/PistolTriggerPulledSounds/sci-fi_weapon_plasma_pistol_04.uasset" 351
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/PistolTriggerPulledSounds/S_ProjectileShot_Cue.uasset" 352
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_03.uasset" 353
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_06.uasset" 354
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_v2_01.uasset" 355
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_v2_02.uasset" 356
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_v2_03.uasset" 357
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_v2_04.uasset" 358
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_v2_05.uasset" 359
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_v2_06.uasset" 360
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_01.uasset" 361
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_02.uasset" 362
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_03.uasset" 363
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_04.uasset" 364
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_05.uasset" 365
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_06.uasset" 366
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_07.uasset" 367
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_08.uasset" 368
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_09.uasset" 369
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_10.uasset" 370
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_11.uasset" 371
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_12.uasset" 372
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_13.uasset" 373
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_14.uasset" 374
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_15.uasset" 375
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_16.uasset" 376
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_17.uasset" 377
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_18.uasset" 378
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_01.uasset" 379
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_02.uasset" 380
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_03.uasset" 381
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_04.uasset" 382
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_05.uasset" 383
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_06.uasset" 384
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_07.uasset" 385
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_08.uasset" 386
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_09.uasset" 387
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_10.uasset" 388
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_11.uasset" 389
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_12.uasset" 390
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_13.uasset" 391
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_14.uasset" 392
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_15.uasset" 393
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_16.uasset" 394
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_17.uasset" 395
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_18.uasset" 396
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_19.uasset" 397
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_20.uasset" 398
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_01.uasset" 399
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_02.uasset" 400
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_03.uasset" 401
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_04.uasset" 402
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_05.uasset" 403
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_06.uasset" 404
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_07.uasset" 405
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_08.uasset" 406
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_09.uasset" 407
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_10.uasset" 408
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_11.uasset" 409
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_12.uasset" 410
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_13.uasset" 411
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_14.uasset" 412
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_15.uasset" 413
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_16.uasset" 414
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_17.uasset" 415
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_18.uasset" 416
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_19.uasset" 417
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_20.uasset" 418
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_21.uasset" 419
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_01.uasset" 420
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_02.uasset" 421
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_03.uasset" 422
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_04.uasset" 423
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_05.uasset" 424
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_06.uasset" 425
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_07.uasset" 426
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_08.uasset" 427
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_01.uasset" 428
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_02.uasset" 429
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_03.uasset" 430
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_04.uasset" 431
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_05.uasset" 432
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_06.uasset" 433
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_07.uasset" 434
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/voice_male_b_effort_quick_action_01.uasset" 435
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/voice_male_b_effort_quick_action_02.uasset" 436
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/voice_male_b_effort_quick_action_03.uasset" 437
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/voice_male_b_effort_quick_action_04.uasset" 438
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/voice_male_b_effort_quick_action_05.uasset" 439
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/voice_male_b_effort_quick_action_06.uasset" 440
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/S_Death_Cue.uasset" 441
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_01.uasset" 442
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_02.uasset" 443
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_03.uasset" 444
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_04.uasset" 445
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_05.uasset" 446
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_06.uasset" 447
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_07.uasset" 448
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_01.uasset" 449
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_02.uasset" 450
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_03.uasset" 451
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_04.uasset" 452
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_05.uasset" 453
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_06.uasset" 454
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_07.uasset" 455
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_08.uasset" 456
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_09.uasset" 457
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_10.uasset" 458
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_01.uasset" 459
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_02.uasset" 460
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_03.uasset" 461
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_04.uasset" 462
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_05.uasset" 463
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_06.uasset" 464
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_07.uasset" 465
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_08.uasset" 466
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_09.uasset" 467
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_10.uasset" 468
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_11.uasset" 469
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_12.uasset" 470
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_13.uasset" 471
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_14.uasset" 472
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_15.uasset" 473
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_16.uasset" 474
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_17.uasset" 475
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_18.uasset" 476
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_19.uasset" 477
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_01.uasset" 478
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_02.uasset" 479
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_03.uasset" 480
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_04.uasset" 481
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_05.uasset" 482
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_06.uasset" 483
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_07.uasset" 484
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_08.uasset" 485
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_09.uasset" 486
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_10.uasset" 487
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_11.uasset" 488
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_12.uasset" 489
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_01.uasset" 490
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_02.uasset" 491
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_03.uasset" 492
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_04.uasset" 493
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_05.uasset" 494
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_06.uasset" 495
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_07.uasset" 496
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_08.uasset" 497
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_09.uasset" 498
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_10.uasset" 499
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_05.uasset" 500
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/S_Hurt_Cue.uasset" 501
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_comedy_02.uasset" 502
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_01.uasset" 503
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_02.uasset" 504
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_03.uasset" 505
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_04.uasset" 506
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_05.uasset" 507
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_06.uasset" 508
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_07.uasset" 509
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_01.uasset" 510
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_02.uasset" 511
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_03.uasset" 512
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_04.uasset" 513
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_05.uasset" 514
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_06.uasset" 515
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_07.uasset" 516
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_08.uasset" 517
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_09.uasset" 518
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_10.uasset" 519
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_11.uasset" 520
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_12.uasset" 521
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_13.uasset" 522
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_14.uasset" 523
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_01.uasset" 524
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_02.uasset" 525
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_03.uasset" 526
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_04.uasset" 527
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_05.uasset" 528
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_06.uasset" 529
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_07.uasset" 530
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_08.uasset" 531
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_4_01.uasset" 532
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_4_02.uasset" 533
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_4_03.uasset" 534
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_4_04.uasset" 535
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_4_05.uasset" 536
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_01.uasset" 537
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_02.uasset" 538
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_03.uasset" 539
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_04.uasset" 540
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_06.uasset" 541
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_07.uasset" 542
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_08.uasset" 543
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_09.uasset" 544
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_10.uasset" 545
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_11.uasset" 546
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_12.uasset" 547
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_13.uasset" 548
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_14.uasset" 549
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_15.uasset" 550
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_16.uasset" 551
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_17.uasset" 552
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_18.uasset" 553
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_19.uasset" 554
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_20.uasset" 555
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_21.uasset" 556
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_01.uasset" 557
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_02.uasset" 558
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_03.uasset" 559
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_04.uasset" 560
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_05.uasset" 561
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_06.uasset" 562
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_07.uasset" 563
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_08.uasset" 564
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_09.uasset" 565
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_c_effort_short_jump_01.uasset" 566
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_c_effort_short_jump_02.uasset" 567
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_c_effort_short_jump_03.uasset" 568
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_c_effort_short_jump_04.uasset" 569
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_c_effort_short_jump_05.uasset" 570
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/collect_item_chime_04.uasset" 571
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_01_A.uasset" 572
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Materials/Mat_PolygonSpy_01_A.uasset" 573
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_03_A.uasset" 574
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Materials/Mat_PolygonSpy_01_Otto.uasset" 575
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/SK_SecretAgent_PhysicsAsset.uasset" 576
-"../../../Engine/Content/EngineMeshes/Humanoid.uasset" 577
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/SK_SecretAgent_Skeleton.uasset" 578
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Player/SK_SecretAgent_Otto.uasset" 579
-"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay.uasset" 580
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_Emissive_01.uasset" 581
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_PolygonOffice_01_A.uasset" 582
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Materials/M_ElevatingActionOffice.uasset" 583
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_PolygonOffice_04_A.uasset" 584
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Materials/M_ElevatingActionOffice_Wall.uasset" 585
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Elevator_01.uasset" 586
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Elevator_01_Door.uasset" 587
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Weapons/SK_Wep_Pistol_01_PhysicsAsset.uasset" 588
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Weapons/SK_Wep_Pistol_01_Skeleton.uasset" 589
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Weapons/SK_Wep_Pistol_01.uasset" 590
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ExplosionSounds/explosion_small_short_01.uasset" 591
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ExplosionSounds/explosion_small_short_02.uasset" 592
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Blueprints/BP_GAP_UnrealProjectile.uasset" 593
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01Grey.uasset" 594
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_AlphaBlended.uasset" 595
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Texturesheets/T_ToonProjectilesVol1_10X10_8K_part1.uasset" 596
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP1_10x10_AB.uasset" 597
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_Additive.uasset" 598
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP1_10x10_Add.uasset" 599
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Bullet01Blue.uasset" 600
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Bullet01Blue.uasset" 601
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/T_Projectile01.uasset" 602
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Projectile01.uasset" 603
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_Additive_Tex.uasset" 604
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Square/T_Square02.uasset" 605
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Square02.uasset" 606
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_BiPlanar01.uasset" 607
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Bullet01Blue.uasset" 608
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Blueprints/BP_Projectile_Bullet01Red.uasset" 609
-"../../Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset" 610
-"../../Plugins/2D/Paper2D/Content/DummySprite.uasset" 611
-"../../Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset" 612
-"../../Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset" 613
-"../../Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset" 614
-"../../Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset" 615
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraAnimTrailWidthMode.uasset" 616
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraBoneSamplingMode.uasset" 617
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraBoneSocketSamplingMode.uasset" 618
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraBooleanLogicOps.uasset" 619
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraBooleanLogicOps_v2.uasset" 620
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCalculateRadiusOptions.uasset" 621
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraChannelCorrelation.uasset" 622
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCollisionRadiusOptions.uasset" 623
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCoordinateSpace.uasset" 624
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCurlNoiseQuality.uasset" 625
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterLifeCycleMode.uasset" 626
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterScalabilityMode.uasset" 627
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterScalabilityMode_Limited.uasset" 628
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraExecutionStateManagement.uasset" 629
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraExpansionMode.uasset" 630
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraFrictionMergeType.uasset" 631
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraGPUDepthResponseType.uasset" 632
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraGridPlacementType.uasset" 633
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraInactiveMode.uasset" 634
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraKillVolumeOptions.uasset" 635
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraLinearColor_Channels.uasset" 636
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMassByVolume.uasset" 637
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMassCalculationForRendererTypes.uasset" 638
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMeshOrSprite.uasset" 639
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMeshSamplingMode.uasset" 640
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMeshSurfaceSamplingMode.uasset" 641
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMeshTransforms.uasset" 642
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMinOrMax.uasset" 643
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraOrientationAxis.uasset" 644
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessMode.uasset" 645
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraRestitutionMergeType.uasset" 646
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraScaleColorMode.uasset" 647
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSimulationTarget.uasset" 648
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSkeletalSpawning.uasset" 649
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSkelSamplingFilteringMode.uasset" 650
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSkelSamplingModeFull.uasset" 651
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSocketSamplingMode.uasset" 652
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSUbUVAnimationMode.uasset" 653
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSystemInactiveMode.uasset" 654
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraTorusDistributionMode.uasset" 655
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraTorusMode.uasset" 656
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraTriangleSamplingMode.uasset" 657
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraVector2_Channels.uasset" 658
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraVector3_Channels.uasset" 659
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraVector4_Channels.uasset" 660
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraVertexFilteringMode.uasset" 661
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraVertexSamplingMode.uasset" 662
-"../../Plugins/FX/Niagara/Content/Enums/ENiagara_CameraMeshOrientation.uasset" 663
-"../../Plugins/FX/Niagara/Content/Enums/ENiagara_CameraProperties.uasset" 664
-"../../Plugins/FX/Niagara/Content/Enums/ENiagara_CollisionType.uasset" 665
-"../../Plugins/FX/Niagara/Content/Enums/ENiagara_CPUCollisionType.uasset" 666
-"../../Plugins/FX/Niagara/Content/Enums/ENiagara_EmitterStateOptions.uasset" 667
-"../../Plugins/FX/Niagara/Content/Enums/ENiagara_Float4Channel.uasset" 668
-"../../Plugins/FX/Niagara/Content/Enums/ENiagara_GPUCollisionType.uasset" 669
-"../../Plugins/FX/Niagara/Content/Enums/ENiagara_InfiniteLoopDuration.uasset" 670
-"../../Plugins/FX/Niagara/Content/Icons/S_ParticleSystem.uasset" 671
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 672
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey.uasset" 673
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey_Lit.uasset" 674
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_OpaqueColoredMaterial.uasset" 675
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_WhiteMaterial.uasset" 676
-"../../../Engine/Content/Maps/Entry_BuiltData.uasset" 677
-"../../../Engine/Content/Maps/Entry.umap" 678
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Materials/DefaultTextMaterialEmissive.uasset" 679
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Materials/M_ElevatingActionOffice_Floor.uasset" 680
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Meshes/SM_Bld_Office_CeilingLight.uasset" 681
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Floor_Carpet_01.uasset" 682
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_01.uasset" 683
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Materials/M_ElevatingActionOffice_Sign.uasset" 684
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Props/Roof/SM_Prop_Ducting_02_Cap.uasset" 685
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Floor.uasset" 686
-"../../../Engine/Content/Animation/DefaultAnimBoneCompressionSettings.uasset" 687
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Fire_Single.uasset" 688
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Fire_Single_Montage.uasset" 689
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Fire_Single.uasset" 690
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Fire_Single_Montage.uasset" 691
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/Driving.uasset" 692
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Aim_Equip_Get_From_MOB.uasset" 693
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Aim_Idle_IPC.uasset" 694
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/S_CrouchUp_Cue.uasset" 695
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Aim_To_Stand_Aim_IPC.uasset" 696
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Jump_RU_Air_IPC.uasset" 697
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/S_LandWhileMoving_Cue.uasset" 698
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Jump_RU_End_IPC.uasset" 699
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/S_Jump_Cue.uasset" 700
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Jump_RU_Start_IPC.uasset" 701
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Idle_IPC.uasset" 702
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Jump_Air_IPC.uasset" 703
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/S_LandWhileStanding_Cue.uasset" 704
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Jump_End_IPC.uasset" 705
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Jump_Start_IPC.uasset" 706
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/S_CrouchDown_Cue.uasset" 707
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_To_Crouch_Aim_IPC.uasset" 708
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Relaxed_Idle_IPC.uasset" 709
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Loop_IPC.uasset" 710
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Walk_Aim_F_Loop_IPC.uasset" 711
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/Aiming_Movement.uasset" 712
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/S_RunningInOffice_Cue.uasset" 713
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/S_WalkingInOffice_Cue.uasset" 714
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/S_RunningOutsideOffice_Cue.uasset" 715
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/ABP_ElevatingActionCharacter.uasset" 716
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/Curve_FlashAddedScore.uasset" 717
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/collect_item_jingle_06.uasset" 718
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/EEntityInsideRoom.uasset" 719
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Materials/Mat_PolygonOffice_Glass.uasset" 720
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Door_OpaqueGlass.uasset" 721
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Floor_Wood_01.uasset" 722
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Door_01.uasset" 723
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Wall_Room.uasset" 724
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Camera/ZoomCurve_ElevatingActionCamera.uasset" 725
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Camera/BP_ElevatingActionCamera.uasset" 726
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Vehicles/SK_Veh_SpyCar_01_Skeleton.uasset" 727
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Vehicle/AnimBP_Veh_SpyCar.uasset" 728
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Vehicle/BP_Veh_SpyCar_FrontWheel.uasset" 729
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Vehicle/BP_Veh_SpyCar_RearWheel.uasset" 730
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/CarEngine/engine_generator_loop_02.uasset" 731
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/CarEngine/S_CarEngine_Cue.uasset" 732
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/points_ticker_bonus_score_reward_single_01.uasset" 733
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/points_ticker_bonus_score_reward_single_04.uasset" 734
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_BonusScore.uasset" 735
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_FX_Steam.uasset" 736
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/FX/P_FX_Steam.uasset" 737
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_03_A.uasset" 738
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_Metallic.uasset" 739
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_Roughness.uasset" 740
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Materials/MAT_PolygonSpy_Car.uasset" 741
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Materials/Mat_PolygonSpy_Glass.uasset" 742
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Vehicles/SK_Veh_SpyCar_01_PhysicsAsset.uasset" 743
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Vehicles/SK_Veh_SpyCar_01.uasset" 744
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Vehicle/BP_Veh_SpyCar.uasset" 745
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/S_BackgroundMusic_Cue.uasset" 746
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/collect_item_hurry_up_alarm_warning_01.uasset" 747
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/points_ticker_bonus_score_reward_jingle_04.uasset" 748
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Fonts/WildWest/Wild_West_USA.uasset" 749
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Fonts/WildWest/Wild_West_USA_Font.uasset" 750
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ScM_ElevatingActionAudio.uasset" 751
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_VolumeBox.uasset" 752
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Icons/arrowLeft.uasset" 753
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Icons/audioOff.uasset" 754
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Icons/audioOn.uasset" 755
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_PauseMenu.uasset" 756
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Props/SM_Prop_Files_01.uasset" 757
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Player/BP_SecretAgent_Otto.uasset" 758
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/S_SecretAgentKick_Cue.uasset" 759
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Enemy/SK_SecretAgent_Enemy.uasset" 760
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_01_B.uasset" 761
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonWestern_01_A.uasset" 762
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Materials/Mat_PolygonSpy_Hat.uasset" 763
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Props/SM_Prop_Hat_01.uasset" 764
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_01_C.uasset" 765
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Enemy/BP_SecretAgent_Enemy.uasset" 766
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/LampBreakingSounds/S_CeilingLampGlassBreak_Cue.uasset" 767
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Props/Roof/SM_Prop_Light_04.uasset" 768
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Texturesheets/T_ToonProjectilesVol1_10X10_8K_part2.uasset" 769
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP2_10x10_Add.uasset" 770
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_ElectricBall01Blue.uasset" 771
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Ceiling_Lamp.uasset" 772
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Meshes/SM_Bld_ElevatorButton.uasset" 773
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_Normal_01.uasset" 774
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_Glass_Windows.uasset" 775
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Door_translucentGlass.uasset" 776
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Elevator_01.uasset" 777
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_03.uasset" 778
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_03_Glass.uasset" 779
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_04.uasset" 780
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_04_Glass.uasset" 781
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Window_Awning_01.uasset" 782
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Window_Cover_Pole_01.uasset" 783
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Basement.uasset" 784
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_FrontWall.uasset" 785
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Materials/Mat_PolygonOffice_01_A.uasset" 786
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Roof_01.uasset" 787
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Roof.uasset" 788
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Brick_Elevator_01.uasset" 789
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Roof_Elevator.uasset" 790
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Stairs_Carpet_02.uasset" 791
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Stairs_Top_Cube_01.uasset" 792
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Stairs_Wood_02.uasset" 793
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Stairs.uasset" 794
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Wall_Blank.uasset" 795
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Wall_Elevator.uasset" 796
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Road_01.uasset" 797
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Road_Normal.uasset" 798
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_Texture_Road_01.uasset" 799
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Meshes/Environments/SM_Env_Road_YellowLines_02.uasset" 800
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Emissive_01.uasset" 801
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_01_A.uasset" 802
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_Metallic.uasset" 803
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_Roughness.uasset" 804
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_Texture_01_A.uasset" 805
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Meshes/Environments/SM_Env_Sidewalk_Straight_02.uasset" 806
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Env_Street.uasset" 807
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/game_over_dark_bell_chime_01.uasset" 808
-"../../../Engine/Content/EngineFonts/Faces/RobotoBold.uasset" 809
-"../../../Engine/Content/EngineFonts/Faces/RobotoBoldItalic.uasset" 810
-"../../../Engine/Content/EngineFonts/Faces/RobotoItalic.uasset" 811
-"../../../Engine/Content/EngineFonts/Faces/RobotoLight.uasset" 812
-"../../../Engine/Content/EngineFonts/Faces/RobotoRegular.uasset" 813
-"../../../Engine/Content/EngineFonts/Roboto.uasset" 814
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/ScoreRichTextTable.uasset" 815
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_SpecialAgentOtto_HUD.uasset" 816
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Ceiling_01.uasset" 817
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_PolygonOffice_02_A.uasset" 818
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_PolygonOffice_03_A.uasset" 819
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/Maps/Office.umap" 820
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_StartMenu.uasset" 821
-"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/Maps/StartMenu.umap" 822
+"../../../Engine/Content/Tutorial/BlueprintTutorials/LevelBlueprintEditorOverview.uasset" 319
+"../../../Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_MacroLib.uasset" 320
+"../../../Engine/Content/VREditor/LaserPointer/VR_LaserPower_01.uasset" 321
+"../../../Engine/Content/VREditor/TransformGizmo/TransformGizmoMaterial.uasset" 322
+"../../../Engine/Content/VREditor/TransformGizmo/TranslucentTransformGizmoMaterial.uasset" 323
+"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxCorner.uasset" 324
+"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxEdge.uasset" 325
+"../../../Engine/Content/VREditor/TransformGizmo/PlaneTranslationHandle.uasset" 326
+"../../../Engine/Content/VREditor/TransformGizmo/Main.uasset" 327
+"../../../Engine/Content/VREditor/TransformGizmo/Xray.uasset" 328
+"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Key.uasset" 329
+"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Node.uasset" 330
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__1.uasset" 331
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__10.uasset" 332
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__2.uasset" 333
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__4.uasset" 334
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__6.uasset" 335
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__8.uasset" 336
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/Abstract_Vision__9.uasset" 337
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/S_Music_Class.uasset" 338
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/S_Voices_Class.uasset" 339
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/S_Master_Class.uasset" 340
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/S_SoundEffects_Class.uasset" 341
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/alarm_siren_loop_04.uasset" 342
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/hum_electric_neon_light_loop_01.uasset" 343
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/switch_button_push_on_off_10.uasset" 344
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorMoving/door_metal_draw_slide_close_02.uasset" 345
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorMoving/door_metal_draw_slide_open_01.uasset" 346
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorMoving/elevator_loop_01.uasset" 347
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ElevatorMoving/elevator_loop_02.uasset" 348
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/LampBreakingSounds/glass_smashable_small_break_01.uasset" 349
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/LampBreakingSounds/glass_smashable_small_break_02.uasset" 350
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/LampBreakingSounds/glass_smashable_small_break_03.uasset" 351
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/PistolTriggerPulledSounds/sci-fi_weapon_plasma_pistol_04.uasset" 352
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/PistolTriggerPulledSounds/S_ProjectileShot_Cue.uasset" 353
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_03.uasset" 354
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_06.uasset" 355
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_v2_01.uasset" 356
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_v2_02.uasset" 357
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_v2_03.uasset" 358
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_v2_04.uasset" 359
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_v2_05.uasset" 360
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/footstep_wood_land_v2_06.uasset" 361
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_01.uasset" 362
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_02.uasset" 363
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_03.uasset" 364
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_04.uasset" 365
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_05.uasset" 366
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_06.uasset" 367
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_07.uasset" 368
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_08.uasset" 369
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_09.uasset" 370
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_10.uasset" 371
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_11.uasset" 372
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_12.uasset" 373
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_13.uasset" 374
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_14.uasset" 375
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_15.uasset" 376
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_16.uasset" 377
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_17.uasset" 378
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/footstep_wood_run_18.uasset" 379
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_01.uasset" 380
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_02.uasset" 381
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_03.uasset" 382
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_04.uasset" 383
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_05.uasset" 384
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_06.uasset" 385
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_07.uasset" 386
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_08.uasset" 387
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_09.uasset" 388
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_10.uasset" 389
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_11.uasset" 390
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_12.uasset" 391
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_13.uasset" 392
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_14.uasset" 393
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_15.uasset" 394
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_16.uasset" 395
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_17.uasset" 396
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_18.uasset" 397
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_19.uasset" 398
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/footstep_wood_walk_20.uasset" 399
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_01.uasset" 400
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_02.uasset" 401
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_03.uasset" 402
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_04.uasset" 403
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_05.uasset" 404
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_06.uasset" 405
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_07.uasset" 406
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_08.uasset" 407
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_09.uasset" 408
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_10.uasset" 409
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_11.uasset" 410
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_12.uasset" 411
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_13.uasset" 412
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_14.uasset" 413
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_15.uasset" 414
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_16.uasset" 415
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_17.uasset" 416
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_18.uasset" 417
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_19.uasset" 418
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_20.uasset" 419
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/footstep_concrete_run_21.uasset" 420
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_01.uasset" 421
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_02.uasset" 422
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_03.uasset" 423
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_04.uasset" 424
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_05.uasset" 425
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_06.uasset" 426
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_07.uasset" 427
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_hard_impact_08.uasset" 428
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_01.uasset" 429
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_02.uasset" 430
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_03.uasset" 431
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_04.uasset" 432
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_05.uasset" 433
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_06.uasset" 434
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/kick_heavy_impact_07.uasset" 435
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/voice_male_b_effort_quick_action_01.uasset" 436
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/voice_male_b_effort_quick_action_02.uasset" 437
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/voice_male_b_effort_quick_action_03.uasset" 438
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/voice_male_b_effort_quick_action_04.uasset" 439
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/voice_male_b_effort_quick_action_05.uasset" 440
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/voice_male_b_effort_quick_action_06.uasset" 441
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/S_Death_Cue.uasset" 442
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_01.uasset" 443
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_02.uasset" 444
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_03.uasset" 445
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_04.uasset" 446
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_05.uasset" 447
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_06.uasset" 448
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_high_07.uasset" 449
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_01.uasset" 450
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_02.uasset" 451
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_03.uasset" 452
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_04.uasset" 453
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_05.uasset" 454
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_06.uasset" 455
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_07.uasset" 456
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_08.uasset" 457
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_09.uasset" 458
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_b_death_low_10.uasset" 459
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_01.uasset" 460
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_02.uasset" 461
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_03.uasset" 462
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_04.uasset" 463
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_05.uasset" 464
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_06.uasset" 465
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_07.uasset" 466
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_08.uasset" 467
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_09.uasset" 468
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_10.uasset" 469
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_11.uasset" 470
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_12.uasset" 471
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_13.uasset" 472
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_14.uasset" 473
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_15.uasset" 474
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_16.uasset" 475
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_17.uasset" 476
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_18.uasset" 477
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_c_death_19.uasset" 478
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_01.uasset" 479
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_02.uasset" 480
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_03.uasset" 481
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_04.uasset" 482
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_05.uasset" 483
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_06.uasset" 484
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_07.uasset" 485
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_08.uasset" 486
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_09.uasset" 487
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_10.uasset" 488
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_11.uasset" 489
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_d_death_12.uasset" 490
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_01.uasset" 491
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_02.uasset" 492
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_03.uasset" 493
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_04.uasset" 494
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_05.uasset" 495
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_06.uasset" 496
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_07.uasset" 497
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_08.uasset" 498
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_09.uasset" 499
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Death/voice_male_grunt_pain_death_10.uasset" 500
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_05.uasset" 501
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/S_Hurt_Cue.uasset" 502
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_comedy_02.uasset" 503
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_01.uasset" 504
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_02.uasset" 505
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_03.uasset" 506
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_04.uasset" 507
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_05.uasset" 508
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_06.uasset" 509
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_1_07.uasset" 510
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_01.uasset" 511
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_02.uasset" 512
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_03.uasset" 513
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_04.uasset" 514
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_05.uasset" 515
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_06.uasset" 516
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_07.uasset" 517
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_08.uasset" 518
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_09.uasset" 519
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_10.uasset" 520
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_11.uasset" 521
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_12.uasset" 522
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_13.uasset" 523
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_2_14.uasset" 524
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_01.uasset" 525
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_02.uasset" 526
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_03.uasset" 527
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_04.uasset" 528
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_05.uasset" 529
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_06.uasset" 530
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_07.uasset" 531
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_3_08.uasset" 532
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_4_01.uasset" 533
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_4_02.uasset" 534
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_4_03.uasset" 535
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_4_04.uasset" 536
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_4_05.uasset" 537
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_01.uasset" 538
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_02.uasset" 539
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_03.uasset" 540
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_04.uasset" 541
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_06.uasset" 542
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_07.uasset" 543
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_08.uasset" 544
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_09.uasset" 545
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_10.uasset" 546
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_11.uasset" 547
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_12.uasset" 548
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_13.uasset" 549
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_14.uasset" 550
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_15.uasset" 551
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_16.uasset" 552
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_17.uasset" 553
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_18.uasset" 554
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_19.uasset" 555
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_20.uasset" 556
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Hurt/voice_male_b_hurt_pain_set_5_21.uasset" 557
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_01.uasset" 558
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_02.uasset" 559
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_03.uasset" 560
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_04.uasset" 561
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_05.uasset" 562
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_06.uasset" 563
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_07.uasset" 564
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_08.uasset" 565
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_b_effort_jump_09.uasset" 566
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_c_effort_short_jump_01.uasset" 567
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_c_effort_short_jump_02.uasset" 568
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_c_effort_short_jump_03.uasset" 569
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_c_effort_short_jump_04.uasset" 570
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/voice_male_c_effort_short_jump_05.uasset" 571
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/collect_item_chime_04.uasset" 572
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_01_A.uasset" 573
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Materials/Mat_PolygonSpy_01_A.uasset" 574
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_03_A.uasset" 575
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Materials/Mat_PolygonSpy_01_Otto.uasset" 576
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/SK_SecretAgent_PhysicsAsset.uasset" 577
+"../../../Engine/Content/EngineMeshes/Humanoid.uasset" 578
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/SK_SecretAgent_Skeleton.uasset" 579
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Player/SK_SecretAgent_Otto.uasset" 580
+"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay.uasset" 581
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_Emissive_01.uasset" 582
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_PolygonOffice_01_A.uasset" 583
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Materials/M_ElevatingActionOffice.uasset" 584
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_PolygonOffice_04_A.uasset" 585
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Materials/M_ElevatingActionOffice_Wall.uasset" 586
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Elevator_01.uasset" 587
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Elevator_01_Door.uasset" 588
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Weapons/SK_Wep_Pistol_01_PhysicsAsset.uasset" 589
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Weapons/SK_Wep_Pistol_01_Skeleton.uasset" 590
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Weapons/SK_Wep_Pistol_01.uasset" 591
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ExplosionSounds/explosion_small_short_01.uasset" 592
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/ExplosionSounds/explosion_small_short_02.uasset" 593
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Blueprints/BP_GAP_UnrealProjectile.uasset" 594
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Beams/T_Beam01Grey.uasset" 595
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_AlphaBlended.uasset" 596
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Texturesheets/T_ToonProjectilesVol1_10X10_8K_part1.uasset" 597
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP1_10x10_AB.uasset" 598
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_Additive.uasset" 599
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP1_10x10_Add.uasset" 600
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_Bullet01Blue.uasset" 601
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Muzzles/P_Muzzle_Bullet01Blue.uasset" 602
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/T_Projectile01.uasset" 603
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Projectile01.uasset" 604
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Originals/M_Additive_Tex.uasset" 605
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Square/T_Square02.uasset" 606
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_Square02.uasset" 607
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Models/SM_BiPlanar01.uasset" 608
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Projectiles/P_Projectile_Bullet01Blue.uasset" 609
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Blueprints/BP_Projectile_Bullet01Red.uasset" 610
+"../../Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset" 611
+"../../Plugins/2D/Paper2D/Content/DummySprite.uasset" 612
+"../../Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset" 613
+"../../Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset" 614
+"../../Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset" 615
+"../../Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset" 616
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraAnimTrailWidthMode.uasset" 617
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraBoneSamplingMode.uasset" 618
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraBoneSocketSamplingMode.uasset" 619
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraBooleanLogicOps.uasset" 620
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraBooleanLogicOps_v2.uasset" 621
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCalculateRadiusOptions.uasset" 622
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraChannelCorrelation.uasset" 623
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCollisionRadiusOptions.uasset" 624
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCoordinateSpace.uasset" 625
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCurlNoiseQuality.uasset" 626
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterLifeCycleMode.uasset" 627
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterScalabilityMode.uasset" 628
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraEmitterScalabilityMode_Limited.uasset" 629
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraExecutionStateManagement.uasset" 630
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraExpansionMode.uasset" 631
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraFrictionMergeType.uasset" 632
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraGPUDepthResponseType.uasset" 633
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraGridPlacementType.uasset" 634
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraInactiveMode.uasset" 635
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraKillVolumeOptions.uasset" 636
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraLinearColor_Channels.uasset" 637
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMassByVolume.uasset" 638
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMassCalculationForRendererTypes.uasset" 639
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMeshOrSprite.uasset" 640
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMeshSamplingMode.uasset" 641
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMeshSurfaceSamplingMode.uasset" 642
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMeshTransforms.uasset" 643
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraMinOrMax.uasset" 644
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraOrientationAxis.uasset" 645
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessMode.uasset" 646
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraRestitutionMergeType.uasset" 647
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraScaleColorMode.uasset" 648
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSimulationTarget.uasset" 649
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSkeletalSpawning.uasset" 650
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSkelSamplingFilteringMode.uasset" 651
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSkelSamplingModeFull.uasset" 652
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSocketSamplingMode.uasset" 653
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSUbUVAnimationMode.uasset" 654
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraSystemInactiveMode.uasset" 655
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraTorusDistributionMode.uasset" 656
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraTorusMode.uasset" 657
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraTriangleSamplingMode.uasset" 658
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraVector2_Channels.uasset" 659
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraVector3_Channels.uasset" 660
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraVector4_Channels.uasset" 661
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraVertexFilteringMode.uasset" 662
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraVertexSamplingMode.uasset" 663
+"../../Plugins/FX/Niagara/Content/Enums/ENiagara_CameraMeshOrientation.uasset" 664
+"../../Plugins/FX/Niagara/Content/Enums/ENiagara_CameraProperties.uasset" 665
+"../../Plugins/FX/Niagara/Content/Enums/ENiagara_CollisionType.uasset" 666
+"../../Plugins/FX/Niagara/Content/Enums/ENiagara_CPUCollisionType.uasset" 667
+"../../Plugins/FX/Niagara/Content/Enums/ENiagara_EmitterStateOptions.uasset" 668
+"../../Plugins/FX/Niagara/Content/Enums/ENiagara_Float4Channel.uasset" 669
+"../../Plugins/FX/Niagara/Content/Enums/ENiagara_GPUCollisionType.uasset" 670
+"../../Plugins/FX/Niagara/Content/Enums/ENiagara_InfiniteLoopDuration.uasset" 671
+"../../Plugins/FX/Niagara/Content/Icons/S_ParticleSystem.uasset" 672
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 673
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey.uasset" 674
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey_Lit.uasset" 675
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_OpaqueColoredMaterial.uasset" 676
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_WhiteMaterial.uasset" 677
+"../../../Engine/Content/Maps/Entry_BuiltData.uasset" 678
+"../../../Engine/Content/Maps/Entry.umap" 679
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Materials/DefaultTextMaterialEmissive.uasset" 680
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Materials/M_ElevatingActionOffice_Floor.uasset" 681
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Meshes/SM_Bld_Office_CeilingLight.uasset" 682
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Floor_Carpet_01.uasset" 683
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_01.uasset" 684
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Materials/M_ElevatingActionOffice_Sign.uasset" 685
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Props/Roof/SM_Prop_Ducting_02_Cap.uasset" 686
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Floor.uasset" 687
+"../../../Engine/Content/Animation/DefaultAnimBoneCompressionSettings.uasset" 688
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Fire_Single.uasset" 689
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Fire_Single_Montage.uasset" 690
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Fire_Single.uasset" 691
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Fire_Single_Montage.uasset" 692
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/Driving.uasset" 693
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Aim_Equip_Get_From_MOB.uasset" 694
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Aim_Idle_IPC.uasset" 695
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/S_CrouchUp_Cue.uasset" 696
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Crouch_Aim_To_Stand_Aim_IPC.uasset" 697
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Jump_RU_Air_IPC.uasset" 698
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/S_LandWhileMoving_Cue.uasset" 699
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Jump_RU_End_IPC.uasset" 700
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Jump/S_Jump_Cue.uasset" 701
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Jump_RU_Start_IPC.uasset" 702
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Idle_IPC.uasset" 703
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Jump_Air_IPC.uasset" 704
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Land/S_LandWhileStanding_Cue.uasset" 705
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Jump_End_IPC.uasset" 706
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_Jump_Start_IPC.uasset" 707
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentVoices/Crouch/S_CrouchDown_Cue.uasset" 708
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Aim_To_Crouch_Aim_IPC.uasset" 709
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Stand_Relaxed_Idle_IPC.uasset" 710
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Jog_Aim_F_Loop_IPC.uasset" 711
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/W1_Walk_Aim_F_Loop_IPC.uasset" 712
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/Aiming_Movement.uasset" 713
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Run/S_RunningInOffice_Cue.uasset" 714
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/InsideOffice/Walk/S_WalkingInOffice_Cue.uasset" 715
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentFootsteps/OutsideOffice/S_RunningOutsideOffice_Cue.uasset" 716
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Animations/ABP_ElevatingActionCharacter.uasset" 717
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/Curve_FlashAddedScore.uasset" 718
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/collect_item_jingle_06.uasset" 719
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/EEntityInsideRoom.uasset" 720
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Materials/Mat_PolygonOffice_Glass.uasset" 721
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Door_OpaqueGlass.uasset" 722
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Floor_Wood_01.uasset" 723
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Door_01.uasset" 724
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Wall_Room.uasset" 725
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Camera/ZoomCurve_ElevatingActionCamera.uasset" 726
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Camera/BP_ElevatingActionCamera.uasset" 727
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Vehicles/SK_Veh_SpyCar_01_Skeleton.uasset" 728
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Vehicle/AnimBP_Veh_SpyCar.uasset" 729
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Vehicle/BP_Veh_SpyCar_FrontWheel.uasset" 730
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Vehicle/BP_Veh_SpyCar_RearWheel.uasset" 731
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/CarEngine/engine_generator_loop_02.uasset" 732
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/CarEngine/S_CarEngine_Cue.uasset" 733
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/points_ticker_bonus_score_reward_single_01.uasset" 734
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/points_ticker_bonus_score_reward_single_04.uasset" 735
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_BonusScore.uasset" 736
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_FX_Steam.uasset" 737
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/FX/P_FX_Steam.uasset" 738
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_03_A.uasset" 739
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_Metallic.uasset" 740
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_Roughness.uasset" 741
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Materials/MAT_PolygonSpy_Car.uasset" 742
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Materials/Mat_PolygonSpy_Glass.uasset" 743
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Vehicles/SK_Veh_SpyCar_01_PhysicsAsset.uasset" 744
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Vehicles/SK_Veh_SpyCar_01.uasset" 745
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Vehicle/BP_Veh_SpyCar.uasset" 746
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ElectronicAbstractMusicPack/S_BackgroundMusic_Cue.uasset" 747
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/collect_item_hurry_up_alarm_warning_01.uasset" 748
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/points_ticker_bonus_score_reward_jingle_04.uasset" 749
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Fonts/WildWest/Wild_West_USA.uasset" 750
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Fonts/WildWest/Wild_West_USA_Font.uasset" 751
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/ScM_ElevatingActionAudio.uasset" 752
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_VolumeBox.uasset" 753
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Icons/arrowLeft.uasset" 754
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Icons/audioOff.uasset" 755
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Icons/audioOn.uasset" 756
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_PauseMenu.uasset" 757
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Props/SM_Prop_Files_01.uasset" 758
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Player/BP_SecretAgent_Otto.uasset" 759
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretAgentKickSounds/S_SecretAgentKick_Cue.uasset" 760
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Enemy/SK_SecretAgent_Enemy.uasset" 761
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_01_B.uasset" 762
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonWestern_01_A.uasset" 763
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Materials/Mat_PolygonSpy_Hat.uasset" 764
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Meshes/Props/SM_Prop_Hat_01.uasset" 765
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonSpy/Textures/T_PolygonSpy_01_C.uasset" 766
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionSecretAgent/Character/Enemy/BP_SecretAgent_Enemy.uasset" 767
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/LampBreakingSounds/S_CeilingLampGlassBreak_Cue.uasset" 768
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Props/Roof/SM_Prop_Light_04.uasset" 769
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Textures/Texturesheets/T_ToonProjectilesVol1_10X10_8K_part2.uasset" 770
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Materials/Mi_ToonProjectilesP2_10x10_Add.uasset" 771
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ToonProjectilesVol1/Particles/Hits/P_Hit_ElectricBall01Blue.uasset" 772
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Ceiling_Lamp.uasset" 773
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Meshes/SM_Bld_ElevatorButton.uasset" 774
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_Normal_01.uasset" 775
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_Glass_Windows.uasset" 776
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Door_translucentGlass.uasset" 777
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Elevator_01.uasset" 778
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_03.uasset" 779
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_03_Glass.uasset" 780
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_04.uasset" 781
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Blank_Window_04_Glass.uasset" 782
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Window_Awning_01.uasset" 783
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Window_Cover_Pole_01.uasset" 784
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Basement.uasset" 785
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_FrontWall.uasset" 786
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Materials/Mat_PolygonOffice_01_A.uasset" 787
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Roof_01.uasset" 788
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Roof.uasset" 789
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Wall_Brick_Elevator_01.uasset" 790
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Roof_Elevator.uasset" 791
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Stairs_Carpet_02.uasset" 792
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Stairs_Top_Cube_01.uasset" 793
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Stairs_Wood_02.uasset" 794
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Stairs.uasset" 795
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Wall_Blank.uasset" 796
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Bld_Office_Wall_Elevator.uasset" 797
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Road_01.uasset" 798
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Road_Normal.uasset" 799
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_Texture_Road_01.uasset" 800
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Meshes/Environments/SM_Env_Road_YellowLines_02.uasset" 801
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Emissive_01.uasset" 802
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_01_A.uasset" 803
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_Metallic.uasset" 804
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Textures/T_PolygonCity_Texture_Roughness.uasset" 805
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Materials/Mat_PolygonCity_Texture_01_A.uasset" 806
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonCity/Meshes/Environments/SM_Env_Sidewalk_Straight_02.uasset" 807
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionOffice/Blueprints/BP_Env_Street.uasset" 808
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionAudio/GameMasterAudio/SecretFileCollection/game_over_dark_bell_chime_01.uasset" 809
+"../../../Engine/Content/EngineFonts/Faces/RobotoBold.uasset" 810
+"../../../Engine/Content/EngineFonts/Faces/RobotoBoldItalic.uasset" 811
+"../../../Engine/Content/EngineFonts/Faces/RobotoItalic.uasset" 812
+"../../../Engine/Content/EngineFonts/Faces/RobotoLight.uasset" 813
+"../../../Engine/Content/EngineFonts/Faces/RobotoRegular.uasset" 814
+"../../../Engine/Content/EngineFonts/Roboto.uasset" 815
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/ScoreRichTextTable.uasset" 816
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_SpecialAgentOtto_HUD.uasset" 817
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Meshes/Buildings/SM_Bld_Ceiling_01.uasset" 818
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_PolygonOffice_02_A.uasset" 819
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/PolygonOffice/Textures/T_PolygonOffice_03_A.uasset" 820
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/Maps/Office.umap" 821
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/ElevatingActionUI/Blueprints/Widget_StartMenu.uasset" 822
+"../../../../../../Users/J Diddy/Documents/Unreal Projects/ElevatingAction/Content/Maps/StartMenu.umap" 823

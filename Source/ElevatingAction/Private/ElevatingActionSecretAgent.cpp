@@ -214,11 +214,12 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 	}
 	
 	CurrentFloorNumber = 30 + FMath::FloorToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
+	
 	if (CurrentFloorNumber >= 16 && CurrentFloorNumber <= 20)
 	{
 		FHitResult StairHitResult;
 		FVector FeetLocation = GetMesh()->GetSocketTransform(TEXT("Root")).GetLocation();
-		FCollisionShape SmallSphere = FCollisionShape::MakeSphere(2.5f);
+		FCollisionShape SmallSphere = FCollisionShape::MakeSphere(1.0f);
 
 		if (GetWorld()->SweepSingleByChannel(StairHitResult, FeetLocation, FeetLocation, FQuat::Identity, ECC_Visibility, SmallSphere, CollisionQueryParams))
 		{
@@ -586,9 +587,6 @@ void AElevatingActionSecretAgent::Destroyed()
 	}
 	else if (IsValid(TracedStairs))
 	{
-		bCanGoDownStairs = false;
-		bCanGoUpStairs = false;
-		
 		TracedStairsLocation = FVector::ZeroVector;
 		TracedStairs = nullptr;
 	}
