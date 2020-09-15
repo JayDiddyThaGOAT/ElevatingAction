@@ -79,6 +79,7 @@ public:
 
 	void SetShootButtonPressed(bool bButtonPressed);
 	void ShootPistol();
+	AElevatingActionPistol* GetPistol() const;
 
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Attacking)
 	int32 ProjectilesShotCount;

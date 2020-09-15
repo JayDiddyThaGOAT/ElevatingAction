@@ -207,7 +207,10 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 
 		AElevatingActionSecretAgent* SecretAgent = Cast<AElevatingActionSecretAgent>(SecretAgentActor);
 		if (IsValid(SecretAgent))
+		{
 			CollisionQueryParams.AddIgnoredComponent(SecretAgent->GetMesh());
+			CollisionQueryParams.AddIgnoredActor(SecretAgent->GetPistol());
+		}
 	}
 	
 	CurrentFloorNumber = 30 + FMath::FloorToInt(GetMesh()->GetSocketLocation(TEXT("eyes_end")).Z / 300);
@@ -682,6 +685,11 @@ void AElevatingActionSecretAgent::ShootPistol()
 
 	if (!bShootButtonPressed)
 		bShootButtonPressed = true;
+}
+
+AElevatingActionPistol* AElevatingActionSecretAgent::GetPistol() const
+{
+	return Pistol;
 }
 
 void AElevatingActionSecretAgent::StartTransition()
