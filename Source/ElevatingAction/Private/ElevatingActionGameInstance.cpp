@@ -54,18 +54,20 @@ void UElevatingActionGameInstance::UpdateHighScore()
             else
             {
                 UElevatingActionSaveGame* LastSavedGame = Cast<UElevatingActionSaveGame>(UGameplayStatics::LoadGameFromSlot(TEXT("HighScore"), 0));
-
+                
                 if (!bIsAllGoalsPassed)
                     LastSavedGame->SetHighScore(GoalScores[CurrentGoalScoreIndex]);
                 else
                     LastSavedGame->SetHighScore(CurrentScore);
-            }\
+            }
         }
     }
     else
     {
         UElevatingActionSaveGame* LastSavedGame = Cast<UElevatingActionSaveGame>(UGameplayStatics::LoadGameFromSlot(TEXT("HighScore"), 0));
-        LastSavedGame->SetHighScore(CurrentScore);
+
+        if (CurrentScore > LastSavedGame->GetHighScore())
+            LastSavedGame->SetHighScore(CurrentScore);
     }
 }
 
