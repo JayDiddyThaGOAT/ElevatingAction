@@ -29,6 +29,7 @@ class ELEVATINGACTION_API AElevator : public AStaticMeshActor
 public:
 	AElevator();
 
+	virtual void PostInitProperties() override;
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaSeconds) override;
 
@@ -79,6 +80,12 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Elevator Movement")
 	void SetTargetFloorNumber(int32 FloorNumber);
+
+	UFUNCTION(BlueprintSetter, Category = "Elevator Lighting")
+	void SetElevatorBrightness(float Brightness);
+
+	UFUNCTION(BlueprintGetter, Category = "Elevator Lighting")
+	float GetElevatorBrightness() const;
 	
 	void SetElevatorButtonCaller(UElevatorButton* ElevatorButton);
 	UElevatorButton* GetElevatorButtonCaller() const;
@@ -105,6 +112,9 @@ protected:
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Door Movement")
 	FVector RightDoorTargetLocation;
+
+	UPROPERTY(BlueprintSetter=SetElevatorBrightness, BlueprintGetter=GetElevatorBrightness, meta = (AllowPrivateAccess = "true"), Category="Elevator Lighting")
+	float ElevatorBrightness;
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true"), Category = "Elevator Movement")
 	FVector ElevatorTargetLocation;
@@ -147,6 +157,9 @@ protected:
 
 	UPROPERTY(BlueprintReadOnly, meta = (AllowPrivateAccess = "true", ClampMin = "1", ClampMax = "31", UIMin = "1", UIMax = "31"), Category = "Floor Number")
 	int32 MaxFloorNumber;
+
+	class UMaterialInstance* ElevatorMaterialInstance;
+	class UMaterialInstanceDynamic* ElevatorMaterial;
 
 	class USoundWave* ElevatorMovingUpSoundWave;
 	class USoundWave* ElevatorMovingDownSoundWave;

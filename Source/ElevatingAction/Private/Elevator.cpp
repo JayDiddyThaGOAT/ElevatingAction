@@ -10,11 +10,35 @@ AElevator::AElevator()
     static ConstructorHelpers::FObjectFinder<UStaticMesh> ElevatorMesh(TEXT("/Game/PolygonOffice/Meshes/Buildings/SM_Bld_Elevator_01"));
     static ConstructorHelpers::FObjectFinder<UStaticMesh> ElevatorDoorMesh(TEXT("/Game/PolygonOffice/Meshes/Buildings/SM_Bld_Elevator_01_Door"));
 
+	LeftDoorTargetLocation = FVector(0.0f, -5.0f, 0.0f);
+	RightDoorTargetLocation = FVector(250.0f, -10.0f, 0.0f);
+
+	LeftDoor = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("LeftDoor"));
+	LeftDoor->SetCollisionProfileName(TEXT("BlockAll"));
+	if (ElevatorDoorMesh.Succeeded())
+		LeftDoor->SetStaticMesh(ElevatorDoorMesh.Object);
+
+	RightDoor = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("RightDoor"));
+	RightDoor->SetCollisionProfileName(TEXT("BlockAll"));
+	if (ElevatorDoorMesh.Succeeded())
+		RightDoor->SetStaticMesh(ElevatorDoorMesh.Object);
+
 	if (ElevatorMesh.Succeeded())
 	{
 		GetStaticMeshComponent()->SetStaticMesh(ElevatorMesh.Object);
 		GetStaticMeshComponent()->SetMobility(EComponentMobility::Movable);
 		GetStaticMeshComponent()->SetGenerateOverlapEvents(true);
+		
+		
+		LeftDoor->SetupAttachment(RootComponent);
+		LeftDoor->SetRelativeLocation(LeftDoorTargetLocation);
+
+		RightDoor->SetupAttachment(RootComponent);
+		RightDoor->SetRelativeLocationAndRotation(RightDoorTargetLocation, FRotator(0.0f, 180.0f, 0.0f));
+
+		ConstructorHelpers::FObjectFinder<UMaterialInstance> WallMaterial(TEXT("/Game/ElevatingActionOffice/Materials/M_ElevatingActionOffice_Wall"));
+		if (WallMaterial.Succeeded())
+			ElevatorMaterialInstance = WallMaterial.Object;
 	}
 
     ElevatorDirection = EDirectionState::Down;
@@ -24,26 +48,10 @@ AElevator::AElevator()
 
     ElevatorDoorsState = EDoorsState::Closed;
     ElevatorDoorsSpeed = 75.0f;
-    LeftDoorTargetLocation = FVector(0.0f, -5.0f, 0.0f);
-    RightDoorTargetLocation = FVector(250.0f, -10.0f, 0.0f);
     OpenDoorOffset = 70.0f;
 
     MinFloorNumber = 1;
     NextTargetFloorNumber = -1;
-	
-    LeftDoor = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("LeftDoor"));
-    LeftDoor->SetCollisionProfileName(TEXT("BlockAll"));
-    LeftDoor->SetupAttachment(RootComponent);
-    LeftDoor->SetRelativeLocation(LeftDoorTargetLocation);
-    if (ElevatorDoorMesh.Succeeded())
-		LeftDoor->SetStaticMesh(ElevatorDoorMesh.Object);
-
-    RightDoor = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("RightDoor"));
-    RightDoor->SetCollisionProfileName(TEXT("BlockAll"));
-    RightDoor->SetupAttachment(RootComponent);
-    RightDoor->SetRelativeLocationAndRotation(RightDoorTargetLocation, FRotator(0.0f, 180.0f, 0.0f));
-    if (ElevatorDoorMesh.Succeeded())
-		RightDoor->SetStaticMesh(ElevatorDoorMesh.Object);
 
 	ElevatorMovingAudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("MovingAudio"));
 	ElevatorMovingAudioComponent->SetupAttachment(RootComponent);
@@ -76,6 +84,18 @@ AElevator::AElevator()
 		ElevatorDoorsOpeningSoundWave = SlideDoorsOpen.Object;
 }
 
+void AElevator::PostInitProperties()
+{
+	Super::PostInitProperties();
+	
+	if (ElevatorMaterialInstance)
+	{
+		ElevatorMaterial = UMaterialInstanceDynamic::Create(ElevatorMaterialInstance, this, TEXT("M_ElevatingActionOffice_Elevator"));
+		ElevatorMaterial->GetScalarParameterValue(TEXT("Base_EmissiveMultiplier"), ElevatorBrightness);
+		GetStaticMeshComponent()->SetMaterial(0, ElevatorMaterial);
+	}
+}
+
 void AElevator::BeginPlay()
 {
     Super::BeginPlay();
@@ -87,6 +107,8 @@ void AElevator::BeginPlay()
         MaxFloorNumber = 30;
     else
 	    MaxFloorNumber = CurrentFloorNumber;
+
+	SetElevatorBrightness(1.0f);
 }
 
 void AElevator::Tick(float DeltaSeconds)
@@ -366,6 +388,27 @@ int32 AElevator::GetMinFloorNumber() const
 int32 AElevator::GetMaxFloorNumber() const
 {
 	return MaxFloorNumber;
+}
+
+void AElevator::SetElevatorBrightness(float Brightness)
+{
+	if (IsValid(ElevatorMaterialInstance) && !IsValid(ElevatorMaterial))
+		ElevatorMaterial = UMaterialInstanceDynamic::Create(ElevatorMaterialInstance, RootComponent, TEXT("M_ElevatingActionOffice_Elevator"));
+	
+	ElevatorBrightness = Brightness;
+	ElevatorMaterial->SetScalarParameterValue(TEXT("Base_EmissiveMultiplier"), ElevatorBrightness);
+	GetStaticMeshComponent()->SetMaterial(0, ElevatorMaterial);
+
+	if (IsValid(LeftDoor))
+		LeftDoor->SetMaterial(0, ElevatorMaterial);
+
+	if (IsValid(RightDoor))
+		RightDoor->SetMaterial(0, ElevatorMaterial);
+}
+
+float AElevator::GetElevatorBrightness() const
+{
+	return ElevatorBrightness;
 }
 
 UAudioComponent* AElevator::GetElevatorMovingAudioComponent() const
