@@ -28,8 +28,7 @@ class ELEVATINGACTION_API AElevator : public AStaticMeshActor
 
 public:
 	AElevator();
-
-	virtual void PostInitProperties() override;
+	
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaSeconds) override;
 

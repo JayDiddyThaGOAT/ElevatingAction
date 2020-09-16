@@ -84,18 +84,6 @@ AElevator::AElevator()
 		ElevatorDoorsOpeningSoundWave = SlideDoorsOpen.Object;
 }
 
-void AElevator::PostInitProperties()
-{
-	Super::PostInitProperties();
-	
-	if (ElevatorMaterialInstance)
-	{
-		ElevatorMaterial = UMaterialInstanceDynamic::Create(ElevatorMaterialInstance, this, TEXT("M_ElevatingActionOffice_Elevator"));
-		ElevatorMaterial->GetScalarParameterValue(TEXT("Base_EmissiveMultiplier"), ElevatorBrightness);
-		GetStaticMeshComponent()->SetMaterial(0, ElevatorMaterial);
-	}
-}
-
 void AElevator::BeginPlay()
 {
     Super::BeginPlay();
@@ -108,7 +96,12 @@ void AElevator::BeginPlay()
     else
 	    MaxFloorNumber = CurrentFloorNumber;
 
-	SetElevatorBrightness(1.0f);
+	if (ElevatorMaterialInstance)
+	{
+		ElevatorMaterial = UMaterialInstanceDynamic::Create(ElevatorMaterialInstance, this, TEXT("M_ElevatingActionOffice_Elevator"));
+		ElevatorMaterial->GetScalarParameterValue(TEXT("Base_EmissiveMultiplier"), ElevatorBrightness);
+		GetStaticMeshComponent()->SetMaterial(0, ElevatorMaterial);
+	}
 }
 
 void AElevator::Tick(float DeltaSeconds)
