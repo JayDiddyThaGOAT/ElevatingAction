@@ -302,13 +302,27 @@ void AElevatingActionSecretAgent::Tick(float DeltaTime)
 			{
 				if (TracedStairs->GetName().Contains("Left"))
 				{
-					bCanGoDownStairs = UKismetMathLibrary::InRange_FloatFloat(FMath::Abs(TracedStairsLocation.X), 1500.0f, 1750.0f) && CurrentFloorNumber > 17;
-					bCanGoUpStairs = UKismetMathLibrary::InRange_FloatFloat(FMath::Abs(TracedStairsLocation.X), 750.0f, 1000.0f) && CurrentFloorNumber < 20;
+					float MinRequiredToGoUpStairs = 750.0f + GetCapsuleComponent()->GetScaledCapsuleRadius();
+					float MaxRequiredToGoUpStairs = 1000.0f - GetCapsuleComponent()->GetScaledCapsuleRadius();
+					bCanGoUpStairs =  CurrentFloorNumber < 20 &&
+						UKismetMathLibrary::InRange_FloatFloat(FMath::Abs(TracedStairsLocation.X), MinRequiredToGoUpStairs, MaxRequiredToGoUpStairs);
+
+					float MinRequiredToGoDownStairs = 1500.0f + GetCapsuleComponent()->GetScaledCapsuleRadius();
+					float MaxRequiredToGoDownStairs = 1750.0f - GetCapsuleComponent()->GetScaledCapsuleRadius();
+					bCanGoDownStairs = CurrentFloorNumber > 17 &&
+						UKismetMathLibrary::InRange_FloatFloat(FMath::Abs(TracedStairsLocation.X), MinRequiredToGoDownStairs, MaxRequiredToGoDownStairs);
 				}
 				else if (TracedStairs->GetName().Contains("Right"))
 				{
-					bCanGoDownStairs = UKismetMathLibrary::InRange_FloatFloat(FMath::Abs(TracedStairsLocation.X), 1750.0f, 2000.0f) && CurrentFloorNumber > 16;
-					bCanGoUpStairs = UKismetMathLibrary::InRange_FloatFloat(FMath::Abs(TracedStairsLocation.X), 1000.0f, 1250.0f) && CurrentFloorNumber < 20;
+					float MinRequiredToGoUpStairs = 1000.0f + GetCapsuleComponent()->GetScaledCapsuleRadius();
+					float MaxRequiredToGoUpStairs = 1250.0f - GetCapsuleComponent()->GetScaledCapsuleRadius();
+					bCanGoUpStairs = CurrentFloorNumber < 20 &&
+						UKismetMathLibrary::InRange_FloatFloat(FMath::Abs(TracedStairsLocation.X), MinRequiredToGoUpStairs, MaxRequiredToGoUpStairs);
+
+					float MinRequiredToGoDownStairs = 1750.0f + GetCapsuleComponent()->GetScaledCapsuleRadius();
+					float MaxRequiredToGoDownStairs = 2000.0f - GetCapsuleComponent()->GetScaledCapsuleRadius();
+					bCanGoDownStairs = CurrentFloorNumber > 16 &&
+						UKismetMathLibrary::InRange_FloatFloat(FMath::Abs(TracedStairsLocation.X), MinRequiredToGoDownStairs, MaxRequiredToGoDownStairs);
 				}
 
 				if (Cast<APlayerController>(GetController()))
