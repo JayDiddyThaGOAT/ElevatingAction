@@ -27,11 +27,6 @@ UElevatorButton::UElevatorButton()
     if (Alarm.Succeeded())
         ElevatorArrivedAlarm = Alarm.Object;
 
-    static ConstructorHelpers::FObjectFinder<USoundWave> Hum
-    (TEXT("SoundWave'/Game/ElevatingActionAudio/GameMasterAudio/ElevatorButtonSignal/hum_electric_neon_light_loop_01.hum_electric_neon_light_loop_01'"));
-    if (Hum.Succeeded())
-        ElevatorButtonHighlightSound = Hum.Object;
-
     ElevatorButtonAudioComponent = CreateDefaultSubobject<UAudioComponent>(TEXT("ElevatorButtonAudio"));
     ElevatorButtonAudioComponent->SetAutoActivate(false);
 }
@@ -74,11 +69,8 @@ void UElevatorButton::CallElevatorTo(int32 FloorNumber)
     AElevatingActionSecretAgent* SecretAgentOtto = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
     if (CurrentFloorNumber == SecretAgentOtto->GetCurrentFloorNumber())
     {
-        if (ElevatorButtonAudioComponent->IsPlaying() && ElevatorButtonAudioComponent->Sound == ElevatorButtonHighlightSound)
-        {
-            ElevatorButtonAudioComponent->SetSound(ElevatorButtonClickSound);
-            ElevatorButtonAudioComponent->Play();
-        }
+        ElevatorButtonAudioComponent->SetSound(ElevatorButtonClickSound);
+        ElevatorButtonAudioComponent->Play();
     }
 }
 
@@ -92,29 +84,6 @@ void UElevatorButton::SetButtonBrightness(float Brightness)
         ButtonBrightness = Brightness;
         ButtonMaterial->SetScalarParameterValue(TEXT("Base_EmissiveMultiplier"), ButtonBrightness);
         SetMaterial(0, ButtonMaterial);
-
-        AElevatingActionSecretAgent* SecretAgentOtto = Cast<AElevatingActionSecretAgent>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
-        {
-            if (SecretAgentOtto->GetCurrentLocation() == ELocationState::Hallway)
-            {
-                if (CurrentFloorNumber == SecretAgentOtto->GetCurrentFloorNumber())
-                {
-                    if (Brightness == 2.0f)
-                    {
-                        if (!ElevatorButtonAudioComponent->IsPlaying())
-                        {
-                            ElevatorButtonAudioComponent->SetSound(ElevatorButtonHighlightSound);
-                            ElevatorButtonAudioComponent->Play();
-                        }
-                    }
-                    else if (Brightness == 1.0f)
-                    {
-                        if (ElevatorButtonAudioComponent->IsPlaying() && ElevatorButtonAudioComponent->Sound == ElevatorButtonHighlightSound)
-                            ElevatorButtonAudioComponent->Stop();
-                    }
-                }
-            }
-        }
     }
 }
 

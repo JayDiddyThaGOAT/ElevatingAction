@@ -43,6 +43,5 @@ private:
 	class UAudioComponent* ElevatorButtonAudioComponent;
 
 	class USoundWave* ElevatorButtonClickSound;
-	class USoundWave* ElevatorButtonHighlightSound;
 	class USoundWave* ElevatorArrivedAlarm;
 };
