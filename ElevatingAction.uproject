@@ -24,6 +24,7 @@
 		"LinuxNoEditor",
 		"LinuxAArch64NoEditor",
 		"WindowsNoEditor",
-		"WindowsNoEditorWin32"
+		"WindowsNoEditorWin32",
+		"MacNoEditor"
 	]
 }

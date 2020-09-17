@@ -2,6 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
+#include "ElevatingActionSaveGame.h"
 #include "ElevatingActionGameInstance.generated.h"
 
 UCLASS()
@@ -52,9 +53,6 @@ private:
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Score)
 	int32 CurrentGoalScoreIndex;
 
-	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Score)
-	bool bIsAllGoalsPassed;
-
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Level)
 	int32 LevelNumber;
 	
@@ -90,5 +88,7 @@ private:
     
 	UPROPERTY(BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = Volume)
 	float VoicesVolume;
+
+	class UElevatingActionSaveGame* SavedGame;
 };
 
