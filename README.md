@@ -20,6 +20,15 @@ This is a 3d clone of Taito's 1983 NES game, Elevator Action, developed in Unrea
 | Alt + F4             | Toggle Fullscreen  |
 | Alt + F11          | Force Quit          |
 
+## Scoring
+| Action           | Points   |
+| ------------- | ------------- |
+| Shooting an enemy agent        | 100         |
+| Jump attacking enemy agent      | 150     |
+| Dropping a light on an enemy agent       | 300     |
+| Collecting secret file      | 500     |
+| Completed Level | 1000 * (level number completed) up to 10000 |
+| First time players start with 3 lives. A life is added when player reaches points | 10,000, 15,000, 20,000, 25,000 |
 ## Credits
 | Asset           | Source   | Creator |
 | ------------- | ------------- | ------------- |
