@@ -23,9 +23,9 @@ This is a 3d clone of Taito's 1983 NES game, Elevator Action, developed in Unrea
 ## Credits
 | Asset           | Source   | Creator |
 | ------------- | ------------- | ------------- |
-| Office Building Parts (Walls, Doors, Stairs, Elevator) | [POLYGON - Office Pack](https://syntystore.com/products/polygon-office-pack) | ![Synty Studios](https://www.syntystudios.com/) |
-| Enemy Secret Agents, Secret File, Pistol, & Car | [POLYGON - Spy Kit](https://syntystore.com/collections/frontpage/products/polygon-spy-kit) |  ![Synty Studios](https://www.syntystudios.com/) |
-| Secret Agent Otto & Road + Sidewalk | [POLYGON - City Pack](https://syntystore.com/collections/frontpage/products/polygon-city-pack) | ![Synty Studios](https://www.syntystudios.com/) |
+| Office Building Parts (Walls, Doors, Stairs, Elevator) | [POLYGON - Office Pack](https://syntystore.com/products/polygon-office-pack) | ![Synty Studios](https://syntystore.com/) |
+| Enemy Secret Agents, Secret File, Pistol, & Car | [POLYGON - Spy Kit](https://syntystore.com/collections/frontpage/products/polygon-spy-kit) |  ![Synty Studios](https://syntystore.com/) |
+| Secret Agent Otto & Road + Sidewalk | [POLYGON - City Pack](https://syntystore.com/collections/frontpage/products/polygon-city-pack) | ![Synty Studios](https://syntystore.com/) |
 | Red Pistol Projectiles w/ Explosion | [Toon Projectiles Vol. 1](https://www.unrealengine.com/marketplace/en-US/product/f5b5501eda0747a4beb442eae5de70ab) | ![Gabriel Aguilar Prod.](https://www.youtube.com/c/gabrielaguiarprod) |
 | Secret Agent Animations | [Pistol Basic - Mocap Pack](https://marketplace-website-node-launcher-prod.ol.epicgames.com/ue/marketplace/en-US/product/pistol-01-basic-mocap-pack) | ![MoCap Online](https://mocaponline.com/) |
 | Gameplay Music (All Abstract Visions except #3 & #7) | [Big Casual & Arcade Game Music Bundle](https://assetstore.unity.com/packages/audio/music/orchestral/big-casual-arcade-game-music-bundle-157671) | [Muz Station Productions (Andrey Sitkov)](https://soundcloud.com/muzstation-game-music) |
