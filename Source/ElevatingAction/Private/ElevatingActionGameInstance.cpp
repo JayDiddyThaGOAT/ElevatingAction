@@ -86,11 +86,18 @@ void UElevatingActionGameInstance::ResetGame()
     else
     {
         SavedGame = Cast<UElevatingActionSaveGame>(UGameplayStatics::LoadGameFromSlot(TEXT("HighScore"), 0));
-        while (GoalScores[CurrentGoalScoreIndex] < SavedGame->GetHighScore() && CurrentGoalScoreIndex < GoalScores.Num())
-        {
-            CurrentGoalScoreIndex++;
-            PlayerLives++;
-        }
+        
+		if (CurrentGoalScoreIndex < GoalScores.Num())
+		{
+			while (GoalScores[CurrentGoalScoreIndex] < SavedGame->GetHighScore())
+			{
+				CurrentGoalScoreIndex++;
+				PlayerLives++;
+
+				if (CurrentGoalScoreIndex == GoalScores.Num())
+					break;
+			}
+		}
     }
 }
 
