@@ -42,10 +42,16 @@ void UElevatingActionGameInstance::UpdateHighScore()
     if (CurrentScore <= SavedGame->GetHighScore())
         return;
 
-    while(CurrentScore > GoalScores[CurrentGoalScoreIndex] && CurrentGoalScoreIndex < GoalScores.Num())
+    if (CurrentGoalScoreIndex < GoalScores.Num())
     {
-        CurrentGoalScoreIndex++;
-        PlayerLives++;
+        while (CurrentScore > GoalScores[CurrentGoalScoreIndex])
+        {
+            CurrentGoalScoreIndex++;
+            PlayerLives++;
+
+            if (CurrentGoalScoreIndex == GoalScores.Num())
+                break;
+        }
     }
     
     if (CurrentGoalScoreIndex >= GoalScores.Num())
